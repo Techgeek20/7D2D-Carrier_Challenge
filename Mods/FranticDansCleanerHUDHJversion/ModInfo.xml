@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+<ModInfo>
+<Name value="FranticDansCleanerHUD"/>
+<Author value="Frantic_Dan"/>
+<Version value="1.0" compat="A21"/>
+<Website value=""/>
+<Description value="Makes HUD cleaner and centralised."/>
+</ModInfo>
+</xml>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="TFP_WebServer" />
+	<DisplayName value="Web Dashboard" />
+	<Description value="Integrated Webserver for the Web Dashboard and server APIs" />
+	<Author value="The Fun Pimps LLC" />
+	<Version value="21.2.1.2" />
+	<Website value="" />
+</xml>

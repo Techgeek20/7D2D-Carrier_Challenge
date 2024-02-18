@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="TFP_MapRendering" />
+	<DisplayName value="Map Renderer" />
+	<Description value="Render the game map to image map tiles as it is uncovered" />
+	<Author value="The Fun Pimps LLC" />
+	<Version value="21.1.16.4" />
+	<Website value="" />
+</xml>

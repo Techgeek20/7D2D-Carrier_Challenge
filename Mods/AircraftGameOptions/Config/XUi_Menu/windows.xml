@@ -1,0 +1,19 @@
+﻿<windows>
+  <!-- Game Options-->
+	
+	
+  <set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/@cell_width">117</set>
+  <set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/@cols">5</set>
+  <set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/rect/simplebutton/@width">116</set>
+  <set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/rect/simplebutton/@font_size">24</set>
+  <set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsHeader']/grid[@name='tabButtons']/rect/sprite/@pos">115,0</set>
+
+  <insertAfter xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']" >
+    <rect tab_key="xuiWinchester">
+      <grid pos="6,-40" rows="13" cell_width="525" cell_height="45" repeat_content="false" arrangement="vertical" >
+		 <gameoption name="CustomSleeperRespawnDays" title="goSleeperRespawnDays" value_wrap="false" value_type="int" values="-1, 1, 3, 5, 7, 9, 11, 13, 15" display_names="goDisabled" value_localization_prefix="goLootRespawnDaysValue" default_value="7" />
+	  </grid>
+    </rect>
+  </insertAfter>
+
+</windows>

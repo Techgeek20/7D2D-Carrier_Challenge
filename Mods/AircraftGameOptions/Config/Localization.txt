@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+xuiWinchester,,XUi,Game Settings,KeyTrunk,Aircraft,,,,,
+goSleeperRespawnDays,,UI,Menu,KgNone,Sleeper Respawn Days,,,,,
+goSleeperRespawnDaysDesc,,UI,Menu,KgNone,Number of days before sleepers respawn.,,,,,

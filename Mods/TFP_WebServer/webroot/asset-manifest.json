@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.780ee3df.css",
+    "main.js": "/static/js/main.31badb24.js",
+    "static/js/787.9d42efaa.chunk.js": "/static/js/787.9d42efaa.chunk.js",
+    "static/media/7d2d-logo.png": "/static/media/7d2d-logo.fb3c6004228951242783.png",
+    "static/media/bg-forest.jpg": "/static/media/bg-forest.a0037883583931c1c7e3.jpg",
+    "static/media/7d2d-square.webp": "/static/media/7d2d-square.8d1f92bcf774cf9ed887.webp",
+    "static/media/ui_game_symbol_tracking_bear.png": "/static/media/ui_game_symbol_tracking_bear.f093e312239e9b55cf62.png",
+    "static/media/ui_game_symbol_tracking_snake.png": "/static/media/ui_game_symbol_tracking_snake.5d39ffcdaa456ce6ce0f.png",
+    "static/media/ui_game_symbol_tracking_pig.png": "/static/media/ui_game_symbol_tracking_pig.b7563c410d208abd634c.png",
+    "static/media/ui_game_symbol_tracking_rabbit.png": "/static/media/ui_game_symbol_tracking_rabbit.a0d8304b6832aa8747ce.png",
+    "static/media/ui_game_symbol_tracking_chicken.png": "/static/media/ui_game_symbol_tracking_chicken.f8502366d557395fcf52.png",
+    "static/media/ui_game_symbol_tracking_wolf.png": "/static/media/ui_game_symbol_tracking_wolf.d1dddf4ab14bc8848bee.png",
+    "static/media/ui_game_symbol_tracking_deer.png": "/static/media/ui_game_symbol_tracking_deer.b0383a07e77bfb5b21dd.png",
+    "static/media/ui_game_symbol_tracking_mountain_lion.png": "/static/media/ui_game_symbol_tracking_mountain_lion.2175438fc5295629a9e4.png",
+    "static/media/ui_game_symbol_zombie.png": "/static/media/ui_game_symbol_zombie.a0270fc24da3324c8de7.png",
+    "static/media/ui_game_symbol_animal_tracker.png": "/static/media/ui_game_symbol_animal_tracker.210ce6882c9a8cca199c.png",
+    "static/media/marker-icon.png": "/static/media/marker-icon.2b3e1faf89f94a483539.png",
+    "static/media/layers-2x.png": "/static/media/layers-2x.8f2c4d11474275fbc161.png",
+    "static/media/ui_game_symbol_player.png": "/static/media/ui_game_symbol_player.94e20a11a9cd11f88a5f.png",
+    "static/media/layers.png": "/static/media/layers.416d91365b44e4b4f477.png",
+    "index.html": "/index.html",
+    "main.780ee3df.css.map": "/static/css/main.780ee3df.css.map",
+    "main.31badb24.js.map": "/static/js/main.31badb24.js.map",
+    "787.9d42efaa.chunk.js.map": "/static/js/787.9d42efaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.780ee3df.css",
+    "static/js/main.31badb24.js"
+  ]
+}
