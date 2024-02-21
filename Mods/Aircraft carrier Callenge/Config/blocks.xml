@@ -1,0 +1,245 @@
+﻿<configs>
+	<insertafter xpath="/blocks/block[@name='concreteNoUpgradeMaster']">
+	<block name="concreteRadiation">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="DescriptionKey" value="concreteNoUpgradeGroupDesc"/>
+		<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Texture" value="8"/>
+		<property name="EconomicValue" value="50"/>
+		<property name="EconomicBundleSize" value="20"/>
+		<property name="BuffsWhenWalkedOn" value="buffInternalBleedingAC" />
+			<requirement name="EntityTagCompare" tags="player"/>
+		<property class="RepairItems">
+			<property name="resourceConcreteMix" value="8"/>
+		</property>
+		<property name="StabilitySupport" value="false"/>
+		<drop event="Harvest" name="resourceRockSmall" count="25" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+		<property name="SortOrder1" value="M070"/>
+		<property name="SortOrder2" value="0000"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="MC_building"/>
+	</block>
+	
+	<block name="concreteindestructible">
+		<property name="CreativeMode" value="Dev"/>
+		<property name="DescriptionKey" value="concreteNoUpgradeGroupDesc"/>
+		<property name="DisplayType" value="blockHardened"/>
+		<property name="Material" value="Mbedrock"/>
+		<property name="Texture" value="8"/>
+		<property name="EconomicValue" value="50"/>
+		<property name="EconomicBundleSize" value="20"/>
+		<property class="RepairItems">
+			<property name="resourceConcreteMix" value="8"/>
+		</property>
+		<drop event="Harvest" name="resourceRockSmall" count="25" tag="allHarvest"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+		<property name="SortOrder1" value="M070"/>
+		<property name="SortOrder2" value="0000"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="FilterTags" value="MC_building"/>
+	</block>
+	
+	<block name="destroyedstoneAC">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="DisplayType" value="blockTerrainFertile"/>
+	<property name="Map.Color" value="152,149,63"/>
+	<property name="Material" value="Mbedrock"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="438"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="BuffsWhenWalkedOn" value="buffInternalBleedingAC" />
+		<requirement name="EntityTagCompare" tags="player"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Weight" value="90"/>
+	<property name="NoScrapping" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceCobblestones" value="6"/>
+	</property>
+	<property name="StabilitySupport" value="false"/>
+	<drop event="Harvest" name="resourceCrushedSand" count="4" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="SortOrder1" value="0000"/>
+	<property name="SortOrder2" value="0700"/>
+	<property name="FilterTags" value="MC_outdoor,SC_terrain,MC_building,SC_destruction"/>
+	</block>
+	
+	<block name="TruckLocked">
+	<property name="Material" value="Mmetal"/>
+	<property name="Class" value="SecureLoot"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#@modfolder:Assets/CarBlocks.unity3d?MilitaryTruck.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<property name="LockPickItem" value="resourceLockPick"/>
+	<property name="LockPickTime" value="20"/>
+	<property name="LockPickBreakChance" value="0.75"/>
+	<property name="DowngradeBlock" value="TruckUnlocked"/>
+	<property name="LootList" value="gunSafe"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="6"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="10000"/>
+	<property class="Explosion">
+	<property name="ParticleIndex" value="4"/>
+	<property name="RadiusBlocks" value="5"/> 
+	<property name="BlockDamage" value="5000"/> 
+	<property name="RadiusEntities" value="5"/> 
+	<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="PlacementDistance" value="6"/>
+	</block>
+		
+	<block name="TruckUnlocked">
+	<property name="Material" value="Mmetal"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="gunSafe"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="6"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#@modfolder:Assets/CarBlocks.unity3d?MilitaryTruck.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceLeather" count="2,7" prob="0.5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<property name="DowngradeBlock" value="TruckDamaged"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/>
+		<property name="RadiusBlocks" value="5"/> 
+		<property name="BlockDamage" value="5000"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+		<property name="PlacementDistance" value="6"/>
+		<property name="DowngradeEvent" value="block_car_alarm_end" />
+	</block>
+		<block name="TruckDamaged">
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Model" value="#@modfolder:Assets/CarBlocks.unity3d?MilitaryTruckDmg.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="PassThroughDamage" value="true"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="smallEngine" count="1" prob="0.35" tag="salvageHarvest"/>
+			<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceOil" count="2,6" prob="0.75" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceCloth" count="3,7" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceSpring" count="2,4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="10,35" tag="salvageHarvest"/>
+			<drop event="Harvest" name="ammoGasCan" count="100,750" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="12" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+			<property name="BigDecorationRadius" value="10"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property name="MaxDamage" value="2500"/>
+			<property class="Explosion">
+				<property name="ParticleIndex" value="4"/>
+				<property name="RadiusBlocks" value="5"/>
+				<property name="BlockDamage" value="5000"/>
+				<property name="RadiusEntities" value="5"/>
+				<property name="EntityDamage" value="250"/>
+			</property>
+			<property name="PlacementDistance" value="6"/>
+		</block>
+	</insertafter>
+	
+	<!-- <insertafter xpath="/blocks/block[@name]/property[1]">
+		<property name="CreativeMode" value="None"/>
+	</insertafter>
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> -->
+	
+	<set xpath="//block[@name='terrDirt']//drop[1]/@count">10</set>
+	
+	<set xpath="//block[@name='glassBulletproofMaster']/property[@name='LightOpacity']/@value">0</set>
+	<set xpath="//block[@name='glassBusinessBlock']/property[@name='LightOpacity']/@value">0</set>
+	
+	<remove xpath="//block[@name='cntPillCaseClosed']/drop[@event='Destroy']"></remove>
+	
+	<insertafter xpath="//block[@name='cntPillCaseEmpty']//drop[1]">
+		<drop event="Destroy" name="resourceAcid" prob=".5" count="1" tag="WasteTreasuresAcidHarvest"/>
+	</insertafter>
+	
+	<append xpath="/blocks/block[starts-with(@name, 'spotlight')]">
+		<drop event="Harvest" name="resourceHeadlight" count="1" prob="1" tag="salvageHarvest"/>
+	</append>
+
+	<insertafter xpath="//block[@name='cntCollapsedCementMixer']//drop[5]">
+		<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
+		<drop event="Destroy" name="smallEngine" count="1" prob="1" tag="salvageHarvest"/>	
+	</insertafter>
+	
+	<insertafter xpath="//block[@name='tableSaw']//property[@name='WorkstationIcon']">
+		<drop event="Destroy" name="carBattery" count="1" tag="salvageHarvest"/>	
+	</insertafter>
+	
+	<append xpath="/blocks/block[@name='workLightPOI']">
+		<drop event="Destroy" name="resourceHeadlight" count="1" prob="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="carBattery" count="1" prob="0.10" tag="salvageHarvest"/>
+	</append>
+	  
+	<append xpath="/blocks/block[@name='treeMaster']">
+		<drop event="Harvest" name="resourceYuccaFibers" count="30" tag="oreWoodHarvest"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='treePlant02']">  <!-- Potted Plant -->
+		<drop event="Harvest" name="resourceYuccaFibers" count="30" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="resourceClayLump" count="3" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="treePlantedOak1m" count="1" prob="0.1" tag="allHarvest"/>
+	</append>
+	  
+	<append xpath="/blocks/block[@name='terrDestroyedStone']">  <!-- Destroyed Stone -->
+		<drop event="Harvest" name="resourceClayLump" count="8" tag="oreWoodHarvest"/> 
+	</append>
+	 
+	<remove xpath="//block[@name='spotlightDownLeft_POI']//drop[@name='resourceHeadlight']" />
+	<append xpath="//block[starts-with(@name,'projector')]">
+		<drop event="Destroy" name="resourceHeadlight" count="1" prob="1" tag="salvageHarvest"/>
+	</append>
+
+</configs>

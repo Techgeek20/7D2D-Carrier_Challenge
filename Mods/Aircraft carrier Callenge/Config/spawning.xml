@@ -1,0 +1,38 @@
+<configs>
+	<!-- change biome spawns for desert to match forest -->
+	<set xpath="//biome[@name='desert']//spawn[1]/@respawndelay">2.9</set>
+	<set xpath="//biome[@name='desert']//spawn[2]/@respawndelay">3.3</set>
+	<set xpath="//biome[@name='desert']//spawn[3]/@respawndelay">0.3</set>
+	<set xpath="//biome[@name='desert']//spawn[4]/@respawndelay">0.15</set>
+	<set xpath="//biome[@name='desert']//spawn[5]/@respawndelay">0.3</set>
+	<set xpath="//biome[@name='desert']//spawn[6]/@respawndelay">0.1</set>
+	<set xpath="//biome[@name='desert']//spawn[3]/@maxcount">2</set>
+	<set xpath="//biome[@name='desert']//spawn[6]/@maxcount">3</set>
+	
+	<!-- change biome spawns for snow to match forest -->
+	<set xpath="//biome[@name='snow']//spawn[1]/@respawndelay">2.9</set>
+	<set xpath="//biome[@name='snow']//spawn[2]/@respawndelay">3.3</set>
+	<set xpath="//biome[@name='snow']//spawn[3]/@respawndelay">0.3</set>
+	<set xpath="//biome[@name='snow']//spawn[4]/@respawndelay">0.15</set>
+	<set xpath="//biome[@name='snow']//spawn[5]/@respawndelay">0.3</set>
+	<set xpath="//biome[@name='snow']//spawn[6]/@respawndelay">0.1</set>
+	<set xpath="//biome[@name='snow']//spawn[3]/@maxcount">2</set>
+	<set xpath="//biome[@name='snow']//spawn[4]/@maxcount">3</set>
+	<set xpath="//biome[@name='snow']//spawn[5]/@maxcount">3</set>
+	<set xpath="//biome[@name='snow']//spawn[6]/@maxcount">3</set>
+	
+	<!-- change biome spawns for wasteland to match forest -->
+	<set xpath="//biome[@name='wasteland']//spawn[1]/@respawndelay">2.9</set>
+	<set xpath="//biome[@name='wasteland']//spawn[2]/@respawndelay">3.3</set>
+	<set xpath="//biome[@name='wasteland']//spawn[3]/@respawndelay">0.3</set>
+	<set xpath="//biome[@name='wasteland']//spawn[4]/@respawndelay">0.15</set>
+	<set xpath="//biome[@name='wasteland']//spawn[5]/@respawndelay">0.3</set>
+	<set xpath="//biome[@name='wasteland']//spawn[6]/@respawndelay">0.1</set>
+	<set xpath="//biome[@name='wasteland']//spawn[7]/@respawndelay">0.3</set>
+	<set xpath="//biome[@name='wasteland']//spawn[2]/@maxcount">1</set>
+	<set xpath="//biome[@name='wasteland']//spawn[3]/@maxcount">2</set>
+	<set xpath="//biome[@name='wasteland']//spawn[4]/@maxcount">3</set>
+	<set xpath="//biome[@name='wasteland']//spawn[5]/@maxcount">3</set>
+	<set xpath="//biome[@name='wasteland']//spawn[6]/@maxcount">3</set>
+	
+</configs>

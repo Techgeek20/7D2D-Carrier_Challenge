@@ -1,0 +1,26 @@
+<configs>
+	<remove xpath="//windows/window[21]/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='XPMultiplier']" />
+	<remove xpath="//windows/window[21]/rect[2]/rect[2]/rect[1]/grid[@pos='6,-40']//gameoption[@name='DayNightLength']" />
+	<remove xpath="//windows/window[21]/rect[2]/rect[2]/rect[3]/grid[@pos='6,-40']//gameoption[@name='BlockDamagePlayer']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsAdvanced']/grid[@pos='6,-40']//gameoption[@name='LootAbundance']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsAdvanced']/grid[@pos='6,-40']//gameoption[@name='BlockDamageAI']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsAdvanced']/grid[@pos='6,-40']//gameoption[@name='BlockDamageAIBM']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsAdvanced']/grid[@pos='6,-40']//gameoption[@name='EnemySpawnMode']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsAdvanced']/grid[@pos='6,-40']//gameoption[@name='MaxChunkAge']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsBasic']/grid[@pos='6,-40']//gameoption[@name='AirDropFrequency']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsAdvanced']/grid[@pos='6,-40']//gameoption[@name='BuildCreate']" />>
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsBasic']/grid[@pos='6,-40']//gameoption[@name='AirDropMarker']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='LandClaimSize']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='LandClaimDeadZone']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='LandClaimExpiryTime']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='LandClaimDecayMode']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='LandClaimOnlineDurabilityModifier']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='LandClaimOfflineDurabilityModifier']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='LandClaimOfflineDelay']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='BedrollDeadZoneSize']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='BedrollExpiryTime']" />
+	<remove xpath="//windows/window[21]/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsMultiplayer']/grid[@pos='6,-40']//gameoption[@name='PlayerKillingMode']" />
+
+	<remove xpath="/windows/window[@name='newsWindow']"/>
+
+</configs>

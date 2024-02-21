@@ -1,0 +1,47 @@
+<configs>
+
+<!-- <set xpath="doc/backgrounds">
+	<tex file="@modfolder:/Config/backgrounds/RELoading1.jpg"/>
+	<tex file="@modfolder:/Config/backgrounds/RELoading2.jpg"/>
+	<tex file="@modfolder:/Config/backgrounds/RELoading3.jpg"/>	
+</set> -->
+
+
+<set xpath="/doc/tips//tip[1]/@key">loadingTipAircraft1</set>
+<set xpath="/doc/tips//tip[2]/@key">loadingTipAircraft2</set>
+<set xpath="/doc/tips//tip[3]/@key">loadingTipAircraft3</set>
+<set xpath="/doc/tips//tip[4]/@key">loadingTipAircraft4</set>
+<set xpath="/doc/tips//tip[5]/@key">loadingTipAircraft5</set>
+<set xpath="/doc/tips//tip[6]/@key">loadingTipAircraft6</set>
+<set xpath="/doc/tips//tip[7]/@key">loadingTipAircraft7</set>
+<set xpath="/doc/tips//tip[8]/@key">loadingTipAircraft8</set>
+<set xpath="/doc/tips//tip[9]/@key">loadingTipAircraft9</set>
+<set xpath="/doc/tips//tip[10]/@key">loadingTipAircraft10</set>
+<set xpath="/doc/tips//tip[11]/@key">loadingTipAircraft11</set>
+<set xpath="/doc/tips//tip[12]/@key">loadingTipAircraft12</set>
+<set xpath="/doc/tips//tip[13]/@key">loadingTipAircraft13</set>
+<set xpath="/doc/tips//tip[14]/@key">loadingTipAircraft14</set>
+
+
+<remove xpath="/doc/tips//tip[@key='loadingTipMagazines']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipPerkLootBoost']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipBaseUpgrading']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipRadials']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipHarvestingCorpses']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipGlue']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipProperTools']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipItemStats']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipExtCharStats']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipBladedWeapons']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipPickaxes']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipAxes']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipSteelKnuckles']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipWrenches']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipSledgehammers']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipUsingIronTools']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipScrapping']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipBuffs']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipKnownSchematics']"/>
+<remove xpath="/doc/tips//tip[@key='loadingTipTwitchIntegration']"/>
+
+</configs>

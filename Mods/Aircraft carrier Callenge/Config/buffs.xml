@@ -1,0 +1,15 @@
+<config>
+	<insertafter xpath="//buff[@name='buffInternalBleeding']">
+	<buff name="buffInternalBleedingAC" name_key="buffInternalBleedingName" description_key="buffInternalBleedingDesc" tooltip_key="buffInternalBleedingTooltip" icon="ui_game_symbol_critical" icon_color="255,0,0" icon_blink="true">
+		<damage_type value="bloodloss"/>		
+		<stack_type value="ignore"/>
+		<duration value="60"/>
+
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_subtract" value="1,5,200" duration="0,3,60"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffInternalBleeding"/>
+			<requirement name="EntityTagCompare" tags="player"/>
+		</effect_group>
+	</buff>	
+	</insertafter>
+</config>

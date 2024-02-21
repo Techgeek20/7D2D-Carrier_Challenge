@@ -1,0 +1,1597 @@
+<configs>
+	<!-- removes seed crafting skill as it's not required -->
+	<set xpath="//crafting_skill[@name='craftingSeeds']/@max_level">1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']//display_entry[1]/@unlock_level">1,1,1,1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']//display_entry[2]/@unlock_level">1,1,1,1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[1]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[2]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[3]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[4]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[5]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[6]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[7]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[8]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[9]/@level">1,1</set>
+	<set xpath="//crafting_skill[@name='craftingSeeds']/effect_group//passive_effect[10]/@level">1,1</set>
+	
+	<!-- increase probabilty of finding vehicle magazines with each perk point -->
+	<set xpath="//perk[@name='perkGreaseMonkey']/effect_group//passive_effect[2]/@value">3,15</set>
+	<set xpath="//perk[@name='perkGreaseMonkey']/effect_group//passive_effect[3]/@value">3,15</set>	
+	
+	<!-- Once vehicle crafting skill reaches 50, set the probability bonus of finding vehicle crafting skill magazines to 0 -->
+	<set xpath="//perk[@name='perkGreaseMonkey']/effect_group/passive_effect[4]/requirement[@name='ProgressionLevel']/@value">50</set>
+	
+	<!-- lowers number requirement of vehicle magazines to craft vehicles AFTER minibike, up to and including gyrocopter -->
+	<set xpath="//crafting_skill[@name='craftingVehicles']/@max_level">50</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[1]/@level">5,50</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[1]/@tags">vehicleWheels</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT2']/@unlock_level">15</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[2]/@level">15,50</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[2]/@tags">resourceOil</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT3']/@unlock_level">20</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[3]/@level">20,50</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[3]/@tags">ammoGasCan</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT4']/@unlock_level">35</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[4]/@level">35,50</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[4]/@tags">resourceAcid,ammoGasCanBundle</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']//display_entry[@name_key='vehiclesT5']/@unlock_level">50</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/effect_group//passive_effect[5]/@level">50,50</set>
+	
+	<set xpath="//crafting_skill[@name='craftingVehicles']/display_entry[1]/unlock_entry/@item">vehicleWheels</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/display_entry[2]/unlock_entry/@item">resourceOil</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/display_entry[3]/unlock_entry/@item">ammoGasCan</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']/display_entry[4]/unlock_entry/@item">resourceAcid,ammoGasCanBundle</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']//display_entry[1]/@icon">vehicleWheels</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']//display_entry[2]/@icon">resourceOil</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']//display_entry[3]/@icon">ammoGasCan</set>
+	<set xpath="//crafting_skill[@name='craftingVehicles']//display_entry[4]/@icon">resourceAcid</set>
+	
+	<!-- increase probabilty of finding workstation magazines with each perk point -->
+	<set xpath="//perk[@name='perkLockPicking']/effect_group//passive_effect[5]/@value">3,15</set>
+	<set xpath="//perk[@name='perkAdvancedEngineering']/effect_group//passive_effect[11]/@value">3,15</set>
+	
+	<!-- Once workstation crafting skill reaches 50, set the probability bonus of finding workstation crafting skill magazines to 0 -->
+	<set xpath="//perk[@name='perkLockPicking']/effect_group/passive_effect[5]/requirement[@name='ProgressionLevel']/@value">50</set>
+	<set xpath="//perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[15]/requirement[@name='ProgressionLevel']/@value">50</set>
+	
+	<!-- lowers number requirement of workstation magazines to craft workstations AFTER workbench, up to and including crucible -->
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/@max_level">50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']//display_entry[@name_key='workstationsT1-1,workstationsT1-2']/@unlock_level">1,5</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[1]/@level">1,50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[2]/@level">5,50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[3]/@level">10,50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[4]/@level">15,50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[5]/@level">20,50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[6]/@level">25,50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[7]/@level">30,50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']//display_entry[@name_key='workstationsT4']/@unlock_level">40</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[8]/@level">40,50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']//display_entry[@name_key='workstationsT5']/@unlock_level">50</set>
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group//passive_effect[9]/@level">50,50</set>
+	
+	<remove xpath="//skill[@name='skillIntellectInfluence']"/>
+	<remove xpath="//perk[@name='perkBetterBarter']"/>
+	<remove xpath="//perk[@name='perkDaringAdventurer']"/>
+	<remove xpath="//perk[@name='perkCharismaticNature']"/>
+	
+	<!-- new tags and progression for looting zombie corpses -->
+	<insertafter xpath="//perk[@name='perkGreaseMonkey']/effect_group//effect_description[1]">
+		<passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value="1,2,3,4,5" tags="GMLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="LT" value="50"/>
+		</passive_effect>
+		
+		<passive_effect name="LootQuantity" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="GMLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="equals" value="50"/>
+		</passive_effect>
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkDeadEye']/effect_group[2]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="RiLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingRifles" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="RiLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingRifles" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkDemolitionsExpert']/effect_group[2]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="EXLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingExplosives" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="EXLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingExplosives" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkJavelinMaster']/effect_group[1]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="SpLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingSpears" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="SpLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingSpears" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkSalvageOperations']/effect_group[3]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="STLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingSalvageTools" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="STLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingSalvageTools" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkBoomstick']/effect_group[2]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="SGLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingShotguns" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="SGLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingShotguns" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkPummelPete']/effect_group[3]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="ClLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingClubs" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="ClLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingClubs" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkSkullCrusher']/effect_group[3]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="SHLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingSledgehammers" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="SHLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingSledgehammers" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkHeavyArmor']/effect_group//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4" value=".7,1.3,1.9,2.5" tags="ArLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingArmor" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4" value="0,0,0,0" tags="ArLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingArmor" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkLightArmor']/effect_group//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4" value=".7,1.3,1.9,2.5" tags="ArLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingArmor" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4" value="0,0,0,0" tags="ArLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingArmor" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkMasterChef']/effect_group//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3" value=".8,1.5,2.5" tags="FoodLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingFood" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3" value="0,0,0" tags="FoodLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingFood" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkMiner69r']/effect_group[1]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="HTLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingHarvestingTools" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="HTLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingHarvestingTools" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkBrawler']/effect_group[1]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="BrLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingKnuckles" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="BrLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingKnuckles" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkMachineGunner']/effect_group[2]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="MGLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingMachineGuns" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="MGLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingMachineGuns" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkArchery']/effect_group//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="BowLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingBows" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="BowLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingBows" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkGunslinger']/effect_group[2]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="HGLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingHandguns" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="HGLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingHandguns" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkDeepCuts']/effect_group[1]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="BlLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingBlades" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="BlLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingBlades" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkElectrocutioner']/effect_group[1]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="RoLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingRobotics" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="RoLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingRobotics" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkTurrets']/effect_group//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="RoLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingRobotics" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="RoLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingRobotics" operation="equals" value="100"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkPhysician']/effect_group[1]//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="MedLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingMedical" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="MedLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingMedical" operation="equals" value="75"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkAdvancedEngineering']/effect_group//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="ElLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingElectrician" operation="LT" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="ElLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingElectrician" operation="equals" value="100"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="TrLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingTraps" operation="LT" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="TrLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingTraps" operation="equals" value="75"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="WSLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingWorkstations" operation="LT" value="50"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="WSLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingWorkstations" operation="equals" value="50"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".5,1,1.5,2,2.5" tags="RTLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="LT" value="50"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3,4,5" value="0,0,0,0,0" tags="RTLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="equals" value="50"/>
+		</passive_effect>
+	</insertafter>
+	
+	<insertafter xpath="//perk[@name='perkLockPicking']/effect_group//effect_description[1]">
+		<passive_effect name="LootProb" operation="perc_add" level="1,2,3" value=".5,1.5,2.5" tags="WSLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingWorkstations" operation="LT" value="50"/>
+		</passive_effect>
+		
+		<passive_effect name="LootProb" operation="base_set" level="1,2,3" value="0,0,0" tags="WSLoot">
+			<requirement name="ProgressionLevel" progression_name="craftingWorkstations" operation="equals" value="50"/>
+		</passive_effect>	
+	</insertafter>
+	
+	<!-- <append xpath="//perk[@name='perkDeadEye']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="Equals" value="0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="DEHarvest0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="DEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="DEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="DEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="DEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeadEye" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="DEHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkDemolitionsExpert']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="DEMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEMHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="DEMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="DEMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEMHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="DEMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="DEMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DEMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DEMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DEMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DEMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DEMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DEMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="DEMHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkJavelinMaster']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="JMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JMHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="JMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="JMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JMHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="JMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="JMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="JMHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkSalvageOperations']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="SOHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SOHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SOHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SOHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SOHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SOHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SOHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="SOHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SOHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SOHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SOHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SOHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SOHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SOHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="SOHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SOHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SOHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SOHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SOHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SOHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SOHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="SOHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SOHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SOHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SOHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SOHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SOHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SOHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="SOHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SOHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SOHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SOHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SOHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SOHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SOHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="SOHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkBoomstick']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="BSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BSHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="BSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BSHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="BSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BSHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="BSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BSHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="BSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BSHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="BSHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkPummelPete']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="PUPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PUPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PUPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PUPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PUPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PUPHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PUPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="PUPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PUPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PUPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PUPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PUPHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PUPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PUPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="PUPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PUPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PUPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PUPHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PUPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PUPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PUPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="PUPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PUPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PUPHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PUPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PUPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PUPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PUPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="PUPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PUPHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PUPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PUPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PUPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PUPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PUPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="PUPHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkSkullCrusher']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="SKCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SKCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SKCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SKCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SKCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SKCHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SKCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="SKCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SKCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SKCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SKCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SKCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SKCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SKCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="SKCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SKCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SKCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SKCHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SKCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SKCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SKCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="SKCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SKCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SKCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SKCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SKCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SKCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SKCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="SKCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="SKCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="SKCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="SKCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="SKCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="SKCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="SKCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="SKCHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkHeavyArmor']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="HAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="HAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="HAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="HAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="HAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="HAHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="HAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="HAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="HAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="HAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="HAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="HAHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="HAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="HAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="HAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="HAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="HAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="HAHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="HAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="HAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="HAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="HAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="HAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="HAHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="HAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="HAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="HAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="HAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="HAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="HAHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="HAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="HAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="HAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="HAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="HAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="HAHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkMasterChef']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="MCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MCHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="MCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="MCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MCHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="MCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="MCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="MCHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkMiner69r']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="M69Harvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="M69Harvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="M69Harvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="M69Harvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="M69Harvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="M69Harvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="M69Harvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="M69Harvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="M69Harvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="M69Harvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="M69Harvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="M69Harvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="M69Harvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="M69Harvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="M69Harvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="M69Harvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="M69Harvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="M69Harvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="M69Harvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="M69Harvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="M69Harvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="M69Harvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="M69Harvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="M69Harvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="M69Harvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="M69Harvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="M69Harvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="M69Harvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="M69Harvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="M69Harvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="M69Harvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="M69Harvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="M69Harvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="M69Harvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="M69Harvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="M69Harvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkBrawler']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBrawler" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="BRHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BRHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BRHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BRHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BRHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BRHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBrawler" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BRHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="BRHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BRHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BRHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BRHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BRHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBrawler" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BRHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BRHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="BRHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BRHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BRHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BRHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBrawler" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BRHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BRHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BRHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="BRHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BRHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BRHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBrawler" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BRHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BRHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BRHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BRHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="BRHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="BRHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkBrawler" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="BRHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="BRHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="BRHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="BRHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="BRHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="BRHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+		<append xpath="//perk[@name='perkMachineGunner']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="MGHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MGHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MGHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MGHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MGHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MGHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MGHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="MGHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MGHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MGHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MGHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MGHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MGHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MGHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="MGHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MGHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MGHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MGHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MGHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MGHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MGHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="MGHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MGHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MGHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MGHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MGHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MGHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MGHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="MGHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="MGHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="MGHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="MGHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="MGHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="MGHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="MGHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="MGHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+		<append xpath="//perk[@name='perkArchery']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="ARHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ARHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ARHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ARHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ARHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ARHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ARHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="ARHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ARHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ARHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ARHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ARHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ARHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ARHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="ARHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ARHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ARHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ARHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ARHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ARHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ARHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="ARHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ARHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ARHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ARHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ARHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ARHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ARHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="ARHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ARHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkArchery" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ARHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ARHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ARHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ARHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ARHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="ARHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+		<append xpath="//perk[@name='perkGunslinger']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="GSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GSHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="GSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GSHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="GSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GSHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="GSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GSHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="GSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GSHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGunslinger" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GSHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GSHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GSHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GSHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GSHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="GSHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+		<append xpath="//perk[@name='perkDeepCuts']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="DCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DCHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="DCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="DCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DCHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="DCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="DCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="DCHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="DCHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="DCHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="DCHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="DCHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="DCHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="DCHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkLightArmor']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="LAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LAHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="LAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LAHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="LAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LAHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="LAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LAHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="LAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LAHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLightArmor" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LAHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LAHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LAHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LAHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LAHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="LAHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkElectrocutioner']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="ELHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ELHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ELHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ELHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ELHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ELHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ELHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="ELHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ELHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ELHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ELHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ELHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ELHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ELHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="ELHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ELHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ELHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ELHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ELHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ELHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ELHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="ELHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ELHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ELHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ELHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ELHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ELHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ELHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="ELHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="ELHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="ELHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="ELHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="ELHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="ELHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="ELHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="ELHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkTurrets']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkTurrets" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="JTHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JTHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JTHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JTHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JTHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JTHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkTurrets" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JTHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="JTHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JTHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JTHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JTHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JTHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkTurrets" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JTHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JTHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="JTHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JTHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JTHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JTHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkTurrets" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JTHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JTHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JTHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="JTHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JTHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JTHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkTurrets" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JTHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JTHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JTHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JTHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="JTHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="JTHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkTurrets" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="JTHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="JTHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="JTHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="JTHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="JTHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="JTHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkPhysician']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="PHHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PHHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PHHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PHHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PHHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PHHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PHHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="PHHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PHHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PHHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PHHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PHHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PHHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PHHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="PHHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PHHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PHHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PHHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PHHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PHHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PHHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="PHHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PHHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PHHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PHHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PHHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PHHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PHHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="PHHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="PHHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="PHHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="PHHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="PHHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="PHHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="PHHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="PHHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkAdvancedEngineering']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="AEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="AEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="AEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="AEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="AEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="AEHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="AEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="AEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="AEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="AEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="AEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="AEHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="AEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="AEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="AEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="AEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="AEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="AEHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="AEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="AEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="AEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="AEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="AEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="AEHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="AEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="AEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="AEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="AEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="AEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="AEHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkAdvancedEngineering" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="AEHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="AEHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="AEHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="AEHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="AEHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="AEHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkGreaseMonkey']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="GMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GMHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="GMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="GMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GMHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="GMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="GMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="GMHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkGreaseMonkey" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="GMHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="GMHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="GMHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="GMHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="GMHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="GMHarvest5"/>            
+        </effect_group>
+
+	</append>
+	
+	<append xpath="//perk[@name='perkLockPicking']">
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLockPicking" operation="Equals" value="0"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="1" tags="LPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LPHarvest5"/>            
+		</effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLockPicking" operation="Equals" value="1"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="1" tags="LPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LPHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLockPicking" operation="Equals" value="2"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="1" tags="LPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LPHarvest5"/>            
+        </effect_group>
+		<effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLockPicking" operation="Equals" value="3"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="1" tags="LPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LPHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLockPicking" operation="Equals" value="4"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="1" tags="LPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="-1" tags="LPHarvest5"/>            
+        </effect_group>
+        <effect_group>
+            <requirement name="ProgressionLevel" progression_name="perkLockPicking" operation="Equals" value="5"/>
+			<passive_effect name="HarvestCount" operation="base_add" level="0" value="-1" tags="LPHarvest0"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="1" value="-1" tags="LPHarvest1"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="2" value="-1" tags="LPHarvest2"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="3" value="-1" tags="LPHarvest3"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="4" value="-1" tags="LPHarvest4"/>
+            <passive_effect name="HarvestCount" operation="base_add" level="5" value="1" tags="LPHarvest5"/>            
+        </effect_group>
+
+	</append> -->			
+</configs>

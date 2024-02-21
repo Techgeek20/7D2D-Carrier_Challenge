@@ -1,0 +1,415 @@
+﻿<configs>
+	
+<!-- <insertafter xpath="/items/item[@name]/property[1]"> -->
+	<!-- <property name="CreativeMode" value="None"/> -->
+	<!-- </insertafter> -->
+	<!--<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set> -->
+	
+	<insertAfter xpath="/items/item[@name='ammoBundleMaster']">
+	<item name="Backpack">
+		<property name="CreativeMode" value="None"/>
+		<property name="CustomIcon" value="backpackMedium"/>
+		<property name="ItemTypeIcon" value="bundle"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Mmetal"/>
+		<property name="Stacknumber" value="1"/> <!-- STK ammobundle high -->
+		<property name="EconomicValue" value="0"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Delay" value="0"/>
+			<property name="Use_time" value="0"/>
+			<property name="Sound_start" value="UseActions/open_backpack"/>
+			<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,meleeWpnBladeT0BoneKnife,foodCanChili,medicalFirstAidBandage,meleeToolTorch"/>
+			<property name="Create_item_count" value="6,2,1"/>
+		</property>
+	</item>	
+	</insertAfter>
+	
+	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">22</set>
+	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">11</set>
+	<set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">30</set>
+	
+	<set xpath="//item[@name='resourceCoal']//property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
+	<set xpath="//item[@name='resourceAcid']//property[@name='Group']/@value">Resources,Chemicals,CFChemicals</set>
+	<insertbefore xpath="//item[@name='resourceAcid']//property[1]">
+		<property name="UnlockedBy" value="craftingVehicles"/>
+	</insertbefore>
+	
+	<insertafter xpath="//item[@name='resourceAcid']">
+	<item name="resourceBatteryAcid">
+		<property name="CustomIcon" value="resourceAcid"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="DescriptionKey" value="resourceBatteryAcidDesc"/>
+		<property name="Material" value="MresourceAcid"/>
+		<property name="Weight" value="0"/>
+		<property name="Stacknumber" value="100"/> <!-- STK resource -->
+		<property name="EconomicValue" value="140"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="Group" value="Resources,Chemicals"/>
+	</item>
+	</insertafter>
+
+	<!-- <property name="DescriptionKey" value="armorLeatherGroupDesc"/> -->
+	
+	<set xpath="//item[@name='resourceWaterFilter']//property[@name='Stacknumber']/@value">1</set>
+	<insertafter xpath="//item[@name='drugAntibiotics']">
+	<item name="drugAntibioticsDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="CustomIcon" value="drugAntibiotics"/>
+		<property name="HoldType" value="16"/>
+		<property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="EconomicValue" value="240"/>
+		<property name="Stacknumber" value="10"/> <!-- STK loot -->
+		<property name="UnlockedBy" value="craftingMedical"/><!-- perkPhysician,drugAntibioticsSchematic, -->
+		<property name="DisplayType" value="cureInfection"/>
+		<property name="Group" value="Science,CFChemicals,Medical,TCMedical"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="player_painkillers"/>
+		</property>
+		<effect_group tiered="false">
+			<display_value name="dCureInfection" value=".25"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="25"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
+		</effect_group>
+	</item>
+	</insertafter>
+	
+	<insertafter xpath="//item[@name='masterSkillMagazine']">	
+	<item name="harvestingToolsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="HTLoot,csm"/>
+		<property name="CustomIcon" value="bookToolsDigest"/>
+		<property name="DescriptionKey" value="harvestingToolsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingHarvestingTools"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Repair_Tools_Skill_Magazine -->
+	<item name="repairToolsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="RTLoot,csm"/>
+		<property name="CustomIcon" value="bookHandyLand"/>
+		<property name="DescriptionKey" value="repairToolsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingRepairTools"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Salvage_Tools_Skill_Magazine -->
+	<item name="salvageToolsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Tags" value="STLoot,csm"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="CustomIcon" value="bookScrapping4Fun"/>
+		<property name="DescriptionKey" value="salvageToolsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingSalvageTools"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Knuckles_Skill_Magazine -->
+	<item name="knucklesSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="KnLoot,csm"/>
+		<property name="CustomIcon" value="bookFuriousFists"/>
+		<property name="DescriptionKey" value="knucklesSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingKnuckles"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Blades_Skill_Magazine -->
+	<item name="bladesSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="BlLoot,csm"/>
+		<property name="CustomIcon" value="bookKnifeGuy"/>
+		<property name="DescriptionKey" value="bladesSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingBlades"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Clubs_Skill_Magazine -->
+	<item name="clubsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="ClLoot,csm"/>
+		<property name="CustomIcon" value="bookBigHitters"/>
+		<property name="DescriptionKey" value="clubsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingClubs"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Sledgehammers_Skill_Magazine -->
+	<item name="sledgehammersSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="SHLoot,csm"/>
+		<property name="CustomIcon" value="bookGetHammered"/>
+		<property name="DescriptionKey" value="sledgehammersSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingSledgehammers"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Spears_Skill_Magazine -->
+	<item name="spearsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="SpLoot,csm"/>
+		<property name="CustomIcon" value="bookSharpSticks"/>
+		<property name="DescriptionKey" value="spearsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingSpears"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Bows_Skill_Magazine -->
+	<item name="bowsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="BowLoot,csm"/>
+		<property name="CustomIcon" value="bookBowHunters"/>
+		<property name="DescriptionKey" value="bowsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingBows"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Handguns_Skill_Magazine -->
+	<item name="handgunsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="HGLoot,csm"/>
+		<property name="CustomIcon" value="bookHandgunMagazine"/>
+		<property name="DescriptionKey" value="handgunsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingHandguns"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Shotguns_Skill_Magazine -->
+	<item name="shotgunsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="SGLoot,csm"/>
+		<property name="CustomIcon" value="bookShotgunWeekly"/>
+		<property name="DescriptionKey" value="shotgunsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingShotguns"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Rifles_Skill_Magazine -->
+	<item name="riflesSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="RiLoot,csm"/>
+		<property name="CustomIcon" value="bookRifleWorld"/>
+		<property name="DescriptionKey" value="riflesSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingRifles"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Machine_Guns_Skill_Magazine -->
+	<item name="machineGunsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="MGLoot,csm"/>
+		<property name="CustomIcon" value="bookTacticalWarfare"/>
+		<property name="DescriptionKey" value="machineGunsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingMachineGuns"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Explosives_Skill_Magazine -->
+	<item name="explosivesSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="EXLoot,csm"/>
+		<property name="CustomIcon" value="bookExplosiveMagazine"/>
+		<property name="DescriptionKey" value="explosivesSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingExplosives"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Robotics_Skill_Magazine -->
+	<item name="roboticsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="RoLoot,csm"/>
+		<property name="CustomIcon" value="bookTechPlanet"/>
+		<property name="DescriptionKey" value="roboticsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingRobotics"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Armor_Skill_Magazine -->
+	<item name="armorSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="ArLoot,csm"/>
+		<property name="CustomIcon" value="bookArmoredUp"/>
+		<property name="DescriptionKey" value="armorSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingArmor"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Medical_Skill_Magazine -->
+	<item name="medicalSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="MedLoot,csm"/>
+		<property name="CustomIcon" value="bookMedicalJournal"/>
+		<property name="DescriptionKey" value="medicalSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingMedical"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMedical" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Food_Skill_Magazine -->
+	<item name="foodSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="FoodLoot,csm"/>
+		<property name="CustomIcon" value="bookHomeCookingWeekly"/>
+		<property name="DescriptionKey" value="foodSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingFood"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingFood" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+	
+		<!-- *** Electrician_Skill_Magazine -->
+	<item name="electricianSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="ElLoot,csm"/>
+		<property name="CustomIcon" value="bookWiring101"/>
+		<property name="DescriptionKey" value="electricianSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingElectrician"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Traps_Skill_Magazine -->
+	<item name="trapsSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="TrLoot,csm"/>
+		<property name="CustomIcon" value="bookElectricalTraps"/>
+		<property name="DescriptionKey" value="trapsSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingTraps"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+		<!-- *** Workstation_Skill_Magazine -->
+	<item name="workstationSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="WSLoot,csm"/>
+		<property name="CustomIcon" value="bookForgeAhead"/>
+		<property name="DescriptionKey" value="workstationSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingWorkstations"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingWorkstations" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+	<!-- *** Vehicle_Skill_Magazine -->
+	<item name="vehiclesSkillMagazineDT">
+		<property name="CreativeMode" value="None"/>
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="Tags" value="csm,GMLoot"/>
+		<property name="CustomIcon" value="bookVehicleAdventures"/>
+		<property name="DescriptionKey" value="vehiclesSkillMagazineDesc"/>
+		<property name="Unlocks" value="craftingVehicles"/>
+		
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingVehicles" level="1"/> <!-- level="-1" sets a perk to max level -->
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+	</insertafter>
+</configs>

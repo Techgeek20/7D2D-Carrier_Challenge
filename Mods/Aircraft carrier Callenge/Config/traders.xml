@@ -1,0 +1,11 @@
+<configs>
+
+    <append xpath="//trader_item_group[@name='cannedfood']">
+		<item name="foodEgg" />
+    </append>
+
+	<append xpath="//trader_item_group[@name='groupDrinksSpecial']">
+		<item name="foodHoney" />
+	</append>
+	
+</configs>

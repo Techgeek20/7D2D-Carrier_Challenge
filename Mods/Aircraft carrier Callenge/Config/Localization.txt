@@ -1,0 +1,206 @@
+Key,English
+goGameWorld,[FF4F00]Select 'Aircraft Carrier Challenge (biome)'[-]
+goLootRespawnDays,Loot Respawn-[FF4F00]Select ANYTHING except 'Disabled'[-]
+resourceCoalDesc,"A great fuel source and a core ingredient for gunpowder.\n\nCan be made from wood in a campfire",,Ein sehr gutes Brennmaterial und eine der wichtigsten Zutaten für die Fertigung von Schießpulver.,Una gran fuente de combustible y un ingrediente principal para la pólvora,Une excellente source de carburant et un composant de base pour la poudre à canon.,Un'ottima fonte di carburante e un ingrediente fondamentale per la polvere da sparo.,良質な燃料として、また火薬の主成分として。,우수한 연료이며 화약의 핵심 성분입니다.,Doskonały nośnik energii i nieodzowny składnik prochu strzelniczego.,Uma excelente fonte de combustível e um ingrediente importantíssimo da pólvora.,Отличное топливо и ингредиент для пороха.,Harika bir yakıt kaynağıdır ve barutun ana maddesidir.,火药的重要燃料来源和核心材料。,火藥的重要燃料來源和核心成分。
+resourceAcidDesc,A resource used in crafting recipes.\n\nCan be crafted in beaker at a campfire or at the chemistry station.
+resourceBatteryAcid,Bottle of Acid
+resourceBatteryAcidDesc,A resource used in crafting recipes.\n\nCan be extracted from a car battery at the chemistry station.
+resourceAnimalFat,"Fat",,Tierfett,Grasa animal,Graisse animale,Grasso animale,動物性油脂,동물성 지방,Tłuszcz zwierzęcy,Gordura animal,Животный жир,Hayvan Yağı,动物脂肪,動物脂肪
+resourceAnimalFatDesc,"Fat can be eaten raw or used in cooking or other crafting recipes.",,Tierfett kann roh gegessen oder in Koch- oder anderen Fertigungsrezepten verwendet werden.,"La grasa animal se puede comer cruda, usarla para cocinar o para fabricar otras recetas.",La graisse animale peut être mangée crue ou utilisée pour cuisiner ou fabriquer d'autres compositions.,"Il grasso animale può essere consumato crudo, utilizzato per cucinare e in varie ricette.",動物性油脂は生食やその他のレシピのクラフトに使用できます。,동물성 지방은 날것으로 먹거나 요리 및 다른 레시피에 사용할 수 있습니다.,"Możesz go zjeść na surowo, ewentualnie wykorzystać do gotowania i rzemiosła.",A gordura animal pode ser comida crua ou usada na culinária e em receitas de fabricação.,"Можно съесть сырым, использовать при приготовлении пищи или изготовлении предметов по рецептам.",Hayvan yağı çiğ yenebilir veya yemek pişirirken ya da başka üretim tariflerinde kullanılabilir.,动物脂肪可生吃，也可用于烹饪或其他制作配方中。,動物脂肪可以生吃，也可以用於烹飪或製作其他配方。
+drugAntibioticsDT,Antibiotics
+drugAntibioticsDTDesc,Antibiotics can cure infections.\n\nCan be crafted in a beaker at a campfire or at the chemistry station.
+foodShepardsPie,Shepherd's Pie
+foodShepardsPieDesc,"Shepherd's Pie sure is tasty and super filling.\n\nI just wish The Fun Pimps spelt it properly, so I didn't need to add this description..."
+
+DishongLootContainerUtilityWorkerLoot,Crappy Loot
+DishongLootContainerBusinessManLoot,Crappy Loot
+DishongLootContainerPartyGirlLoot,Crappy Loot
+DishongLootContainerWightFeralLoot,Crappy Loot
+DishongLootContainerFatCopLoot,Crappy Loot
+DishongLootContainerZombieMutatedLoot,Crappy Loot
+DishongLootContainerJanitorLoot,Crappy Loot
+DishongLootContainerSkateboarderLoot,Crappy Loot
+DishongLootContainerSoldierLoot,Crappy Loot
+DishongLootContainerZombieFemaleLoot,Crappy Loot
+DishongLootContainerSteveAndTomLoot,Crappy Loot
+DishongLootContainerZombieMaleLoot,Crappy Loot
+DishongLootContainerFatZombieLoot,Crappy Loot
+DishongLootContainerNurseLoot,Crappy Loot
+DishongLootContainerLabWorkerLoot,Crappy Loot
+DishongLootContainerMaleHazmatLoot,Crappy Loot
+DishongLootContainerLumberjackLoot,Crappy Loot
+DishongLootContainerBikerLoot,Crappy Loot
+DishongLootContainerRadUtilityWorkerLoot,Crappy Loot
+DishongLootContainerRadBusinessManLoot,Crappy Loot
+DishongLootContainerRadPartyGirlLoot,Crappy Loot
+DishongLootContainerRadWightFeralLoot,Crappy Loot
+DishongLootContainerRadFatCopLoot,Crappy Loot
+DishongLootContainerRadZombieMutatedLoot,Crappy Loot
+DishongLootContainerRadJanitorLoot,Crappy Loot
+DishongLootContainerRadSkateboarderLoot,Crappy Loot
+DishongLootContainerRadSoldierLoot,Crappy Loot
+DishongLootContainerRadZombieFemaleLoot,Crappy Loot
+DishongLootContainerRadSteveAndTomLoot,Crappy Loot
+DishongLootContainerRadZombieMaleLoot,Crappy Loot
+DishongLootContainerRadFatZombieLoot,Crappy Loot
+DishongLootContainerRadNurseLoot,Crappy Loot
+DishongLootContainerRadLabWorkerLoot,Crappy Loot
+
+
+perkGreaseMonkeyRank1Desc,Wheely good
+perkGreaseMonkeyRank1LongDesc,Congratulations - you are now as smart as a primitive human!\n\nCraft wheels 33% cheaper.\n\nRepair kits are 10 percent more effective on vehicles.
+perkGreaseMonkeyRank2Desc,Oil be back
+perkGreaseMonkeyRank2LongDesc,"Not quite a fully-fledged grease monkey, but at least it's a start.\n\nRepair kits are 20 percent more effective on vehicles."
+perkGreaseMonkeyRank3Desc,Life's a gas
+perkGreaseMonkeyRank3LongDesc,Now you're starting to know your way around a toolbox!\n\nRepair kits are 30 percent more effective on vehicles.
+perkGreaseMonkeyRank4Desc,Not very basic
+perkGreaseMonkeyRank4LongDesc,"Your mechanical prowess is that of a professional pit crew!\n\nRepair kits are 40 percent more effective on vehicles."
+perkGreaseMonkeyRank5Desc,At last!!
+perkGreaseMonkeyRank5LongDesc,"You're a full-on aeronautical MacGyver.\nCraft gyrocopter parts 33% cheaper.\n\nRepair kits are 50 percent more effective on vehicles."
+vehiclesT1,Tier 1: Wheels
+vehiclesT2,Tier 2: Oil
+vehiclesT3,Tier 3: Gas Cans
+vehiclesT4,Tier 4: Acid
+vehiclesT5,Tier 5: UH-60
+
+
+harvestingToolsSkillMagazineDT,Tools Digest
+repairToolsSkillMagazineDT,Handy Land
+salvageToolsSkillMagazineDT,Scrapping 4 Fun
+vehiclesSkillMagazineDT,Vehicle Adventures
+workstationSkillMagazineDT,Forge Ahead
+armorSkillMagazineDT,Armored Up
+electricianSkillMagazineDT,Wiring 101
+trapsSkillMagazineDT,Electrical Traps
+foodSkillMagazineDT,Home Cooking Weekly
+bowsSkillMagazineDT,Bow Hunters
+handgunsSkillMagazineDT,Handgun Magazine
+machineGunsSkillMagazineDT,Tactical Warfare
+riflesSkillMagazineDT,Rifle World
+shotgunsSkillMagazineDT,Shotgun Weekly
+medicalSkillMagazineDT,Medical Journal
+bladesSkillMagazineDT,Knife Guy
+clubsSkillMagazineDT,Big Hitters
+knucklesSkillMagazineDT,Furious Fists
+sledgehammersSkillMagazineDT,Get Hammered
+spearsSkillMagazineDT,Sharp Sticks
+roboticsSkillMagazineDT,Tech Planet
+explosivesSkillMagazineDT,Explosive Magazine
+zombieBiker,Yubinashi
+zombieBikerFeral,Feral Yubinashi
+zombieBikerRadiated,Yubinashi
+zombieBoe,w00kie n00kie
+zombieBoeFeral,Feral w00kie n00kie
+zombieBoeRadiated,Radiated w00kie n00kie
+zombieBurnt,FlameWizo
+zombieBurntFeral,Feral FlameWizo
+zombieBurntRadiated,Radiated FlameWizo
+zombieDarlene,Loveshack65
+zombieDarleneFeral,Feral Loveshack65
+zombieDarleneRadiated,Radiated Loveshack65
+zombieFatCop,SpeedyPig69
+zombieFatCopFeral,Feral SpeedyPig69
+zombieFatCopRadiated,Radiated SpeedyPig69
+zombieJanitor,HellsJanitorTV
+zombieJanitorFeral,Feral HellsJanitorTV
+zombieJanitorRadiated,Radiated HellsJanitorTV
+zombieLab,CharmCuddler
+zombieLabFeral,Feral CharmCuddler
+zombieLabRadiated,Radiated CharmCuddler
+zombieLumberjack,HardBargain
+zombieLumberjackFeral,Feral HardBargain
+zombieLumberjackRadiated,Radiated HardBargain
+zombieMaleHazmat,Riven
+zombieMaleHazmatFeral,Feral Riven
+zombieMaleHazmatRadiated,Radiated Riven
+zombieMarlene,TechnoBeatz
+zombieMarleneFeral,Feral TechnoBeatz
+zombieMarleneRadiated,Radiated TechnoBeatz
+zombieMoe,Angelacus
+zombieMoeFeral,Feral Angelacus
+zombieMoeRadiated,Radiated Angelacus
+zombieNurse,ArrantHealer
+zombieNurseFeral,Feral ArrantHealer
+zombieNurseRadiated,Radiated ArrantHealer
+zombieYo,Sarcoth
+zombieYoFeral,Feral Sarcoth
+zombieYoRadiated,Radiated Sarcoth
+zombieTomClark,Techie
+zombieTomClarkRadiated,Radiated Techie
+zombieTomClarkFeral,Feral Techie
+zombiePartyGirl,ElainethePaine
+zombiePartyGirlFeral,Feral ElainethePaine
+zombiePartyGirlRadiated,Radiated Elainethepaine
+zombieBusinessMan,Raziel
+zombieBusinessManFeral,Feral Raziel
+zombieBusinessManRadiated,Radiated Raziel 
+zombieSoldier,Devilskut
+zombieSoldierFeral,Feral Devilskut
+zombieSoldierRadiated,Radiated Devilskut
+zombieJoe, Astryael
+zombieJoeFeral, Feral Astryael
+zombieJoeRadiated, Radiated Astryael
+zombieSteve,Frantic_Dan
+zombieSteveFeral,Feral Frantic_Dan
+zombieSteveRadiated,Radiated Frantic_Dan
+zombieArlene,Deaditegirl
+zombieArleneFeral,Deaditegirl
+zombieArleneRadiated,Deaditegirl
+zombieUtilityWorker,Tyl3rGMS
+zombieUtilityWorkerRadiated,Radiated Tyl3rGMS
+zombieUtilityWorkerFeral,Feral Tyl3rGMS
+zombieWight,DracaBro,
+zombieWightFeral,Feral DracaBro
+zombieWightRadiated,Radiated DracaBro
+zombieSkateboarder,Magna
+zombieSkateboarderFeral,Feral Magna
+zombieSkateboarderRadiated,Radiated Magna
+zombieFatHawaiian,Korbulas
+zombieFatHawaiianFeral,Feral Korbulas
+zombieFatHawaiianRadiated,Radiated korbulas
+animalsnake,Danger Noodle
+
+
+loadingTipAircraft1,"All seed crafting is unlocked by default, and some seeds only require a couple of food items to make. There are NO usuable farmplots in the ship ..."
+loadingTipAircraft1_title,Seeds asshole
+loadingTipAircraft2,"Almost every zombie will drop a loot bag once dead, and specific zombies will have a chance to drop specific loot."
+loadingTipAircraft2_title,Zombie Loot
+loadingTipAircraft3,"Skill magazines can be found in their usual places, and certain zombies have a chance to give certain magazines in their loot bag."
+loadingTipAircraft3_title,Skill Magazines
+loadingTipAircraft4,"Loot respawn is integral to completing this challenge. Loot will automatically restock after a certain period of time, determined by the 'Loot Respawn' number you set before starting the game."
+loadingTipAircraft4_title,Looting
+loadingTipAircraft5,"Zombies can now be set to respawn after a time you decide. Check the 'Aircraft' tab on the main menu, and set the number of days you want between zombies respawning on the ship."
+loadingTipAircraft5_title,Zombie respawns
+loadingTipAircraft6,"Resources are scarce in the ship, but you will be able to find or craft everything you need to complete the challenge. Some resources, like old cash, can be used in recipes - so make sure you check the recipes for EVERYTHING. Also, some of the rarer resources, like acid, can now be crafted. It can also be looted from zombies - along with antibiotics and beakers."
+loadingTipAircraft6_title,Resources
+loadingTipAircraft7,"Crafting workstations, and tools like the crucible, and vehicles themselves, take fewer magazines to read before they unlock."
+loadingTipAircraft7_title,Crafting
+loadingTipAircraft8,"Trying to leave the ship other than by UH-60 is a very bad idea ..."
+loadingTipAircraft8_title,Cheating
+loadingTipAircraft9,"Certain in-game functions, like zombie health bars and XP pop-ups, can be enabled or disabled from the pause menu. Pause the game, click 'video' then the 'Customization' tab."
+loadingTipAircraft9_title,Customization
+loadingTipAircraft10,"Thanks to w00kien00kie for the custom code, Khelldon for the custom menu, Frantic_Dan for ideas & xpath help, Zilox, Midnight Designer, SphereII, and Pitchsilent for the original base mod and concept."
+loadingTipAircraft10_title,Crappy Thanks
+loadingTipAircraft11,"Horde nights, better suck it up, buttercup."
+loadingTipAircraft11_title,Horde Night
+loadingTipAircraft12,"There are many changes from vanilla for resource gathering. Clay soil, for example, can be found by harvesting potted plants, farm plots, and destroyed stone"
+loadingTipAircraft12_title,Aircraft Resources
+loadingTipAircraft13,"You can lock slots in your inventory by hovering over a slot and pressing 'X'. The slot will have a green border, indicating it is locked."
+loadingTipAircraft13_title,Locked Slots
+loadingTipAircraft14,"Keep it repaired. Look after your wrench, and your wrench will look after you."
+loadingTipAircraft14_title,Wrench
+
+resourcePaper,"Classified Document" 
+resourcePaperDesc,"EAM\n FROM: USLANTFLT\n TO: USS SAN PAULO\n MESSAGE AS FOLLOWS:\n Movement to G.S. ATL-001 to acquire TP for bunghole (and other ""supplies"")"
+tutorialTipQuest01,"Welcome to the Aircraft Carrier Challenge.\n\n You now must choose your fate thru the ship.\n\n Choose a KEY or a VALVE to start your journey.\n\n NOW, Fight your way thru the ship, looting and crafting everything you need to craft a UH-60 to make your escape from the ship. \nFailure is not an option. \n\nRULES:\nYou must enter the Aircraft Carrier immediately (being inside the tent counts as being on the ship) and cannot leave thereafter. The rubble on the ground around the ship is NOT part of the ship, and as such may NOT be used to support any structures, or to grow any crops, unless you can do this WITHOUT touching it. \nYou may build bridges off the side of the ship to reach things, but those bridges must support themselves and cannot touch the ground.\nYou may not mine or dig under the ship.\nAll default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days.\nIf you die, the game is over.\nYou must survive until you are able to build a UH-60 and fly off the ship.\n\nYou have ONE life. Make it count."
+tutorialTipQuest01_title,Started The Aircraft Carrier Challenge
+
+
+
+Challenge Completion,"You made it!!"
+Challenge Completion_offer,"Challenge complete!"
+Challenge Completion_description,"Congratulations on escaping the Aircraft Carrier!"
+Challenge Completion_subtitle,"Congratulations!"
+
+Quest_Completion_tip_title,Completed Aircraft Carrier Challenge
+Quest_Completion_tip,"Congratulations! \n\nYou have successfully completed the Aircraft Carrier challenge!"

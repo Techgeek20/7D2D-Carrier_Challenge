@@ -1,0 +1,11 @@
+
+	<configs>
+		
+	<insertafter xpath="/item_modifiers/item_modifier[@name]/property[1]">
+		<property name="CreativeMode" value="None"/>
+	</insertafter>
+	<set xpath="/item_modifiers/item_modifier//property[@name='CreativeMode']/@value">None</set>
+		
+</configs>
+
+	
