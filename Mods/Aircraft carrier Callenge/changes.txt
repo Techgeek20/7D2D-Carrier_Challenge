@@ -1,0 +1,83 @@
+Wasteland Treasures volume 5 now has a 50% chance to give acid from "open" wooden pill case
+
+Cement mixers can be harvested for an engine and gas cans
+
+Cement mixer loot contains Stone, clay soil, sand, and oil shale
+
+Tablesaws can be harvested for a battery
+
+Added guaranteed battery
+
+Worklights and projectors can be harvested for headlights, worklights have a 10% chance to drop a car battery
+
+Trees give plant fibres; potted plants can be harvested for plant fibres, clay soil, and a 10% chance of a tree seed
+
+Destroyed stone terrain blocks when mined give 8 clay in addition to stone, and can be used to plant trees
+
+Big Momma, Tourist, and Moe zombies can be harvested for bones and rotting flesh
+
+Hazmat zombie can be harvested for nitrate and bones
+
+Nurse zombie can be harvested for bones, nitrate, and a 10% chance of antibiotics & 10% chance of medical skill magazines
+
+Lab Worker zombie can harvested for bones, nitrate, 10% chance of medical skill magazine and a 10% chance of a beaker
+
+Lumberjack zombie can be harvested for snowballs
+
+Biker zombie can be harvested for oil & vehicle skill magazines
+
+Utility Worker zombie can be harvested for a 10% chance of workstation skill magazines
+
+Fat Cop zombie can be harvested for a 10% chance of handgun and club magazines, and 10% chance of acid
+
+Janitor zombie can be harvested for a 10% chance of Harvesting, Repair, Salvage, Electrician & Sledgehammer skill magazines
+
+Thug zombie can be harvested for a 10% chance of Knuckles, Blades & Shotgun skill magazines
+
+Soldier zombie can be harvested for a 10% chance of Rifles, Machine guns, Armour & Explosives skill magazines
+
+Arlene, Darlene and Marlene zombies can be harvested for a 10% chance of Food skill magazines
+
+Boe, Joe & Yo zombies can be harvested for a 10% chance of Spears & Bows skill magazines
+
+Tom Clark & Steve can be harvested for a 10% chance of Robotics & Traps skill magazines
+
+Party Girl can be harvested for a 10% chance of old cash
+
+Businessman zombie can be harvested for 10% chance of Dukes
+
+Wight zombie can be harvested for a 10% chance of a Forgettin' Elixir and/or a magazine bundle
+
+Pumpkin bread food and health values have been increased
+
+Coal can be crafted from wood in a campfire
+
+Seed magazines no longer appear in loot, nor are they needed for seed crafting
+
+*Most* containers do not downgrade on looting
+
+Loot containers no longer have to be "reseeded" (or manually restocked) to force loot respawn (Credit WookieNookie)
+
+Paper has been removed from bookcase loot
+
+Increased probability for vehicle books and workstation books IF perk points are used in their respective skills
+
+Reduced number of books required for the UH-60, chem station and crucible
+
+Old cash can be converted into Dukes
+
+Stone arrows can be turned back into feathers
+
+Acid can be crafted from car batteries, or crafted from resources in chem station
+
+Reduced requirements for some scarce resources like glue, farmplots, and oil
+
+Lowered requirements for some food to be crafted into seeds, only two items per seed, reduced from five
+
+Honey and eggs added to vending machines, vending machine types have been randomised, but one of each type is guaranteed
+
+Included lockable slots for backpack (press 'X' to lock individual slots) (Credit WookieNookie)
+
+Sleeper respawns are configurable from a main menu option. You can now set zombies to respawn in the Tower every one, three, five, seven, nine, eleven, thirteen or fifteen days (Credit WookieNookie)
+
+Thanks to WookieNookie for the custom code, Khelldon for the custom menu, Frantic_Dan for ideas & xpath help, Zilox, Midnight Designer, SphereII and Pitchsilent for the original base mod and concept.
