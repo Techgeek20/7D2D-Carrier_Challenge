@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefabs>
+  <decoration type="model" name="naz_super_aircraft_trader_rear_1" position="-170,45,-69" rotation="1" y_is_groundlevel="true" />
+  <decoration type="model" name="Trader_Front_Carrier" position="-170,45,95" rotation="1" y_is_groundlevel="true" />
+  <decoration type="model" name="HughGotIT2" position="-121,50,-59" rotation="0" y_is_groundlevel="true" />
+  <decoration type="model" name="Jen_trader_1" position="-116,51,179" rotation="3" y_is_groundlevel="true" />
+</prefabs>

@@ -8,4 +8,9 @@
 		<item name="foodHoney" />
 	</append>
 	
+	<append xpath="//trader_item_group[@name='generalResources']">
+		<item name="resourceClayLump" count="5,150" />
+		<item name="resourceRockSmall" count="10,250" />
+	</append>
+
 </configs>
