@@ -204,21 +204,13 @@
 		<action type="TrackQuest"/>
 		<reward type="Exp" value="5060"/>
 		<reward type="Item" id="casinoCoin" value="1400"/>
-		<reward type="Quest" id="quest_CarrierChallenge05"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
-		<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
-        <!-- <reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="2"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="2"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
-		<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
-		<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true"/> 
-		<reward type="Quest" id="quest_CarrierChallenge05"/> -->
+		<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		<reward type="Quest" id="quest_CarrierChallenge05"/>
+
 	</quest>
 	  
 	    <quest id="quest_CarrierChallenge05">
