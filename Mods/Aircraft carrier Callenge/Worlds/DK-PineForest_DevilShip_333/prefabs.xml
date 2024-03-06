@@ -3,7 +3,7 @@
   <decoration type="model" name="naz_super_aircraft_trader_rear_1" position="-170,45,-69" rotation="1" y_is_groundlevel="true" />
   <decoration type="model" name="Trader_Front_Carrier" position="-170,45,95" rotation="1" y_is_groundlevel="true" />
   <decoration type="model" name="HughGotIT2" position="-121,50,-59" rotation="0" y_is_groundlevel="true" />
-  <decoration type="model" name="ARMY_DEPOT_2" position="-133,35,132" rotation="3" y_is_groundlevel="true" />
+  <decoration type="model" name="ARMY_DEPOT_2" position="-133,35,132" rotation="1" y_is_groundlevel="true" />
   <decoration type="model" name="Trader_Jen_2" position="-116,51,179" rotation="3" y_is_groundlevel="true" />
-  <decoration type="model" name="The_Bridge" position="-109,57,-15" rotation="3" y_is_groundlevel="true" />
+  <decoration type="model" name="The_Bridge" position="-109,57,-15" rotation="1" y_is_groundlevel="true" />
 </prefabs>

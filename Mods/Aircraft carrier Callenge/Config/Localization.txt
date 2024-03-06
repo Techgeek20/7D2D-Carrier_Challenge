@@ -12,39 +12,39 @@ drugAntibioticsDTDesc,Antibiotics can cure infections.\n\nCan be crafted in a be
 foodShepardsPie,Shepherd's Pie
 foodShepardsPieDesc,"Shepherd's Pie sure is tasty and super filling.\n\nI just wish The Fun Pimps spelt it properly, so I didn't need to add this description..."
 
-DishongLootContainerUtilityWorkerLoot,Crappy loot Bag
-DishongLootContainerBusinessManLoot,Crappy loot Bag
-DishongLootContainerPartyGirlLoot,Crappy loot Bag
-DishongLootContainerWightFeralLoot,Crappy loot Bag
-DishongLootContainerFatCopLoot,Crappy loot Bag
-DishongLootContainerZombieMutatedLoot,Crappy loot Bag
-DishongLootContainerJanitorLoot,Crappy loot Bag
-DishongLootContainerSkateboarderLoot,Crappy loot Bag
-DishongLootContainerSoldierLoot,Crappy loot Bag
-DishongLootContainerZombieFemaleLoot,Crappy loot Bag
-DishongLootContainerSteveAndTomLoot,Crappy loot Bag
-DishongLootContainerZombieMaleLoot,Crappy loot Bag
-DishongLootContainerFatZombieLoot,Crappy loot Bag
-DishongLootContainerNurseLoot,Crappy loot Bag
-DishongLootContainerLabWorkerLoot,Crappy loot Bag
-DishongLootContainerMaleHazmatLoot,Crappy loot Bag
-DishongLootContainerLumberjackLoot,Crappy loot Bag
-DishongLootContainerBikerLoot,Crappy loot Bag
-DishongLootContainerRadUtilityWorkerLoot,Crappy loot Bag
-DishongLootContainerRadBusinessManLoot,Crappy loot Bag
-DishongLootContainerRadPartyGirlLoot,Crappy loot Bag
-DishongLootContainerRadWightFeralLoot,Crappy loot Bag
-DishongLootContainerRadFatCopLoot,Crappy loot Bag
-DishongLootContainerRadZombieMutatedLoot,Crappy loot Bag
-DishongLootContainerRadJanitorLoot,Crappy loot Bag
-DishongLootContainerRadSkateboarderLoot,Crappy loot Bag
-DishongLootContainerRadSoldierLoot,Crappy loot Bag
-DishongLootContainerRadZombieFemaleLoot,Crappy loot Bag
-DishongLootContainerRadSteveAndTomLoot,Crappy loot Bag
-DishongLootContainerRadZombieMaleLoot,Crappy loot Bag
-DishongLootContainerRadFatZombieLoot,Crappy loot Bag
-DishongLootContainerRadNurseLoot,Crappy loot Bag
-DishongLootContainerRadLabWorkerLoot,Crappy loot Bag
+DishongLootContainerUtilityWorkerLoot,Duffle Bag
+DishongLootContainerBusinessManLoot,Duffle Bag
+DishongLootContainerPartyGirlLoot,Duffle Bag
+DishongLootContainerWightFeralLoot,Duffle Bag
+DishongLootContainerFatCopLoot,Duffle Bag
+DishongLootContainerZombieMutatedLoot,Duffle Bag
+DishongLootContainerJanitorLoot,Duffle Bag
+DishongLootContainerSkateboarderLoot,Duffle Bag
+DishongLootContainerSoldierLoot,Duffle Bag
+DishongLootContainerZombieFemaleLoot,Duffle Bag
+DishongLootContainerSteveAndTomLoot,Duffle Bag
+DishongLootContainerZombieMaleLoot,Duffle Bag
+DishongLootContainerFatZombieLoot,Duffle Bag
+DishongLootContainerNurseLoot,Duffle Bag
+DishongLootContainerLabWorkerLoot,Duffle Bag
+DishongLootContainerMaleHazmatLoot,Duffle Bag
+DishongLootContainerLumberjackLoot,Duffle Bag
+DishongLootContainerBikerLoot,Duffle Bag
+DishongLootContainerRadUtilityWorkerLoot,Duffle Bag
+DishongLootContainerRadBusinessManLoot,Duffle Bag
+DishongLootContainerRadPartyGirlLoot,Duffle Bag
+DishongLootContainerRadWightFeralLoot,Duffle Bag
+DishongLootContainerRadFatCopLoot,Duffle Bag
+DishongLootContainerRadZombieMutatedLoot,Duffle Bag
+DishongLootContainerRadJanitorLoot,Duffle Bag
+DishongLootContainerRadSkateboarderLoot,Duffle Bag
+DishongLootContainerRadSoldierLoot,Duffle Bag
+DishongLootContainerRadZombieFemaleLoot,Duffle Bag
+DishongLootContainerRadSteveAndTomLoot,Duffle Bag
+DishongLootContainerRadZombieMaleLoot,Duffle Bag
+DishongLootContainerRadFatZombieLoot,Duffle Bag
+DishongLootContainerRadNurseLoot,Duffle Bag
+DishongLootContainerRadLabWorkerLoot,Duffle Bag
 
 
 perkGreaseMonkeyRank1Desc,Wheely good
@@ -89,25 +89,25 @@ explosivesSkillMagazineDT,Explosive Magazine
 
 
 
-zombieBiker,Devilskut
-zombieBikerFeral,Feral Devilskut
-zombieBikerRadiated,Devilskut
+zombieBiker,Raziel_MacCloud
+zombieBikerFeral,Feral Raziel_MacCloud
+zombieBikerRadiated,Radiated Raziel_MacCloud
 
 zombieBoe,w00kie n00kie
 zombieBoeFeral,Feral w00kie n00kie
 zombieBoeRadiated,Radiated w00kie n00kie
 
-zombieBurnt,Burny
-zombieBurntFeral,Feral Burny
-zombieBurntRadiated,Radiated Burny
+zombieBurnt,FlameWizo
+zombieBurntFeral,Feral FlameWizo
+zombieBurntRadiated,Radiated FlameWizo
 
 zombieDarlene,Loveshack
 zombieDarleneFeral,Feral Loveshack
 zombieDarleneRadiated,Radiated Loveshack
 
-zombieFatCop,Speedypig69
-zombieFatCopFeral,Feral Speedypig69
-zombieFatCopRadiated,Radiated Speedypig69
+zombieFatCop,
+zombieFatCopFeral,Feral 
+zombieFatCopRadiated,Radiated 
 
 zombieJanitor,HellsJanitorTV
 zombieJanitorFeral,Feral HellsJanitorTV
@@ -141,9 +141,9 @@ zombieYo,Sarcoth
 zombieYoFeral,Feral Sarcoth
 zombieYoRadiated,Radiated Sarcoth
 
-zombieTomClark,Raziel_MacCloud
-zombieTomClarkRadiated,Radiated Raziel_MacCloud
-zombieTomClarkFeral,Feral Raziel_MacCloud
+zombieTomClark,Devilskut
+zombieTomClarkRadiated,Radiated Devilskut
+zombieTomClarkFeral,Feral Devilskut
 
 zombiePartyGirl,ElainethePaine
 zombiePartyGirlFeral,Feral ElainethePaine
@@ -165,14 +165,23 @@ zombieSteve,Frantic_Dan
 zombieSteveFeral,Feral Frantic_Dan
 zombieSteveRadiated,Radiated Frantic_Dan
 
-animalZombieVulture,Air Rat
-animalZombieVultureRadiated,Spicy Air Rat
+animalBossGrace,SpeedyPig69
 
-zombieWightFeral,Korbulas
-zombieWightRadiated,Sassy Korbulas
+animalWolf,Korbulas
+animalDireWolf,Raging Korbulas
 
-zombieScreamer,DeathAngel573
-zombieScreamerRadiated,Spicy DeathAngel573
+animalRabbit,Killer Bunny
+animalZombieBear,Reclining Gamer
+
+animalZombieVulture,Phancy
+animalZombieVultureRadiated,Spicy Dragonfly
+
+zombieWightFeral,Feral 
+zombieWightRadiated,Radiated
+
+zombieScreamer,DeathAngel
+zombieScreamerFeral,Feral DeathAngel
+zombieScreamerRadiated,Spicy DeathAngel
 
 animalSnake,Danger Noodle
 animalSnakeRadiated,Spicy Danger Noodle
@@ -181,7 +190,25 @@ zombieUtilityWorker,Seamen
 zombieUtilityWorkerRadiated,Spicy Seamen
 zombieUtilityFeral,Fast Seamen
 
+zombieArlene,DeaditeGirl
+zombieArleneFeral, Feral DeaditeGirl
+zombieArleneRadiated,Radiated DeaditeGirl
 
+zombieSpider,NuttyMonkey
+zombieSpiderFeral,Feral NuttyMonkey
+zombieSpiderRadiation, Radiated NuttyMonkey
+
+zombieFatHawaiian
+
+zombieSteveCrawler
+
+zombieScreamer,MoonLuna
+zombieScreamerFeral,Feral MoonLuna
+zombieScreamerRadiated,Radiated MoonLuna
+
+zombieSkateboarder,TylerGMS
+zombieSkateboarderFeral,Feral TylerGMS
+zombieSkateboarderRadiated,Radiated TylerGMS
 
 loadingTipAircraft1,"All seed crafting is unlocked by default, and some seeds only require a couple of food items to make. There are NO usuable farmplots in the ship ..."
 loadingTipAircraft1_title,Seeds asshole
