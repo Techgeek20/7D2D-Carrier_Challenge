@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Servers>
-    <ServerGroup Name="Aircraft Carrier" Logo="https://cdn.discordapp.com/attachments/673338035227852811/1176982126676148404/Screenshot_39.png?ex=6570d906&is=655e6406&hm=3b87d887c19f72e2895235a1718994c078fb9f5daf07e92e44d416cb914f367a&" Description="Can you escape the Dishong Tower?">
-        <Server Name="Aircraft Carrier" Logo="https://cdn.discordapp.com/attachments/673338035227852811/1176982126676148404/Screenshot_39.png?ex=6570d906&is=655e6406&hm=3b87d887c19f72e2895235a1718994c078fb9f5daf07e92e44d416cb914f367a&">
-            <Description>CHANGELOG V 1.0.5:
+    <ServerGroup Name="Aircraft Carrier" Logo="" Description="Can you escape the Aircraft Carrier?">
+        <Server Name="Aircraft Carrier" Logo="">
+            <Description>CHANGELOG V 1.0.0:
+            	
 Zombie corpses no longer lootable - they now drop an entity-specific red loot bag.
 Tweaked container loot respawn - it now shows a timer for when the container will be lootable again.
 Removed non-essential vehicle parts from loot and crafting.
@@ -75,7 +76,7 @@ CHALLENGE RULES:
 						WMMStashBackpack			-Author: w00kien00kie
 						WMMVideoOptions				-Author: w00kien00kie
 						
-For full details, check the forum post here: https://community.7daystodie.com/topic/34098-the-dishong-tower-challenge-updated-for-alpha-21/
+For full details, check the forum post here: *No post*
 			
             </Description>
             <Discord></Discord>
@@ -84,7 +85,7 @@ For full details, check the forum post here: https://community.7daystodie.com/to
             <Version>Latest</Version>
             <DownloadMode>Clone</DownloadMode>
             <Downloads>
-                <Download>https://github.com/HellsJanitor/Dishong-Tower-Challenge</Download>
+                <Download></Download>
             </Downloads>
         </Server>
     </ServerGroup>
