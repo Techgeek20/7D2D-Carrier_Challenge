@@ -46,7 +46,7 @@
 			<property class="fuelTank">
 				<property name="class" value="FuelTank"/>
 				<property name="parent_part" value="engine"/>
-				<property name="capacity" value="600"/>
+				<property name="capacity" value="1000"/>
 			</property>
 			<property class="handlebars">
 				<property name="parent_part" value="chassis"/>

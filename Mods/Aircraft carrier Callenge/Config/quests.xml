@@ -1,289 +1,321 @@
 <configs>
-	  
-  <remove xpath="/quests/quest[@id='quest_BasicSurvival1']" />
 
-  <remove xpath="/quests/quest[@id='tier1_buried_supplies']" />
-  <remove xpath="/quests/quest[@id='tier2_buried_supplies']" />
-  <remove xpath="/quests/quest[@id='tier3_buried_supplies']" />
-  
-  
-  <insertBefore xpath="/quests/quest[@id='quest_BasicSurvival2']">
-     <quest id="quest_BasicSurvival1">
-       <property name="name_key" value="challenge_StartingCarrier"/>
-       <property name="subtitle_key" value="challenge_StartingCarrier"/>
-       <property name="description_key" value="challenge_StartingCarrier_description"/>
+	<!-- Begin Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
 
-	<property name="icon" value="ui_game_symbol_zombie"/>
-	<property name="repeatable" value="true"/>
-	<property name="category_key" value="challenge"/>
-	<property name="offer_key" value="challenge_StartingCarrier_offer"/>
-	<property name="difficulty" value="medium"/>
+		<remove xpath="/quests/quest[@id='quest_BasicSurvival1']" />
+		<remove xpath="/quests/quest[@id='quest_BasicSurvival2']" />
+		<remove xpath="/quests/quest[@id='quest_BasicSurvival3']" />
+		<remove xpath="/quests/quest[@id='quest_BasicSurvival4']" />
+		<remove xpath="/quests/quest[@id='quest_BasicSurvival5']" />
+		<remove xpath="/quests/quest[@id='quest_BasicSurvival6']" />
+		<remove xpath="/quests/quest[@id='quest_BasicSurvival7']" />
+		<remove xpath="/quests/quest[@id='quest_BasicSurvival8']" />
 
-	<objective type="EntityKill" value="10" phase="1"/>
+		<remove xpath="/quests/quest[@id='tier1_buried_supplies']" />
+		<remove xpath="/quests/quest[@id='tier2_buried_supplies']" />
+		<remove xpath="/quests/quest[@id='tier3_buried_supplies']" />
 
-	<reward type="Item" id="apparelNerdGlasses" value="1"/>
-	<reward type="Item" id="meleeToolSalvageT1Wrench" value="1"/>
-	<reward type="Item" id="armorClothHat" value="1"/>
-	<reward type="Item" id="modArmorHelmetLight" value="1"/>
-	<reward type="Item" id="bookWasteTreasuresAcid" value="1"/>  
+	<!-- End Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
 
-       <reward type="SkillPoints" value="4" />
-       <reward type="Quest" id="quest_CarrierChallenge01" />
-       <reward type="Quest" id="quest_eliminatezombies10" />
-     </quest>
-	  <quest id="quest_CarrierChallenge01">
-		  <property name="name_key" value="quest_CarrierChallenge01"/>
-		  <property name="subtitle_key" value="quest_CarrierChallenge01"/>
-		  <property name="description_key" value="This is a fetch test quest for dev purposes"/>
-		  <property name="icon" value="ui_game_symbol_quest"/>
-		  <property name="repeatable" value="false"/>
-		  <property name="category_key" value="challenge"/>
-		  <property name="difficulty" value="medium"/>
-		  <property name="difficulty_tier" value="5"/>
-		  <property name="offer_key" value="fetch objective."/>
-		  <property name="statement_key" value="Find the fetch item in the POI."/>
-		  <property name="response_key" value="Test - Fetch"/> 
-		  <property name="reward_choices_count" value="5" />
+	<append xpath="/quests"/>
 
-		  <property name="completiontype" value="TurnIn"/>
-		  <property name="completion_key" value="WELL I'LL BE DANGED."/>
-		  <objective type="ClosestPOIGoto">
-			  <property name="distance" value="10"/>
-			  <property name="phase" value="1"/>
-		  </objective>
-           <objective type="RallyPoint">
-			  <property name="phase" value="2"/>
-			  <property name="nav_object" value="rally" />
-		  </objective>
-          <objective type="FetchFromContainer">
-			  <property name="phase" value="3"/>
-			  <property name="quest_item_ID" value="1"/>
-			  <property name="item_count" value="1"/>
-			  <property name="default_container" value="cntFetchQuestSatchel"/>
-			  <property name="nav_object" value="fetch_container" />
-		  </objective>
-          <objective type="POIStayWithin">
-			  <property name="phase" value="3"/>
-			  <property name="radius" value="25"/>
-		  </objective>
-          <action type="UnlockPOI" >
-			  <property name="phase" value="4"/>
-		  </action> 
-		  <objective type="ReturnToNPC">
-			  <property name="phase" value="4"/>
-			  <property name="nav_object" value="return_to_trader" />
-		  </objective>
+		<!-- Initial Quest to kick off the challenge / quests -->
 
-		  <objective type="InteractWithNPC">
-			  <property name="phase" value="4"/>
-			  <property name="nav_object" value="return_to_trader" />
-		  </objective>
-          <action type="TrackQuest"/>
-		  <reward type="Exp" value="2500"/>
-		  <reward type="Item" id="casinoCoin" value="350"/>
-		  <reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-		  <reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
-		  <reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-		  <reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
-		  <reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
-		  <reward type="Quest" id="quest_CarrierChallenge02"/>
-	  </quest>  
-    <quest id="quest_CarrierChallenge02">
-		<property name="name_key" value="quest_CarrierChallenge02"/>
-		<property name="subtitle_key" value="quest_CarrierChallenge02"/>
-		<property name="description_key" value="quest_CarrierChallenge02_description"/>
-		<property name="icon" value="ui_game_symbol_gyrocopter"/>
-		<property name="repeatable" value="false"/>
-		<property name="category_key" value="quest"/>
-		<property name="offer_key" value="quest_CarrierChallenge02_offer"/>
-		<property name="difficulty" value="medium"/>
-		<property name="shareable" value="false"/>
-		
-		<action type="TrackQuest"/>
+		<quest id="quest_BasicSurvival1">
 
-		<objective type="FetchKeep" id="resourceElectricParts" value="33" phase="1"/>
-		<objective type="FetchKeep" id="resourceHeadlight" value="8" phase="1"/>
-		<objective type="FetchKeep" id="resourceMetalPipe" value="50" phase="1"/>
-		<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
-		<objective type="FetchKeep" id="resourceSpring" value="6" phase="1"/>
+			<property name="name_key" value="challenge_StartingCarrier"/>
+			<property name="subtitle_key" value="challenge_StartingCarrier"/>
+			<property name="description_key" value="challenge_StartingCarrier_description"/>
 
-		<reward type="Exp" value="50"/>
-		<reward type="Quest" id="quest_CarrierChallenge03"/>
-	</quest>
-	
-	<quest id="quest_CarrierChallenge03">
-		<property name="name_key" value="quest_CarrierChallenge03"/>
-		<property name="subtitle_key" value="quest_CarrierChallenge03"/>
-		<property name="description_key" value="quest_CarrierChallenge03_description"/>
-		<property name="icon" value="ui_game_symbol_gyrocopter"/>
-		<property name="repeatable" value="false"/>
-		<property name="category_key" value="quest"/>
-		<property name="offer_key" value="quest_CarrierChallenge03_offer"/>
-		<property name="difficulty" value="medium"/>
-		<property name="shareable" value="false"/>
-		
-		<action type="TrackQuest"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="quest_BasicSurvival_offer"/>
+			<property name="difficulty" value="medium"/>
 
-		<objective type="FetchKeep" id="resourceForgedSteel" value="125" phase="1"/>
-		<objective type="FetchKeep" id="resourceMechanicalParts" value="40" phase="1"/>
-		<objective type="FetchKeep" id="resourceDuctTape" value="25" phase="1"/>
-		<objective type="FetchKeep" id="resourceLeather" value="40" phase="1"/>
-		<objective type="FetchKeep" id="resourceElectricParts" value="20" phase="1"/>
+			<action type="TrackQuest"/> <!-- This line forces the quest to be one showing on screen -->
 
-		<reward type="Exp" value="50"/>
-		<reward type="Quest" id="quest_CarrierChallenge04"/>
-	</quest>
-	  <quest id="quest_CarrierChallenge04">
-		<property name="name_key" value="quest_CarrierChallenge04"/>
-		<property name="subtitle_key" value="quest_CarrierChallenge04_subtitle"/>
-		<property name="description_key" value="quest_CarrierChallenge04_description"/>
-		<property name="icon" value="ui_game_symbol_quest" />
-		<property name="repeatable" value="false" />
-		<property name="category_key" value="challenge" />
-		<property name="difficulty" value="medium" />
-		<property name="difficulty_tier" value="2" param1="difficulty" />
-		<property name="offer_key" value="quest_CarrierChallenge04_offer"/>
-		<property name="statement_key" value="quest_CarrierChallenge04_statement" />
-		<property name="response_key" value="quest_CarrierChallenge04_response" />
-		<property name="reward_choices_count" value="5" />
-		<property name="extra_tags" value="" param1="extra_tags" />
-		<property name="shareable" value="false"/>
+			<objective type="EntityKill" value="10" phase="1"/>
 
-		<property name="completiontype" value="TurnIn"/>
-		<property name="completion_key" value="quest_CarrierChallenge04_completion"/>
+			<reward type="Item" id="apparelNerdGlasses" value="1"/>
+			<reward type="Item" id="meleeToolSalvageT1Wrench" value="1"/>
+			<reward type="Item" id="armorClothHat" value="1"/>
+			<reward type="Item" id="modArmorHelmetLight" value="1"/>
+			<reward type="Item" id="bookWasteTreasuresAcid" value="1"/>  
 
-		  <objective type="ClosestPOIGoto">
-			  <property name="distance" value="10"/>
-			  <property name="phase" value="1"/>
-		  </objective>
-		<!-- <objective type="RandomPOIGoto">
-			<property name="phase" value="1"/>
-			<property name="nav_object" value="quest" />
-		</objective> -->
+			<reward type="SkillPoints" value="4" />
+			<reward type="Quest" id="quest_CarrierChallenge01" />
+			<reward type="Quest" id="quest_eliminatezombies10" />
 
-		<objective type="RallyPoint">
-			<property name="phase" value="2" />
-			<property name="nav_object" value="rally" />
-			<property name="allowed_start_hour" value="22" />
-			<property name="allowed_end_hour" value="1" />
+		</quest>
 
-			<property name="complete_event" value="quest_poi_lights_off" />
-		</objective>
+		<quest id="quest_CarrierChallenge01">
 
-		<objective type="ClearSleepers">
-			<property name="phase" value="3" />
-			<property name="nav_object" value="sleeper_volume"/>
-		</objective>
+			<property name="name_key" value="quest_CarrierChallenge01"/>
+			<property name="subtitle_key" value="quest_CarrierChallenge01"/>
+			<property name="description_key" value="This is a fetch test quest for dev purposes"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="5"/>
+			<property name="offer_key" value="fetch objective."/>
+			<property name="statement_key" value="Find the fetch item in the POI."/>
+			<property name="response_key" value="Test - Fetch"/> 
+			<property name="reward_choices_count" value="5" />
 
-		<objective type="POIBlockActivate" >
-			<property name="phase" value="3" />
-			<property name="block_index" value="QuestRestorePower" />
-			<property name="nav_object" value="restore_power" />
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="WELL I'LL BE DANGED."/>
 
-			<property name="complete_event" value="quest_poi_lights_on" />
-		</objective>
+			<action type="TrackQuest"/>
 
-		<objective type="POIStayWithin">
-			<property name="phase" value="3" />
-			<property name="radius" value="25" />
-		</objective>
+			<objective type="ClosestPOIGoto">
+				<property name="distance" value="10"/>
+				<property name="phase" value="1"/>
+			</objective>
 
-		<action type="UnlockPOI" >
-			<property name="phase" value="4"/>
-		</action>
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+			
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container" />
+			</objective>
+			
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
 
-		<objective type="ReturnToNPC">
-			<property name="phase" value="4" />
-			<property name="nav_object" value="return_to_trader" />
-		</objective>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
 
-		<objective type="InteractWithNPC">
-			<property name="phase" value="4" />
-			<property name="nav_object" value="return_to_trader" />
-		</objective>
-		<action type="TrackQuest"/>
-		<reward type="Exp" value="5060"/>
-		<reward type="Item" id="casinoCoin" value="1400"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
-		<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
-		<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
-		<reward type="Quest" id="quest_CarrierChallenge05"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
 
-	</quest>
-	  
-	    <quest id="quest_CarrierChallenge05">
-		<property name="name_key" value="quest_CarrierChallenge05"/>
-		<property name="subtitle_key" value="quest_CarrierChallenge05_subtitle"/>
-		<property name="description_key" value="quest_CarrierChallenge05_description"/>
-		<property name="icon" value="ui_game_symbol_gyrocopter"/>
-		<property name="repeatable" value="false"/>
-		<property name="category_key" value="challenge"/>
-		<property name="offer_key" value="quest_CarrierChallenge05_offer"/>
-		<property name="difficulty" value="medium"/>
-		<property name="shareable" value="false"/>
-		
-		<action type="TrackQuest"/>
+			<reward type="Exp" value="2500"/>
+			<reward type="Item" id="casinoCoin" value="350"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Quest" id="quest_CarrierChallenge02"/>
 
-		<objective type="FetchKeep" id="vehicleUH60chassis" value="1" phase="1"/>
-        <objective type="FetchKeep" id="vehicleUH60accessories" value="1" phase="1"/>
-        <objective type="FetchKeep" id="smallEngine" value="1" phase="1"/>
-        <objective type="FetchKeep" id="carBattery" value="1" phase="1"/>
-        <objective type="FetchKeep" id="vehicleWheels" value="3" phase="1"/>
-        <objective type="FetchKeep" id="vehicleUH60placeable" value="1" phase="2"/>
-		<reward type="Quest" id="quest_CarrierChallenge06"/>
-	</quest>
-	
-	<quest id="quest_CarrierChallenge06">
-		<property name="name_key" value="quest_CarrierChallenge06"/>
-		<property name="subtitle_key" value="quest_CarrierChallenge06"/>
-		<property name="description_key" value="quest_CarrierChallenge06_description"/>
-		<property name="icon" value="ui_game_symbol_gyrocopter"/>
-		<property name="repeatable" value="false"/>
-		<property name="category_key" value="quest"/>
-		<property name="offer_key" value="quest_CarrierChallenge06_offer"/>
-		<property name="difficulty" value="medium"/>
-		<property name="shareable" value="false"/>
-		
-		<action type="TrackQuest"/>
-		
-		<objective type="Goto" id="trader" value="1" phase="1">
-        <property name="nav_object" value="go_to_trader" />
-		</objective>
+		</quest>  
 
-		<objective type="InteractWithNPC">
-        <property name="phase" value="1"/>
-        <property name="nav_object" value="return_to_trader" />
-        <property name="use_closest" value="true" />
-		</objective>
-      
-      <reward type="Exp" value="500"/>
-	  <reward type="Quest" id="Completion"/>
-	</quest>
+		<quest id="quest_CarrierChallenge02">
 
-	<quest id="Completion">
-        <property name="name_key" value="Challenge Completion"/>
-        <property name="subtitle_key" value="Challenge Completion_subtitle"/>
-        <property name="description_key" value="Challenge Completion_description"/>
-        <property name="icon" value="ui_game_symbol_map_trader"/>
-        <property name="category" value="Congratulations!"/>
-        <property name="difficulty" value="easy"/>
-        <property name="shareable" value="false"/>
+				<property name="name_key" value="quest_CarrierChallenge02"/>
+				<property name="subtitle_key" value="quest_CarrierChallenge02"/>
+				<property name="description_key" value="quest_CarrierChallenge02_description"/>
+				<property name="icon" value="ui_game_symbol_gyrocopter"/>
+				<property name="repeatable" value="false"/>
+				<property name="category_key" value="quest"/>
+				<property name="offer_key" value="quest_CarrierChallenge02_offer"/>
+				<property name="difficulty" value="medium"/>
+				<property name="shareable" value="false"/>
 
+			<action type="TrackQuest"/>
 
-        <action type="ShowTip" value="Quest_Completion_tip">
-        <property name="delay" value="3"/>
-        </action>
-    </quest>	
+			<objective type="FetchKeep" id="resourceElectricParts" value="33" phase="1"/>
+			<objective type="FetchKeep" id="resourceHeadlight" value="8" phase="1"/>
+			<objective type="FetchKeep" id="resourceMetalPipe" value="50" phase="1"/>
+			<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
+			<objective type="FetchKeep" id="resourceSpring" value="6" phase="1"/>
 
-  </insertBefore>
+			<reward type="Exp" value="50"/>
+			<reward type="Quest" id="quest_CarrierChallenge03"/>
 
+		</quest>
 
-	<append xpath="/quests">
+		<quest id="quest_CarrierChallenge03">
 
+				<property name="name_key" value="quest_CarrierChallenge03"/>
+				<property name="subtitle_key" value="quest_CarrierChallenge03"/>
+				<property name="description_key" value="quest_CarrierChallenge03_description"/>
+				<property name="icon" value="ui_game_symbol_gyrocopter"/>
+				<property name="repeatable" value="false"/>
+				<property name="category_key" value="quest"/>
+				<property name="offer_key" value="quest_CarrierChallenge03_offer"/>
+				<property name="difficulty" value="medium"/>
+				<property name="shareable" value="false"/>
+
+				<action type="TrackQuest"/>
+
+				<objective type="FetchKeep" id="resourceForgedSteel" value="125" phase="1"/>
+				<objective type="FetchKeep" id="resourceMechanicalParts" value="40" phase="1"/>
+				<objective type="FetchKeep" id="resourceDuctTape" value="25" phase="1"/>
+				<objective type="FetchKeep" id="resourceLeather" value="40" phase="1"/>
+				<objective type="FetchKeep" id="resourceElectricParts" value="20" phase="1"/>
+
+				<reward type="Exp" value="50"/>
+				<reward type="Quest" id="quest_CarrierChallenge04"/>
+
+		</quest>
+
+		<quest id="quest_CarrierChallenge04">
+
+			<property name="name_key" value="quest_CarrierChallenge04"/>
+			<property name="subtitle_key" value="quest_CarrierChallenge04_subtitle"/>
+			<property name="description_key" value="quest_CarrierChallenge04_description"/>
+			<property name="icon" value="ui_game_symbol_quest" />
+			<property name="repeatable" value="false" />
+			<property name="category_key" value="challenge" />
+			<property name="difficulty" value="medium" />
+			<property name="difficulty_tier" value="2" param1="difficulty" />
+			<property name="offer_key" value="quest_CarrierChallenge04_offer"/>
+			<property name="statement_key" value="quest_CarrierChallenge04_statement" />
+			<property name="response_key" value="quest_CarrierChallenge04_response" />
+			<property name="reward_choices_count" value="5" />
+			<property name="extra_tags" value="" param1="extra_tags" />
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_CarrierChallenge04_completion"/>
+
+			<action type="TrackQuest"/>
+
+			<objective type="ClosestPOIGoto">
+				<property name="distance" value="10"/>
+				<property name="phase" value="1"/>
+			</objective>
+			
+			<objective type="RallyPoint">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="rally" />
+				<property name="allowed_start_hour" value="22" />
+				<property name="allowed_end_hour" value="1" />
+				<property name="complete_event" value="quest_poi_lights_off" />
+			</objective>
+
+			<objective type="ClearSleepers">
+				<property name="phase" value="3" />
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+
+			<objective type="POIBlockActivate" >
+				<property name="phase" value="3" />
+				<property name="block_index" value="QuestRestorePower" />
+				<property name="nav_object" value="restore_power" />
+				<property name="complete_event" value="quest_poi_lights_on" />
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3" />
+				<property name="radius" value="25" />
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="5060"/>
+			<reward type="Item" id="casinoCoin" value="1400"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="Quest" id="quest_CarrierChallenge05"/>
+
+		</quest>
+
+		<quest id="quest_CarrierChallenge05">
+
+			<property name="name_key" value="quest_CarrierChallenge05"/>
+			<property name="subtitle_key" value="quest_CarrierChallenge05_subtitle"/>
+			<property name="description_key" value="quest_CarrierChallenge05_description"/>
+			<property name="icon" value="ui_game_symbol_gyrocopter"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer_key" value="quest_CarrierChallenge05_offer"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+
+			<action type="TrackQuest"/>
+
+			<objective type="Craft" id="vehicleUH60chassis" value="1" phase="1"/>
+			<objective type="Craft" id="vehicleUH60accessories" value="1" phase="1"/>
+			<objective type="FetchKeep" id="smallEngine" value="1" phase="1"/>
+			<objective type="FetchKeep" id="carBattery" value="1" phase="1"/>
+			<objective type="FetchKeep" id="vehicleWheels" value="3" phase="1"/>
+			<objective type="Craft" id="vehicleUH60placeable" value="1" phase="2"/>
+
+			<reward type="Quest" id="quest_CarrierChallenge06"/>
+
+		</quest>
+
+		<quest id="quest_CarrierChallenge06">
+
+			<property name="name_key" value="quest_CarrierChallenge06"/>
+			<property name="subtitle_key" value="quest_CarrierChallenge06"/>
+			<property name="description_key" value="quest_CarrierChallenge06_description"/>
+			<property name="icon" value="ui_game_symbol_gyrocopter"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="quest_CarrierChallenge06_offer"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+
+			<action type="TrackQuest"/>
+
+			<objective type="Goto" id="trader" value="1" phase="1">
+				<property name="nav_object" value="go_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader" />
+				<property name="use_closest" value="true" />
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<reward type="Quest" id="Completion"/>
+
+		</quest>
+
+		<quest id="Completion">
+
+			<property name="name_key" value="Challenge Completion"/>
+			<property name="subtitle_key" value="Challenge Completion_subtitle"/>
+			<property name="description_key" value="Challenge Completion_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="category" value="Congratulations!"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+
+			<action type="ShowTip" value="Quest_Completion_tip">
+				<property name="delay" value="3"/>
+			</action>
+
+		</quest>
 
 		<quest id="quest_eliminatezombies10">
+			
 			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
 			<property name="name_key" value="10 Zombies" />
 			<property name="subtitle_key" value="10 Zombies" />
@@ -297,12 +329,15 @@
 			<objective type="EntityKill" value="10"/>
 
 			<reward type="Item" id="casinoCoin" value="20"/>
+			
 			<reward type="Quest" id="quest_eliminatezombies15">
 				<property name="chainquest" value="false"/>
 			</reward>
+
 		</quest>
 
 		<quest id="quest_eliminatezombies15">
+			
 			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
 			<property name="name_key" value="15 Zombies" />
 			<property name="subtitle_key" value="15 Zombies" />
@@ -316,12 +351,15 @@
 			<objective type="EntityKill" value="15"/>
 
 			<reward type="Exp" value="1500"/>
+			
 			<reward type="Quest" id="quest_eliminatezombies25">
 				<property name="chainquest" value="false"/>
 			</reward>
+		
 		</quest>
 
 		<quest id="quest_eliminatezombies25">
+
 			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
 			<property name="name_key" value="25 Zombies" />
 			<property name="subtitle_key" value="25 Zombies" />
@@ -335,12 +373,15 @@
 			<objective type="EntityKill" value="25"/>
 
 			<reward type="Item" id="casinoCoin" value="1250"/>
+			
 			<reward type="Quest" id="quest_eliminatezombies50">
 				<property name="chainquest" value="false"/>
 			</reward>
+
 		</quest>
 
 		<quest id="quest_eliminatezombies50">
+			
 			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
 			<property name="name_key" value="50 Zombies" />
 			<property name="subtitle_key" value="50 Zombies" />
@@ -354,13 +395,17 @@
 			<objective type="EntityKill" value="50"/>
 
 			<reward type="Exp" value="5000"/>
+			
 			<reward type="Quest" id="quest_eliminatezombies75">
 				<property name="chainquest" value="false"/>
 			</reward>
+
 		</quest>
 
 		<quest id="quest_eliminatezombies75">
-			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
+			
+			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 
+			1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
 			<property name="name_key" value="75 Zombies" />
 			<property name="subtitle_key" value="75 Zombies" />
 			<property name="description_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
@@ -373,12 +418,15 @@
 			<objective type="EntityKill" value="75"/>
 
 			<reward type="Item" id="casinoCoin" value="3750"/>
+			
 			<reward type="Quest" id="quest_eliminatezombies125">
 				<property name="chainquest" value="false"/>
 			</reward>
+
 		</quest>
 
 		<quest id="quest_eliminatezombies125">
+
 			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
 			<property name="name_key" value="125 Zombies" />
 			<property name="subtitle_key" value="125 Zombies" />
@@ -392,12 +440,15 @@
 			<objective type="EntityKill" value="125"/>
 
 			<reward type="Exp" value="12500"/>
+
 			<reward type="Quest" id="quest_eliminatezombies200">
 				<property name="chainquest" value="false"/>
 			</reward>
+
 		</quest>
 
 		<quest id="quest_eliminatezombies200">
+
 			<property name="offer_key" value="Accept this quest to eliminate 500 Zombies through multiple smaller stages. Eliminate 10 in the first stage for 20 Dukes, 15 for 1500 XP, 25 for 1250 Dukes, 50 for 5000 XP, 75 for 3750 Dukes, 125 for 12500 XP, and 200 for 2 Skill Points. This Quest repeats in an endless loop." />
 			<property name="name_key" value="200 Zombies" />
 			<property name="subtitle_key" value="200 Zombies" />
@@ -411,10 +462,13 @@
 			<objective type="EntityKill" value="200"/>
 
 			<reward type="SkillPoints" value="2" chainreward="false"/>
+
 			<reward type="Quest" id="quest_eliminatezombies10">
 				<property name="chainquest" value="false"/>
 			</reward>
+
 		</quest>
+
 	</append>
 
 </configs>

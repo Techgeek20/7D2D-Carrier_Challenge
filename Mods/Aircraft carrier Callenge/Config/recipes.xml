@@ -41,10 +41,6 @@
 	  <ingredient name="resourceScrapIron" count="50"/>
 	  <ingredient name="resourceScrapBrass" count="50"/>
     </recipe>
-	
-    <recipe name="drinkJarBoiledWater" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30">
-      <ingredient name="resourceSnowBall" count="25" />
-    </recipe>
 
   </append>
 
