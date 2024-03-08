@@ -30,15 +30,15 @@
   <property name="TriggerVolumeStart" value="68, 11, -2" />
   <property name="TriggerVolumeTriggers" value=" " />
   <property class="Stats">
-    <property name="TotalVertices" value="27149199" />
-    <property name="TotalTriangles" value="10030675" />
+    <property name="TotalVertices" value="27159263" />
+    <property name="TotalTriangles" value="10042371" />
     <property class="BlockEntities">
       <property name="Vertices" value="24487283" />
       <property name="Triangles" value="8252823" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="2592132" />
-      <property name="Triangles" value="1668180" />
+      <property name="Vertices" value="2602196" />
+      <property name="Triangles" value="1679876" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />

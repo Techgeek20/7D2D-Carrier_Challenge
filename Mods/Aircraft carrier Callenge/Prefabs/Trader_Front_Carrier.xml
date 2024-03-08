@@ -27,15 +27,15 @@
   <property name="QuestTags" value="trader, fetch, restore_power, infested, hidden_cache" />
   <property name="TraderArea" value="False" />
   <property class="Stats">
-    <property name="TotalVertices" value="17829757" />
-    <property name="TotalTriangles" value="6893712" />
+    <property name="TotalVertices" value="17838740" />
+    <property name="TotalTriangles" value="6901833" />
     <property class="BlockEntities">
-      <property name="Vertices" value="15927926" />
-      <property name="Triangles" value="5652732" />
+      <property name="Vertices" value="15931285" />
+      <property name="Triangles" value="5654317" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="1832967" />
-      <property name="Triangles" value="1138280" />
+      <property name="Vertices" value="1838591" />
+      <property name="Triangles" value="1144816" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="256" />

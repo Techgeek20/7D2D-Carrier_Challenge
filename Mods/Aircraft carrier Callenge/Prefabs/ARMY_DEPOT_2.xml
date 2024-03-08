@@ -39,22 +39,21 @@
       <property name="3" value="9, 16, 19" />
       <property name="4" value="13, 16, 19" />
       <property name="5" value="9, 2, 20" />
-      <property name="6" value="8, 1, 22" />
-      <property name="7" value="9, 2, 23" />
-      <property name="8" value="9, 3, 26" />
-      <property name="9" value="13, 10, 26" />
+      <property name="6" value="9, 2, 23" />
+      <property name="7" value="9, 3, 26" />
+      <property name="8" value="13, 10, 26" />
     </property>
   </property>
   <property class="Stats">
-    <property name="TotalVertices" value="714929" />
-    <property name="TotalTriangles" value="265587" />
+    <property name="TotalVertices" value="730369" />
+    <property name="TotalTriangles" value="278357" />
     <property class="BlockEntities">
-      <property name="Vertices" value="622548" />
-      <property name="Triangles" value="206215" />
+      <property name="Vertices" value="637996" />
+      <property name="Triangles" value="218989" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="92007" />
-      <property name="Triangles" value="59188" />
+      <property name="Vertices" value="91999" />
+      <property name="Triangles" value="59184" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
