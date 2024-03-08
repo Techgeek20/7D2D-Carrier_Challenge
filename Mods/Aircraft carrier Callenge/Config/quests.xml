@@ -1,5 +1,4 @@
 <configs>
-
 	<!-- Begin Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
 
 		<remove xpath="/quests/quest[@id='quest_BasicSurvival1']" />
@@ -17,7 +16,7 @@
 
 	<!-- End Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
 
-	<append xpath="/quests"/>
+	<append xpath="/quests">
 
 		<!-- Initial Quest to kick off the challenge / quests -->
 
