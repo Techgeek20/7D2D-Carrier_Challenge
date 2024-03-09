@@ -130,11 +130,11 @@
 
 			<action type="TrackQuest"/>
 
-			<objective type="FetchKeep" id="resourceElectricParts" value="33" phase="1"/>
-			<objective type="FetchKeep" id="resourceHeadlight" value="8" phase="1"/>
-			<objective type="FetchKeep" id="resourceMetalPipe" value="50" phase="1"/>
-			<objective type="FetchKeep" id="resourceMechanicalParts" value="10" phase="1"/>
-			<objective type="FetchKeep" id="resourceSpring" value="6" phase="1"/>
+			<objective type="FetchKeep" id="resourceElectricParts" value="120" phase="1"/>
+			<objective type="FetchKeep" id="resourceHeadlight" value="20" phase="1"/>
+			<objective type="FetchKeep" id="resourceMetalPipe" value="250" phase="1"/>
+			<objective type="FetchKeep" id="resourceMechanicalParts" value="150" phase="1"/>
+			<objective type="FetchKeep" id="resourceSpring" value="80" phase="1"/>
 
 			<reward type="Exp" value="50"/>
 			<reward type="Quest" id="quest_CarrierChallenge03"/>
@@ -155,11 +155,9 @@
 
 				<action type="TrackQuest"/>
 
-				<objective type="FetchKeep" id="resourceForgedSteel" value="125" phase="1"/>
-				<objective type="FetchKeep" id="resourceMechanicalParts" value="40" phase="1"/>
-				<objective type="FetchKeep" id="resourceDuctTape" value="25" phase="1"/>
-				<objective type="FetchKeep" id="resourceLeather" value="40" phase="1"/>
-				<objective type="FetchKeep" id="resourceElectricParts" value="20" phase="1"/>
+				<objective type="FetchKeep" id="resourceForgedSteel" value="800" phase="1"/>
+				<objective type="FetchKeep" id="resourceDuctTape" value="120" phase="1"/>
+				<objective type="FetchKeep" id="resourceLeather" value="125" phase="1"/>
 
 				<reward type="Exp" value="50"/>
 				<reward type="Quest" id="quest_CarrierChallenge04"/>
@@ -259,8 +257,8 @@
 
 			<objective type="Craft" id="vehicleUH60chassis" value="1" phase="1"/>
 			<objective type="Craft" id="vehicleUH60accessories" value="1" phase="1"/>
-			<objective type="FetchKeep" id="smallEngine" value="1" phase="1"/>
-			<objective type="FetchKeep" id="carBattery" value="1" phase="1"/>
+			<objective type="FetchKeep" id="smallEngine" value="2" phase="1"/>
+			<objective type="FetchKeep" id="carBattery" value="2" phase="1"/>
 			<objective type="FetchKeep" id="vehicleWheels" value="3" phase="1"/>
 			<objective type="Craft" id="vehicleUH60placeable" value="1" phase="2"/>
 

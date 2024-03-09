@@ -1,5 +1,6 @@
 <configs>
   <append xpath="/recipes">
+    
     <recipe name="resourceCoal" count="1" craft_area="campfire" craft_time="10" >
       <ingredient name="resourceWood" count="1"/>
     </recipe>
