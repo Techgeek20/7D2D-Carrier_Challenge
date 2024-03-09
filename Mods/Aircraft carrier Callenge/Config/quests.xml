@@ -57,6 +57,7 @@
 			<property name="repeatable" value="false"/>
 			<property name="category_key" value="challenge"/>
 			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="true"/>
 			<property name="difficulty_tier" value="5"/>
 			<property name="offer_key" value="fetch objective."/>
 			<property name="statement_key" value="Find the fetch item in the POI."/>
@@ -126,7 +127,7 @@
 				<property name="category_key" value="quest"/>
 				<property name="offer_key" value="quest_CarrierChallenge02_offer"/>
 				<property name="difficulty" value="medium"/>
-				<property name="shareable" value="false"/>
+				<property name="shareable" value="true"/>
 
 			<action type="TrackQuest"/>
 
@@ -151,7 +152,7 @@
 				<property name="category_key" value="quest"/>
 				<property name="offer_key" value="quest_CarrierChallenge03_offer"/>
 				<property name="difficulty" value="medium"/>
-				<property name="shareable" value="false"/>
+				<property name="shareable" value="true"/>
 
 				<action type="TrackQuest"/>
 
@@ -179,7 +180,7 @@
 			<property name="response_key" value="quest_CarrierChallenge04_response" />
 			<property name="reward_choices_count" value="5" />
 			<property name="extra_tags" value="" param1="extra_tags" />
-			<property name="shareable" value="false"/>
+			<property name="shareable" value="true"/>
 
 			<property name="completiontype" value="TurnIn"/>
 			<property name="completion_key" value="quest_CarrierChallenge04_completion"/>
@@ -251,7 +252,7 @@
 			<property name="category_key" value="challenge"/>
 			<property name="offer_key" value="quest_CarrierChallenge05_offer"/>
 			<property name="difficulty" value="medium"/>
-			<property name="shareable" value="false"/>
+			<property name="shareable" value="true"/>
 
 			<action type="TrackQuest"/>
 
@@ -276,7 +277,7 @@
 			<property name="category_key" value="quest"/>
 			<property name="offer_key" value="quest_CarrierChallenge06_offer"/>
 			<property name="difficulty" value="medium"/>
-			<property name="shareable" value="false"/>
+			<property name="shareable" value="true"/>
 
 			<action type="TrackQuest"/>
 
@@ -303,7 +304,7 @@
 			<property name="icon" value="ui_game_symbol_map_trader"/>
 			<property name="category" value="Congratulations!"/>
 			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
+			<property name="shareable" value="true"/>
 
 			<action type="ShowTip" value="Quest_Completion_tip">
 				<property name="delay" value="3"/>
@@ -321,7 +322,7 @@
 			<property name="repeatable" value="true"/>
 			<property name="category_key" value="Quest"/>
 			<property name="difficulty" value="easy"/>
-			<property name="shareable" value="false"/>
+			<property name="shareable" value="true"/>
 
 			<objective type="EntityKill" value="10"/>
 
