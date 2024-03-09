@@ -105,10 +105,6 @@ zombieDarlene,Loveshack
 zombieDarleneFeral,Feral Loveshack
 zombieDarleneRadiated,Radiated Loveshack
 
-zombieFatCop,
-zombieFatCopFeral,Feral 
-zombieFatCopRadiated,Radiated 
-
 zombieJanitor,HellsJanitorTV
 zombieJanitorFeral,Feral HellsJanitorTV
 zombieJanitorRadiated,Radiated HellsJanitorTV
@@ -176,12 +172,8 @@ animalZombieBear,Reclining Gamer
 animalZombieVulture,Phancy
 animalZombieVultureRadiated,Spicy Dragonfly
 
-zombieWightFeral,Feral 
-zombieWightRadiated,Radiated
-
-zombieScreamer,DeathAngel
-zombieScreamerFeral,Feral DeathAngel
-zombieScreamerRadiated,Spicy DeathAngel
+zombieWightFeral,Feral DeathAngel
+zombieWightRadiated,Radiated DeathAngel
 
 animalSnake,Danger Noodle
 animalSnakeRadiated,Spicy Danger Noodle
@@ -197,10 +189,6 @@ zombieArleneRadiated,Radiated DeaditeGirl
 zombieSpider,NuttyMonkey
 zombieSpiderFeral,Feral NuttyMonkey
 zombieSpiderRadiation, Radiated NuttyMonkey
-
-zombieFatHawaiian
-
-zombieSteveCrawler
 
 zombieScreamer,MoonLuna
 zombieScreamerFeral,Feral MoonLuna
@@ -244,7 +232,7 @@ resourcePaperDesc,"EAM\n FROM: USLANTFLT\n TO: USS SAN PAULO\n MESSAGE AS FOLLOW
 tutorialTipQuest01,"Welcome to the Aircraft Carrier Challenge.\n\nFight your way thru the ship, looting and crafting everything you need to craft a UH-60 to make your escape from the ship. \nFailure is not an option. \n\nRULES:\nYou must enter the Aircraft Carrier immediately (being inside the tent counts as being on the ship) and cannot leave thereafter. The rubble on the ground around the ship is NOT part of the ship, and as such may NOT be used to support any structures, or to grow any crops, unless you can do this WITHOUT touching it. \nYou may build bridges off the side of the ship to reach things, but those bridges must support themselves and cannot touch the ground.\nYou may not mine or dig under the ship.\nAll default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days.\nIf you die, the game is over.\nYou must survive until you are able to build a UH-60 and fly off the ship.\n\nYou have ONE life. Make it count."
 tutorialTipQuest01_title,Started The Aircraft Carrier Challenge
 
-challenge_StartingCarrier,"Do you think you have what it takes?"
+challenge_StartingCarrier,"Welcome aboard ye land lubbers! Now kill your 10 undead"
 challenge_StartingCarrier_description,"Do you have what it takes to complete the Carrier Challenge? Prove it."
 challenge_StartingCarrier_subtitle,"Prove your worth."
 challenge_StartingCarrier_offer,"So you think you can handle the Aircraft Carrier Challenge? The worlds gone to hell in a handbasket, and you think you can just leisurely walk in for some fun?\n\nYeh, right."
@@ -258,7 +246,7 @@ quest_CarrierChallenge01_offer,"Gather Jen's supplies."
 quest_CarrierChallenge01_description,"Gather Jen's supplies."
 quest_CarrierChallenge01_subtitle,"Gather Jen's supplies."
 
-quest_CarrierChallenge02,"Gather UH-60 Parts 2/6"
+quest_CarrierChallenge02,"Gather some UH-60 Parts 2/6"
 quest_CarrierChallenge02_offer,"Gather resources for the UH-60 accessories."
 quest_CarrierChallenge02_description,"Gather resources for the UH-60 accessories."
 quest_CarrierChallenge02_subtitle,"Gather resources for the UH-60 accessories."

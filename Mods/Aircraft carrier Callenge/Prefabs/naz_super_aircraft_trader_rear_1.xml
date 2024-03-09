@@ -3,9 +3,9 @@
   <property name="CopyAirBlocks" value="True" />
   <property name="AllowTopSoilDecorations" value="True" />
   <property name="TraderArea" value="False" />
-  <property name="ExcludeDistantPOIMesh" value="False" />
-  <property name="ExcludePOICulling" value="False" />
-  <property name="QuestTags" value="fetch, hidden_cache" />
+  <property name="ExcludeDistantPOIMesh" value="True" />
+  <property name="ExcludePOICulling" value="True" />
+  <!-- <property name="QuestTags" value="fetch, hidden_cache" /> -->
   <property name="DifficultyTier" value="5" />
   <property name="YOffset" value="-20" />
   <property name="DistantPOIYOffset" value="0" />
