@@ -1,4 +1,4 @@
-<configs>
+	<configs>
 	<!-- Begin Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
 
 		<remove xpath="/quests/quest[@id='quest_BasicSurvival1']" />
@@ -9,11 +9,13 @@
 		<remove xpath="/quests/quest[@id='quest_BasicSurvival6']" />
 		<remove xpath="/quests/quest[@id='quest_BasicSurvival7']" />
 		<remove xpath="/quests/quest[@id='quest_BasicSurvival8']" />
-
-		<remove xpath="/quests/quest[@id='tier1_buried_supplies']" />
+     	
+	    <remove xpath="/quests/quest[@id='tier1_buried_supplies']" />
 		<remove xpath="/quests/quest[@id='tier2_buried_supplies']" />
-		<remove xpath="/quests/quest[@id='tier3_buried_supplies']" />
-
+	    <remove xpath="/quests/quest[@id='tier3_buried_supplies']" />
+	
+	    <remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
+	
 	<!-- End Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
 
 	<append xpath="/quests">
@@ -22,7 +24,7 @@
 
 		<quest id="quest_BasicSurvival1">
 
-			<property name="name_key" value="challenge_StartingCarrier"/>
+			<property name="group_name_key" value="challenge_StartingCarrier"/>
 			<property name="subtitle_key" value="challenge_StartingCarrier"/>
 			<property name="description_key" value="challenge_StartingCarrier_description"/>
 
@@ -32,7 +34,8 @@
 			<property name="offer_key" value="quest_BasicSurvival_offer"/>
 			<property name="difficulty" value="medium"/>
 
-			<action type="TrackQuest"/> <!-- This line forces the quest to be one showing on screen -->
+			<action type="TrackQuest"/>
+			<!-- This line forces the quest to be one showing on screen -->
 
 			<objective type="EntityKill" value="10" phase="1"/>
 
@@ -40,13 +43,53 @@
 			<reward type="Item" id="meleeToolSalvageT1Wrench" value="1"/>
 			<reward type="Item" id="armorClothHat" value="1"/>
 			<reward type="Item" id="modArmorHelmetLight" value="1"/>
-			<reward type="Item" id="bookWasteTreasuresAcid" value="1"/>  
+			<reward type="Item" id="bookWasteTreasuresAcid" value="1"/>
 
 			<reward type="SkillPoints" value="4" />
-			<reward type="Quest" id="quest_CarrierChallenge01" />
-			<reward type="Quest" id="quest_eliminatezombies10" />
+			<!-- <reward type="Quest" id="quest_eliminatezombies10" /> -->
+			<reward type="Quest" id="quest_whiteRiverCitizen1" />
+			<action type="TrackQuest"/>
 
 		</quest>
+	</append>
+		
+		    <append xpath="/quests">
+				
+			<quest id="quest_whiteRiverCitizen1">
+				<property name="group_name_key" value="quest_CarrierChallenge"/>
+				<property name="name_key" value="quest_CarrierChallenge"/>
+				<property name="subtitle_key" value="quest_CarrierChallenge_subtitle"/>
+				<property name="description_key" value="quest_CarrierChallenge_description"/>
+				<property name="icon" value="ui_game_symbol_map_trader"/>
+				<property name="category_key" value="quest"/>
+				<property name="difficulty" value="medium"/>
+				<property name="offer_key" value="quest_CarrierChallenge"/>
+				<property name="shareable" value="true"/>
+				<property name="chainquest" value="true"/>
+				<action type="TrackQuest"/>
+				
+				<objective type="Goto" id="trader" value="5" phase="1">
+					<property name="biome_filter_type" value="any" />
+					<property name="Zoning" value="any" />
+					<!--<property name="biome_filter" value="pine_forest" />
+				    <property name="biome_filter_type" value="ExcludeBiome" /> 
+					<property name="biome_filter" value="snow" />
+					<property name="biome_filter" value="wasteland" />
+					<property name="biome_filter" value="desert" /> -->
+					<property name="nav_object" value="go_to_trader" />
+				</objective>
+
+				<objective type="InteractWithNPC">
+					<property name="phase" value="2"/>
+					<property name="nav_object" value="return_to_trader" />
+					<property name="use_closest" value="true" />
+				</objective>
+				<!-- <property name="chainquest" value="false"/> -->
+				
+				<reward type="Quest" id="quest_CarrierChallenge01" />
+				<reward type="Quest" id="quest_eliminatezombies10" />
+			</quest>
+
 
 		<quest id="quest_CarrierChallenge01">
 
@@ -58,14 +101,15 @@
 			<property name="category_key" value="challenge"/>
 			<property name="difficulty" value="medium"/>
 			<property name="shareable" value="true"/>
+			<property name="chainquest" value="true"/>
 			<property name="difficulty_tier" value="5"/>
-			<property name="offer_key" value="fetch objective."/>
+			<property name="offer_key" value="quest_CarrierChallenge01"/>
 			<property name="statement_key" value="Find the and fetch item in the POI."/>
 			<property name="response_key" value="Fetch supplies"/> 
 			<property name="reward_choices_count" value="5" />
 
-			<property name="completiontype" value="TurnIn"/>
-			<property name="completion_key" value="WELL I'LL BE DANGED."/>
+			<!-- <property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="WELL I'LL BE DANGED."/> -->
 
 			<action type="TrackQuest"/>
 
@@ -96,7 +140,7 @@
 				<property name="phase" value="4"/>
 			</action>
 
-			<objective type="ReturnToNPC">
+			<!--<objective type="ReturnToNPC">
 				<property name="phase" value="4"/>
 				<property name="nav_object" value="return_to_trader" />
 			</objective>
@@ -104,16 +148,17 @@
 			<objective type="InteractWithNPC">
 				<property name="phase" value="4"/>
 				<property name="nav_object" value="return_to_trader" />
-			</objective>
+			</objective> -->
 
 			<reward type="Exp" value="2500"/>
 			<reward type="Item" id="casinoCoin" value="350"/>
-			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="Quest" id="quest_CarrierChallenge02"/>
+			<!-- type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
-			<reward type="Quest" id="quest_CarrierChallenge02"/>
+			<reward type="Quest" id="quest_CarrierChallenge02"/> -->
 
 		</quest>  
 
@@ -329,6 +374,7 @@
 			<reward type="Item" id="casinoCoin" value="20"/>
 			
 			<reward type="Quest" id="quest_eliminatezombies15">
+			
 				<property name="chainquest" value="false"/>
 			</reward>
 
