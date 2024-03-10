@@ -27,11 +27,11 @@
   <property name="TraderArea" value="False" />
   <property name="QuestTags" value="snow, desert, pineforest, wasteland" />
   <property class="Stats">
-    <property name="TotalVertices" value="17841971" />
-    <property name="TotalTriangles" value="6905085" />
+    <property name="TotalVertices" value="17841675" />
+    <property name="TotalTriangles" value="6904997" />
     <property class="BlockEntities">
-      <property name="Vertices" value="15932820" />
-      <property name="Triangles" value="5656721" />
+      <property name="Vertices" value="15932524" />
+      <property name="Triangles" value="5656633" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="1840415" />

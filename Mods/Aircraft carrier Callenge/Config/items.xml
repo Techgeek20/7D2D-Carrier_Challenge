@@ -1,6 +1,6 @@
 ﻿<configs>
 	<insertafter xpath="/items/item[@name]/property[1]">
-		<property name="CreativeMode" value="none"/>
+		 <property name="CreativeMode" value="none"/> 
 	</insertafter>
 	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set>
 	
