@@ -1,12 +1,12 @@
 Key,English
 goGameWorld,[FF4F00]Select 'Aircraft Carrier Challenge (biome)'[-]
 goLootRespawnDays,Loot Respawn-[FF4F00]Select ANYTHING except 'Disabled'[-]
-resourceCoalDesc,"A great fuel source and a core ingredient for gunpowder.\n\nCan be made from wood in a campfire",,Ein sehr gutes Brennmaterial und eine der wichtigsten Zutaten für die Fertigung von Schießpulver.,Una gran fuente de combustible y un ingrediente principal para la pólvora,Une excellente source de carburant et un composant de base pour la poudre à canon.,Un'ottima fonte di carburante e un ingrediente fondamentale per la polvere da sparo.,良質な燃料として、また火薬の主成分として。,우수한 연료이며 화약의 핵심 성분입니다.,Doskonały nośnik energii i nieodzowny składnik prochu strzelniczego.,Uma excelente fonte de combustível e um ingrediente importantíssimo da pólvora.,Отличное топливо и ингредиент для пороха.,Harika bir yakıt kaynağıdır ve barutun ana maddesidir.,火药的重要燃料来源和核心材料。,火藥的重要燃料來源和核心成分。
+resourceCoalDesc,"A great fuel source and a core ingredient for gunpowder.\n\nCan be made from wood in a campfire"
 resourceAcidDesc,A resource used in crafting recipes.\n\nCan be crafted in beaker at a campfire or at the chemistry station.
 resourceBatteryAcid,Bottle of Acid
 resourceBatteryAcidDesc,A resource used in crafting recipes.\n\nCan be extracted from a car battery at the chemistry station.
-resourceAnimalFat,"Fat",,Tierfett,Grasa animal,Graisse animale,Grasso animale,動物性油脂,동물성 지방,Tłuszcz zwierzęcy,Gordura animal,Животный жир,Hayvan Yağı,动物脂肪,動物脂肪
-resourceAnimalFatDesc,"Fat can be eaten raw or used in cooking or other crafting recipes.",,Tierfett kann roh gegessen oder in Koch- oder anderen Fertigungsrezepten verwendet werden.,"La grasa animal se puede comer cruda, usarla para cocinar o para fabricar otras recetas.",La graisse animale peut être mangée crue ou utilisée pour cuisiner ou fabriquer d'autres compositions.,"Il grasso animale può essere consumato crudo, utilizzato per cucinare e in varie ricette.",動物性油脂は生食やその他のレシピのクラフトに使用できます。,동물성 지방은 날것으로 먹거나 요리 및 다른 레시피에 사용할 수 있습니다.,"Możesz go zjeść na surowo, ewentualnie wykorzystać do gotowania i rzemiosła.",A gordura animal pode ser comida crua ou usada na culinária e em receitas de fabricação.,"Можно съесть сырым, использовать при приготовлении пищи или изготовлении предметов по рецептам.",Hayvan yağı çiğ yenebilir veya yemek pişirirken ya da başka üretim tariflerinde kullanılabilir.,动物脂肪可生吃，也可用于烹饪或其他制作配方中。,動物脂肪可以生吃，也可以用於烹飪或製作其他配方。
+resourceAnimalFat,"Fat"
+resourceAnimalFatDesc,"Fat can be eaten raw or used in cooking or other crafting recipes."
 drugAntibioticsDT,Antibiotics
 drugAntibioticsDTDesc,Antibiotics can cure infections.\n\nCan be crafted in a beaker at a campfire or at the chemistry station.
 foodShepardsPie,Shepherd's Pie
