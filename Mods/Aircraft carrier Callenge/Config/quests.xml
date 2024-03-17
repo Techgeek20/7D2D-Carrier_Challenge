@@ -92,7 +92,7 @@
 			<property name="repeatable" value="false"/>
 			<property name="category_key" value="challenge"/>
 			<property name="difficulty" value="medium"/>
-			<property name="shareable" value="False"/>
+			<property name="shareable" value="true"/>
 			<property name="chainquest" value="true"/>
 			<property name="difficulty_tier" value="5"/>
 			<property name="offer_key" value="quest_CarrierChallenge01"/>
