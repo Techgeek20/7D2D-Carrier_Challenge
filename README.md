@@ -19,6 +19,8 @@ WookieNookie for the following modlets:
   * Stash Backpack
   * Video Options
     
-Khelldon-CustomMenu  Link: https://7daystodiemods.com/custom-menu-art/
+Khelldon-CustomMenu  Link: https://7daystodiemods.com/custom-menu-art/ 
+
 UH-60 by Bdubyah - https://7daystodiemods.com/uh-60/
+
 OCB Map Waypoints (A21) by obcMaurice - https://www.nexusmods.com/7daystodie/mods/1883 or https://github.com/OCB7D2D/OcbWayPointIcons
