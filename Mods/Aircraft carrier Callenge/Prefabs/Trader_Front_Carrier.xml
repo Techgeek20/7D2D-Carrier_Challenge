@@ -25,17 +25,17 @@
   <property name="PrefabSize" value="166, 39, 91" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #3#4#6# #7# # # # #8# # # # # # # # # # # # # # # # # # # # # # # # # # #15# # #18#17#16# #24# # # # # " />
   <property name="TraderArea" value="False" />
-  <property name="QuestTags" value="snow, desert, pineforest, wasteland" />
+  <property name="QuestTags" value="snow, desert, wasteland, pineforest" />
   <property class="Stats">
-    <property name="TotalVertices" value="17841675" />
-    <property name="TotalTriangles" value="6904997" />
+    <property name="TotalVertices" value="17929531" />
+    <property name="TotalTriangles" value="6897318" />
     <property class="BlockEntities">
-      <property name="Vertices" value="15932524" />
-      <property name="Triangles" value="5656633" />
+      <property name="Vertices" value="16009922" />
+      <property name="Triangles" value="5641070" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="1840415" />
-      <property name="Triangles" value="1145728" />
+      <property name="Vertices" value="1850873" />
+      <property name="Triangles" value="1153612" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="128" />
