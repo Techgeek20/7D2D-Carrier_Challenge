@@ -1,8 +1,0 @@
-Key,English
-vehicleUH60chassis,UH-60 Chassis
-vehicleUH60chassisDesc,Parts needed to craft the UH-60.
-vehicleUH60accessories,UH-60 Accessories
-vehicleUH60accessoriesDesc,Parts needed to craft the UH-60.
-vehicleUH60,UH-60
-vehicleUH60placeable,UH-60
-vehicleUH60placeableDesc,They can't kill you if they can't hit you!

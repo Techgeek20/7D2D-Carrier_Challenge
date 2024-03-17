@@ -1,8 +1,0 @@
-<configs>
-	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleGyrocopterPlaceable']">
-		<unlock_entry item="vehicleUH60chassis,vehicleUH60accessories" unlock_tier="1"/>
-	</append>
-	<append xpath="//crafting_skill[@name='craftingVehicles']/effect_group">
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,50" value="1" tags="vehicleUH60chassis,vehicleUH60accessories"/>
-	</append>	
- </configs>

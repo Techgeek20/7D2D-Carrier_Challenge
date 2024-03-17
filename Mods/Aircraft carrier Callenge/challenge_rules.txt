@@ -3,4 +3,4 @@ You may build bridges off the side of the ship to reach things, but those bridge
 You may not mine or dig under the ship.
 All default game settings, unless you want to turn up the size of the hordes
 If you die, the game is over.
-You must survive until you are able to build a UH-60 and fly off the flight deck.
+You must survive until you are able to build a gyrocopter and fly off the flight deck.

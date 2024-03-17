@@ -62,7 +62,7 @@ Paper has been removed from bookcase loot
 
 Increased probability for vehicle books and workstation books IF perk points are used in their respective skills
 
-Reduced number of books required for the UH-60, chem station and crucible
+Reduced number of books required for the gyrocopter, chem station and crucible
 
 Old cash can be converted into Dukes
 

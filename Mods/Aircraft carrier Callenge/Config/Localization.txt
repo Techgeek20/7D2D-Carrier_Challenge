@@ -56,12 +56,12 @@ perkGreaseMonkeyRank3LongDesc,Now you're starting to know your way around a tool
 perkGreaseMonkeyRank4Desc,Not very basic
 perkGreaseMonkeyRank4LongDesc,"Your mechanical prowess is that of a professional pit crew!\n\nRepair kits are 40 percent more effective on vehicles."
 perkGreaseMonkeyRank5Desc,At last!!
-perkGreaseMonkeyRank5LongDesc,"You're a full-on aeronautical MacGyver.\nCraft UH-60 parts 33% cheaper.\n\nRepair kits are 50 percent more effective on vehicles."
+perkGreaseMonkeyRank5LongDesc,"You're a full-on aeronautical MacGyver.\nCraft gyrocopter parts 33% cheaper.\n\nRepair kits are 50 percent more effective on vehicles."
 vehiclesT1,Tier 1: Wheels
 vehiclesT2,Tier 2: Oil
 vehiclesT3,Tier 3: Gas Cans
 vehiclesT4,Tier 4: Acid
-vehiclesT5,Tier 5: UH-60
+vehiclesT5,Tier 5: Flight
 
 
 harvestingToolsSkillMagazineDT,Tools Digest
@@ -212,7 +212,7 @@ loadingTipAircraft6,"Resources are scarce in the ship, but you will be able to f
 loadingTipAircraft6_title,Resources
 loadingTipAircraft7,"Crafting workstations, and tools like the crucible, and vehicles themselves, take fewer magazines to read before they unlock."
 loadingTipAircraft7_title,Crafting
-loadingTipAircraft8,"Trying to leave the ship other than by UH-60 is a very bad idea ..."
+loadingTipAircraft8,"Trying to leave the ship other than by gyrocopter is a very bad idea ..."
 loadingTipAircraft8_title,Cheating
 loadingTipAircraft9,"Certain in-game functions, like zombie health bars and XP pop-ups, can be enabled or disabled from the pause menu. Pause the game, click 'video' then the 'Customization' tab."
 loadingTipAircraft9_title,Customization
@@ -229,7 +229,7 @@ loadingTipAircraft14_title,Wrench
 
 resourcePaper,"Classified Document" 
 resourcePaperDesc,"EAM\n FROM: USLANTFLT\n TO: USS SAN PAULO\n MESSAGE AS FOLLOWS:\n Movement to G.S. ATL-001 to acquire TP for bunghole (and other ""supplies"")"
-tutorialTipQuest01,"Welcome to the Aircraft Carrier Challenge.\n\nFight your way thru the ship, looting and crafting everything you need to craft a UH-60 to make your escape from the ship. \nFailure is not an option. \n\nRULES:\nYou must enter the Aircraft Carrier immediately (being inside the tent counts as being on the ship) and cannot leave thereafter. The rubble on the ground around the ship is NOT part of the ship, and as such may NOT be used to support any structures, or to grow any crops, unless you can do this WITHOUT touching it. \nYou may build bridges off the side of the ship to reach things, but those bridges must support themselves and cannot touch the ground.\nYou may not mine or dig under the ship.\nAll default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days.\nIf you die, the game is over.\nYou must survive until you are able to build a UH-60 and fly off the ship.\n\nYou have ONE life. Make it count."
+tutorialTipQuest01,"Welcome to the Aircraft Carrier Challenge.\n\nFight your way thru the ship, looting and crafting everything you need to craft a gyrocopter to make your escape from the ship. \nFailure is not an option. \n\nRULES:\nYou must enter the Aircraft Carrier immediately (being inside the tent counts as being on the ship) and cannot leave thereafter. The rubble on the ground around the ship is NOT part of the ship, and as such may NOT be used to support any structures, or to grow any crops, unless you can do this WITHOUT touching it. \nYou may build bridges off the side of the ship to reach things, but those bridges must support themselves and cannot touch the ground.\nYou may not mine or dig under the ship.\nAll default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days.\nIf you die, the game is over.\nYou must survive until you are able to build a gyrocopter and fly off the ship.\n\nYou have ONE life. Make it count."
 tutorialTipQuest01_title,Started The Aircraft Carrier Challenge
 
 challenge_StartingCarrier,"Welcome aboard ye land lubbers! \n\nNow kill your 10 undead"
@@ -250,27 +250,27 @@ quest_CarrierChallenge01_offer,"Gather Jen's supplies."
 quest_CarrierChallenge01_description,"Gather Jen's supplies."
 quest_CarrierChallenge01_subtitle,"Gather Jen's supplies."
 
-quest_CarrierChallenge02,"Gather some UH-60 Parts 2/6"
-quest_CarrierChallenge02_offer,"Gather resources for the UH-60 accessories."
-quest_CarrierChallenge02_description,"Gather resources for the UH-60 accessories."
-quest_CarrierChallenge02_subtitle,"Gather resources for the UH-60 accessories."
+quest_CarrierChallenge02,"Gather some gyrocopter Parts 2/6"
+quest_CarrierChallenge02_offer,"Gather resources for the gyrocopter accessories."
+quest_CarrierChallenge02_description,"Gather resources for the gyrocopter accessories."
+quest_CarrierChallenge02_subtitle,"Gather resources for the gyrocopter accessories."
 
-quest_CarrierChallenge03,"Gather more UH-60 Parts 3/6"
-quest_CarrierChallenge03_offer,"Gather resources for the UH-60 chassis."
-quest_CarrierChallenge03_description,"Gather resources for the UH-60 chassis."
-quest_CarrierChallenge03_subtitle,"Gather resources for the UH-60 chassis."
+quest_CarrierChallenge03,"Gather more gyrocopter Parts 3/6"
+quest_CarrierChallenge03_offer,"Gather resources for the gyrocopter chassis."
+quest_CarrierChallenge03_description,"Gather resources for the gyrocopter chassis."
+quest_CarrierChallenge03_subtitle,"Gather resources for the gyrocopter chassis."
 
 quest_CarrierChallenge04,"Restore power to the Bridge! 4/6"
 quest_CarrierChallenge04_offer,"Restore power to the Bridge."
 quest_CarrierChallenge04_description,"Restore power to the Bridge."
 quest_CarrierChallenge04_subtitle,"Restore power to the Bridge."
 
-quest_CarrierChallenge05,"Assemble UH-60 Parts 5/6"
-quest_CarrierChallenge05_offer,"Gather all the parts to craft a UH-60, and craft the UH-60."
-quest_CarrierChallenge05_description,"Gather all the parts to craft a UH-60, and craft the UH-60."
-quest_CarrierChallenge05_subtitle,"Craft the UH-60."
+quest_CarrierChallenge05,"Assemble gyrocopter Parts 5/6"
+quest_CarrierChallenge05_offer,"Gather all the parts to craft a gyrocopter, and craft the gyrocopter."
+quest_CarrierChallenge05_description,"Gather all the parts to craft a gyrocopter, and craft the gyrocopter."
+quest_CarrierChallenge05_subtitle,"Craft the gyrocopter."
 
-quest_CarrierChallenge06,"Use UH-60 to escape 6/6"
+quest_CarrierChallenge06,"Use gyrocopter to escape 6/6"
 quest_CarrierChallenge06_offer,"Fly! Fly, my pretty!! Trader Jen is your salvation!!"
 quest_CarrierChallenge06_description,"Escape the Carrier!"
 quest_CarrierChallenge06_subtitle,"Escape the Carrier!"
