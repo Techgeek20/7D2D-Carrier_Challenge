@@ -86,14 +86,13 @@ For full details, check the forum post here: *No post*
            	
            	<Version>Alpha21.2</Version>
             <EAC>Disabled</EAC>
-            <DownloadMode>Clone</DownloadMode>
             <Discord></Discord>
             <Donate></Donate>
             <DownloadMode>Clone</DownloadMode>
             <Downloads>
                 <Download>https://github.com/Techgeek20/7D2D-Carrier_Challenge</Download>
             </Downloads>
-            
+
         </Server>
     </ServerGroup>
 </Servers>
