@@ -1,5 +1,6 @@
 ﻿<configs>
 	<insertafter xpath="/blocks/block[@name='concreteNoUpgradeMaster']">
+
 	<block name="concreteRadiation">
 		<property name="CreativeMode" value="Dev"/>
 		<property name="DescriptionKey" value="concreteNoUpgradeGroupDesc"/>
@@ -71,11 +72,13 @@
 	<property name="SortOrder2" value="0700"/>
 	<property name="FilterTags" value="MC_outdoor,SC_terrain,MC_building,SC_destruction"/>
 	</block>
+
+</insertafter>
 	
-	<!-- <insertafter xpath="/blocks/block[@name]/property[1]">
+	<insertafter xpath="/blocks/block[@name]/property[1]">
 		<property name="CreativeMode" value="None"/>
 	</insertafter>
-	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> -->
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>
 	
 	<set xpath="//block[@name='terrDirt']//drop[1]/@count">10</set>
 	

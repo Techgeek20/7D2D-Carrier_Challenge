@@ -83,7 +83,8 @@ CHALLENGE RULES:
 For full details, check the forum post here: *No post*
 			
             </Description>
-            	<Version>Alpha21.2</Version>
+           	
+           	<Version>Alpha21.2</Version>
             <EAC>Disabled</EAC>
             <DownloadMode>Clone</DownloadMode>
             <Discord></Discord>
@@ -92,6 +93,7 @@ For full details, check the forum post here: *No post*
             <Downloads>
                 <Download>https://github.com/Techgeek20/7D2D-Carrier_Challenge</Download>
             </Downloads>
+            
         </Server>
     </ServerGroup>
 </Servers>
