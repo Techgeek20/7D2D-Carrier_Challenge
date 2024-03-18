@@ -6,7 +6,7 @@
             	This mod is based on the Dishong Tower Challenge by Hells_Janitor
             	Shout outs and thanks yous to the creators and mod authors of the Dishong Tower Challenge for allowing usage of their mods and code.
 
-CHANGELOG V 1.0.1:
+CHANGELOG V 1.0.0:
             	
 Zombie corpses no longer lootable - they now drop an entity-specific red loot bag.
 Tweaked container loot respawn - it now shows a timer for when the container will be lootable again.
@@ -83,10 +83,11 @@ CHALLENGE RULES:
 For full details, check the forum post here: *No post*
 			
             </Description>
+            	<Version>Alpha21.2</Version>
+            <EAC>Disabled</EAC>
+            <DownloadMode>Clone</DownloadMode>
             <Discord></Discord>
             <Donate></Donate>
-            <EAC>Disabled</EAC>
-            <Version>Latest</Version>
             <DownloadMode>Clone</DownloadMode>
             <Downloads>
                 <Download>https://github.com/Techgeek20/7D2D-Carrier_Challenge</Download>
