@@ -1,3 +1,4 @@
+
 Wasteland Treasures volume 5 now has a 50% chance to give acid from "open" wooden pill case
 
 Cement mixers can be harvested for an engine and gas cans
@@ -62,7 +63,7 @@ Paper has been removed from bookcase loot
 
 Increased probability for vehicle books and workstation books IF perk points are used in their respective skills
 
-Reduced number of books required for the gyrocopter, chem station and crucible
+Reduced number of books required for the UH-60, chem station and crucible
 
 Old cash can be converted into Dukes
 
