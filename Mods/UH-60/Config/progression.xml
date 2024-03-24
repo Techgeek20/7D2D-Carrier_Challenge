@@ -1,5 +1,5 @@
 <configs>
-	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleGyrocopterPlaceable']>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicleGyrocopterPlaceable']">
 		<unlock_entry item="vehicleUH60chassis,vehicleUH60accessories" unlock_tier="1"/>
 	</append>
 	<append xpath="//crafting_skill[@name='craftingVehicles']/effect_group">
