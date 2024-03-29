@@ -1,0 +1,57 @@
+<Config>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']">
+		<display_entry item="resourceGrenadeTip" unlock_level="35,100" />
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,100" value="1" tags="resourceGrenadeTip"/>
+	</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']">
+		<display_entry item="resourceGrenadeCasing" unlock_level="35,100" />
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="resourceGrenadeCasing"/>
+	</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']">
+		<display_entry icon="gunT0GrenadeLauncher" name_key="explosivesT1" has_quality="true" unlock_level="11,13,15,17,100" >
+			<unlock_entry item="gunT0GrenadeLauncher" unlock_tier="1" />
+		</display_entry>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="gunT0GrenadeLauncher"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="11,13,15,17,100" value="1,2,3,4,4" tags="gunT0GrenadeLauncher"/>
+	</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']">
+		<display_entry icon="gunT1GrenadeLauncher" name_key="explosivesT1" has_quality="true" unlock_level="21,23,25,27,100" >
+			<unlock_entry item="gunT1GrenadeLauncher" unlock_tier="1" />
+		</display_entry>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="gunT1GrenadeLauncher"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="21,23,25,27,100" value="1,2,3,4,4" tags="gunT1GrenadeLauncher"/>
+	</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']">
+		<display_entry icon="gunT2GrenadeLauncher" name_key="explosivesT2" has_quality="true" unlock_level="31,33,35,37,100" >
+			<unlock_entry item="gunT2GrenadeLauncher" unlock_tier="2" />
+		</display_entry>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="gunT2GrenadeLauncher"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="31,33,35,37,100" value="1,2,3,4,4" tags="gunT2GrenadeLauncher"/>
+	</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']">
+		<display_entry icon="gunT3GrenadeLauncher" name_key="explosivesT3" has_quality="true" unlock_level="41,43,45,47,100" >
+			<unlock_entry item="gunT3GrenadeLauncher" unlock_tier="2" />
+		</display_entry>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="gunT3GrenadeLauncher"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="41,43,45,47,100" value="1,2,3,4,4" tags="gunT3GrenadeLauncher"/>
+	</append>
+
+</Config>
