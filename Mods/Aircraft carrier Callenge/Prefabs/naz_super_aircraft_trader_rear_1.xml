@@ -30,15 +30,15 @@
   <property name="TriggerVolumeTriggers" value=" " />
   <property name="QuestTags" value="snow, desert, forest, wasteland" />
   <property class="Stats">
-    <property name="TotalVertices" value="26860064" />
-    <property name="TotalTriangles" value="9912400" />
+    <property name="TotalVertices" value="26859478" />
+    <property name="TotalTriangles" value="9912100" />
     <property class="BlockEntities">
-      <property name="Vertices" value="24225875" />
-      <property name="Triangles" value="8150862" />
+      <property name="Vertices" value="24225673" />
+      <property name="Triangles" value="8150766" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="2565217" />
-      <property name="Triangles" value="1652410" />
+      <property name="Vertices" value="2564833" />
+      <property name="Triangles" value="1652206" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
