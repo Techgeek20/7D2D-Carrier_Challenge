@@ -1,0 +1,65 @@
+<config>
+
+    <append xpath="item_modifiers">
+
+        <item_modifier name="modArmorInsulater" installable_tags="pocketMod" modifier_tags="thermal" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+            <property name="UnlockedBy" value="modArmorInsulatedLinerSchematic"/>
+            <property name="CustomIcon" value="modArmorInsulatedLiner"/>
+            <property name="CustomIconTint" value="B87333"/>
+            <property name="TraderStageTemplate" value="modsTier1"/>
+            <property name="DisplayType" value="modTempResist"/>
+            <property name="Material" value="Mcloth"/>
+
+            <effect_group tiered="false">
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="heat,electrical"/>
+            </effect_group>
+        </item_modifier>
+
+        <item_modifier name="modArmorAdvInsulater" installable_tags="pocketMod" modifier_tags="thermal" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+            <property name="UnlockedBy" value="modArmorInsulatedLinerSchematic"/>
+            <property name="CustomIcon" value="modArmorInsulatedLiner"/>
+            <property name="CustomIconTint" value="0000FF"/>
+            <property name="TraderStageTemplate" value="modsTier1"/>
+            <property name="DisplayType" value="modTempResist"/>
+            <property name="Material" value="Mcloth"/>
+
+            <effect_group tiered="false">
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="10" tags="heat,electrical"/>
+            </effect_group>
+        </item_modifier>
+
+        <item_modifier name="modArmorAdvInsulatedLiner" installable_tags="armor" modifier_tags="thermal" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+            <property name="UnlockedBy" value="modArmorInsulatedLinerSchematic"/>
+            <property name="CustomIcon" value="modArmorInsulatedLiner"/>
+            <property name="CustomIconTint" value="00FF00"/>
+            <property name="TraderStageTemplate" value="modsTier1"/>
+            <property name="DisplayType" value="modTempResist"/>
+            <property name="Material" value="Mcloth"/>
+
+            <effect_group tiered="false">
+                <passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="heat,electrical"/>
+            </effect_group>
+        </item_modifier>
+
+        <item_modifier name="modArmorAdvCoolingMesh" installable_tags="armor" modifier_tags="temperature" blocked_tags="noMods" type="attachment">
+            <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+            <property name="UnlockedBy" value="modArmorCoolingMeshSchematic"/>
+            <property name="CustomIcon" value="modArmorCoolingMesh"/>
+            <property name="CustomIcontint" value="00FF00"/>
+            <property name="TraderStageTemplate" value="modsTier1"/>
+            <property name="DisplayType" value="modTempResist"/>
+            <property name="Material" value="Mplastics"/>
+
+            <effect_group tiered="false">
+                <passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+                <passive_effect name="ElementalDamageResist" operation="base_add" value="5" tags="heat,electrical"/>
+            </effect_group>
+        </item_modifier>
+
+    </append>
+
+</config>

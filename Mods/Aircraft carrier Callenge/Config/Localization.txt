@@ -198,6 +198,10 @@ zombieSkateboarder,TylerGMS
 zombieSkateboarderFeral,Feral TylerGMS
 zombieSkateboarderRadiated,Radiated TylerGMS
 
+zombieFatHawaiian,Shrader
+zombieFatHawaiianFeral,Feral Shrader
+zombieFatHawaiianRadiated,Radiated Shrader
+
 loadingTipAircraft1,"All seed crafting is unlocked by default, and some seeds only require a couple of food items to make. There are NO usuable farmplots in the ship ..."
 loadingTipAircraft1_title,Seeds asshole
 loadingTipAircraft2,"Almost every zombie will drop a loot bag once dead, and specific zombies will have a chance to drop specific loot."
@@ -232,53 +236,54 @@ resourcePaperDesc,"EAM\n FROM: USLANTFLT\n TO: USS SAN PAULO\n MESSAGE AS FOLLOW
 tutorialTipQuest01,"Welcome to the Aircraft Carrier Challenge.\n\nFight your way thru the ship, looting and crafting everything you need to craft a UH-60 to make your escape from the ship. \nFailure is not an option. \n\nRULES:\nYou must enter the Aircraft Carrier immediately (being inside the tent counts as being on the ship) and cannot leave thereafter. The rubble on the ground around the ship is NOT part of the ship, and as such may NOT be used to support any structures, or to grow any crops, unless you can do this WITHOUT touching it. \nYou may build bridges off the side of the ship to reach things, but those bridges must support themselves and cannot touch the ground.\nYou may not mine or dig under the ship.\nAll default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days.\nIf you die, the game is over.\nYou must survive until you are able to build a UH-60 and fly off the ship.\n\nYou have ONE life. Make it count."
 tutorialTipQuest01_title,Started The Aircraft Carrier Challenge
 
-challenge_StartingCarrier,"Welcome aboard ye land lubbers! \n\nNow kill your 10 undead"
-challenge_StartingCarrier_description,"Do you have what it takes to complete the Carrier Challenge? Prove it."
+challenge_StartingCarrier,"Welcome aboard!"
+challenge_StartingCarrier_offer,"Up for a Challenge?"
+challenge_StartingCarrier_description,"So you think you can handle the Aircraft Carrier Challenge? The worlds gone to hell in a handbasket, and you think you can just leisurely walk in for some fun?\n\nYeh, right."
 challenge_StartingCarrier_subtitle,"Prove your worth."
-challenge_StartingCarrier_offer,"So you think you can handle the Aircraft Carrier Challenge? The worlds gone to hell in a handbasket, and you think you can just leisurely walk in for some fun?\n\nYeh, right."
+
 
 dishongTowerBundle,Aircraft Carrier Challenge Starter Items,,
 dishongTowerBundleDesc,Starter items for the Aircraft carrier challenge.,,
 
-quest_CarrierChallenge,"Head to a trader."
+quest_CarrierChallenge,"Head to a trader"
 quest_CarrierChallenge_offer,"Find your way to a trader."
-quest_CarrierChallenge_description,"Find trader,surely what goes up must go down?"
+quest_CarrierChallenge_description,"To find the trader, go through double doors behind tanks. Through cargo storage, then upstairs to briefing rooms."
 quest_CarrierChallenge_subtitle,"Find your trader."
 
-quest_CarrierChallenge01,"Fetch my supplies 1/6"
+quest_CarrierChallenge01,"Fetch my supplies"
 quest_CarrierChallenge01_offer,"Gather Jen's supplies."
 quest_CarrierChallenge01_description,"Gather Jen's supplies."
 quest_CarrierChallenge01_subtitle,"Gather Jen's supplies."
 
-quest_CarrierChallenge02,"Gather some UH-60 Parts 2/6"
+quest_CarrierChallenge02,"Gather some UH-60 Parts - 1"
 quest_CarrierChallenge02_offer,"Gather resources for the UH-60 accessories."
 quest_CarrierChallenge02_description,"Gather resources for the UH-60 accessories."
 quest_CarrierChallenge02_subtitle,"Gather resources for the UH-60 accessories."
 
-quest_CarrierChallenge03,"Gather more UH-60 Parts 3/6"
+quest_CarrierChallenge03,"Gather more UH-60 Parts - 2"
 quest_CarrierChallenge03_offer,"Gather resources for the UH-60 chassis."
 quest_CarrierChallenge03_description,"Gather resources for the UH-60 chassis."
 quest_CarrierChallenge03_subtitle,"Gather resources for the UH-60 chassis."
 
-quest_CarrierChallenge04,"Restore power to the Bridge! 4/6"
+quest_CarrierChallenge04,"Restore power to the Bridge!"
 quest_CarrierChallenge04_offer,"Restore power to the Bridge."
 quest_CarrierChallenge04_description,"Restore power to the Bridge."
 quest_CarrierChallenge04_subtitle,"Restore power to the Bridge."
 
-quest_CarrierChallenge05,"Assemble UH-60 Parts 5/6"
+quest_CarrierChallenge05,"Assemble UH-60 Parts"
 quest_CarrierChallenge05_offer,"Gather all the parts to craft a UH-60, and craft the UH-60."
 quest_CarrierChallenge05_description,"Gather all the parts to craft a UH-60, and craft the UH-60."
 quest_CarrierChallenge05_subtitle,"Craft the UH-60."
 
-quest_CarrierChallenge06,"Use UH-60 to escape 6/6"
+quest_CarrierChallenge06,"Use UH-60 to escape"
 quest_CarrierChallenge06_offer,"Fly! Fly, my pretty!! Trader Jen is your salvation!!"
 quest_CarrierChallenge06_description,"Escape the Carrier!"
 quest_CarrierChallenge06_subtitle,"Escape the Carrier!"
 
-Challenge Completion,"You made it!!"
-Challenge Completion_offer,"Challenge complete!"
-Challenge Completion_description,"Congratulations on escaping the Carrier!"
-Challenge Completion_subtitle,"Congratulations!"
+Challenge_Completion,"You made it!!"
+Challenge_Completion_offer,"Challenge complete!"
+Challenge_Completion_description,"Congratulations on escaping the Carrier!"
+Challenge_Completion_subtitle,"Congratulations!"
 
 Quest_Completion_tip_title,Completed The Aircraft Carrier Challenge
 Quest_Completion_tip,"Congratulations! \n\nYou have successfully completed the Aircraft Carrier challenge!"

@@ -1,5 +1,7 @@
 ﻿<configs>
 	
+	<remove xpath="/loot/lootgroup[@name='dyes']"/>
+
 	<!-- removes non-essential vehicle parts -->
 	<remove xpath="//lootgroup[@name='bicycleParts']//item[@name='vehicleBicycleChassis']"/>
 	<remove xpath="//lootgroup[@name='minibikeParts']//item[@name='vehicleMinibikeChassis']"/>

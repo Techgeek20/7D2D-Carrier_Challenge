@@ -1,0 +1,15 @@
+<config>
+		
+	<append xpath="//trader_item_group[@name='groupRangedAll']">
+		<item name="gunT0GrenadeLauncher" quality="1,5" />
+		<item name="gunT1GrenadeLauncher" quality="1,5" prob="0.4"/>
+		<item name="gunT2GrenadeLauncher" quality="1,5" prob="0.3"/>
+		<item name="gunT3GrenadeLauncher" quality="1,5" prob="0.2"/>
+	</append>
+
+	<append xpath="//trader_item_group[@name='ammoSupplies']">
+        <item name="resourceGrenadeTip" count="5,20"/>
+        <item name="resourceGrenadeCasing" count="5,20"/>
+	</append>
+
+</config>	

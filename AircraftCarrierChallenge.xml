@@ -3,89 +3,95 @@
     <ServerGroup Name="Aircraft Carrier" Logo="" Description="Can you escape the Aircraft Carrier?">
         <Server Name="Aircraft Carrier" Logo="">
             <Description>
-            	This mod is based on the Dishong Tower Challenge by Hells_Janitor
-            	Shout outs and thanks yous to the creators and mod authors of the Dishong Tower Challenge for allowing usage of their mods and code.
+				A mini overhaul mod for Alpha 21.
+				This mod pack was created for a solo or multiplayer challenge onboard a US Ford class carrier by_NAZ redesigned by Devilskut for A21.2 with code help from
+				Techgeek_20.
 
-CHANGELOG V 1.0.0:
-            	
-Zombie corpses no longer lootable - they now drop an entity-specific red loot bag.
-Tweaked container loot respawn - it now shows a timer for when the container will be lootable again.
-Removed non-essential vehicle parts from loot and crafting.
-Removed beds and bedrolls from crafting.
-Removed LCB from crafting.
-Removed treasure maps from loot.
-Acid can now be made in the campfire, but a beaker is a required tool. Can also be crafted cheaper in the chem station. Unlocked with Grease Monkey 4.
-Mod-specific loading screen tips.
-Localization tweaks.
-Perk books can now drop from zombies along with magazines. The chance of a perk book increases with the relevant perk points spent, just like skill magazines.
-Loot tables adjusted accordingly, so certain zombies have a chance to drop certain perk books, just like skill magazines.
-Removed Better Barter, Daring Adventurer and Charismatic Nature from the intellect skill tree.
-Number of Dukes/old cash from Businessman/Party Girl is increased, probability increased from 10% to 20%.
-Slight increase in oil shale from cement mixer loot.
-Increased chance of antibiotics from nurses per perk point spent in Physician, up to a max chance of 35%.
-Base chance of skill magazines from radiated zombies increased from 10% to 13%.
-Changed the quest requirements for gathering gyro parts to reflect maxed-out Grease Monkey (removed a possible soft-lock)
-Antibiotics loot probability from nurses now tied to Physician perk.
-Player placed workstations can be picked up with no need for a landclaim block. (Workstation MUST be empty of all tools, items, and materials for this to work)			
-									
-									
-									
-									THE AIRCRAFT CARRIER CHALLENGE:
-			Can you survive and escape the Aircraft Carrier, using nothing but what you can scavenge from the ship itself?
-						You have one life, one mission, one means of escape.
-						
-This challenge places you, a lone survivor, or a group of survivalists, in a menacing ship of death incarnate. Your only means of escape is to gather everything you need to be able to craft a UH-60 and make your escape from the flight deck to the nearby settlement. You have one life. Make it count.
 
- 
-	A mini overhaul mod, re-imagined for Alpha 21. One ship, one trader, one means of escape.
+				Notes about this mini-mod:
 
- 
+				Zombie corpses no longer lootable - they now drop an entity-specific red loot bag.
+				Tweaked container loot respawn - it now shows a timer for when the container will be lootable again.
+				Removed non-essential vehicle parts from loot and crafting.
+				Beds, Bedrolls, and L.C.B. recipes removed.
+				Removed treasure maps from loot.
+				Acid can now be made in the campfire, but a beaker is a required tool. Can also be crafted cheaper in the chem station. Unlocked with Grease Monkey 4.
+				Mod-specific loading screen tips.
+				Localization tweaks.
+				Perk books can now drop from zombies along with magazines. The chance of a perk book increases with the relevant perk points spent, just like skill magazines.
+				Loot tables adjusted accordingly, so certain zombies have a chance to drop certain perk books, just like skill magazines.
+				Removed Better Barter, Daring Adventurer and Charismatic Nature from the intellect skill tree.
+				Number of Dukes/old cash from Businessman/Party Girl is increased, probability increased from 10% to 20%.
+				Slight increase in oil shale from cement mixer loot.
+				Increased chance of antibiotics from nurses per perk point spent in Physician, up to a max chance of 35%.
+				Base chance of skill magazines from radiated zombies increased from 10% to 13%.
+				Changed the quest requirements for gathering UH-60 parts to reflect maxed-out Grease Monkey (removed a possible soft-lock)
+				Antibiotics loot probability from nurses now tied to Physician perk.
+				Player placed workstations can be picked up with no need for a landclaim block. (Workstation MUST be empty of all tools, items, and materials for this to work)
 
-Four custom worlds, each a different biome, so you can choose your starting "difficulty" - Forest, Desert, Snow, or the ultimate challenge, Wasteland.
 
-	Custom-edited Aircraft Carrier POI, giving you everything you need to be able to complete your quest.
 
-						Custom questline, guiding you on your way.
+				THE AIRCRAFT CARRIER CHALLENGE:
+				Can you survive and escape the Aircraft Carrier, using nothing but what you can scavenge from the carrier itself?
+				You have one life, one mission, one means of escape.
 
-		Custom HUD, and in-game options added for toggling crosshair visibility, health bar visibility, etc.
-					Pause the game, and look for "Video", then the "Customize" tab.
-					
-CHALLENGE RULES: 
+				This challenge places you, a lone hard core survivor, or a group of survivalists, in a menacing carrier of death incarnate.
 
-1: You must enter the Aircraft carrier immediately (being in the tent counts as being in) and cannot leave thereafter.
+				Your only means of escape is to gather everything you need to be able to craft a UH-60 and make your escape from the flight deck to a nearby settlement.
 
-2: The rubble on the ground around the ship is NOT part of the tower, and as such may NOT be used to support any structures, or to grow any crops, unless you can do this WITHOUT touching it.
+				A mini overhaul mod for Alpha 21. One carrier with traders and only one means of escape.
 
-3: You may build bridges off the side of the ship to reach things, but those bridges must support themselves and cannot touch the ground.
+				Four custom worlds, each a different biome, so you can choose your starting "difficulty" - Forest, Desert, Snow, or the ultimate challenge, Wasteland.
 
-4: You may NOT mine or dig under the ship.
+				Custom-edited Aircraft Carrier POI, giving you everything you need to be able to complete your quest.
 
-5: All default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days and turn airdrops OFF.
+				Custom questline, guiding you on your way.
 
-6: If you die, the game is over.
+				Custom HUD, and in-game options added for toggling crosshair visibility, health bar visibility, etc.
+				Pause the game, and look for "Video", then the "Customize" tab.
 
-7: You must survive until you are able to build a UH-60 and fly off the flight deck.
-			
-						Contributors:
-						DishongGameOptions 			-Author: w00kien00kie
-						DishongLootBags 			-Author: w00kien00kie
-						DishongPickupWorkstations 	-Author: w00kien00kie
-						Cleaner HUD					-Author: Frantic_Dan
-						KHA21-HPBars				-Author: Khaine
-						Khelldon Custom Menu 		-Author: Khelldon
-						WMMAvoidBloodmoon 			-Author: w00kien00kie
-						WMMLootRespawnTweak			-Author: w00kien00kie
-						WMMPersistGameOptions		-Author: w00kien00kie
-						WMMStaminaDehydrationFix	-Author: w00kien00kie
-						WMMStashBackpack			-Author: w00kien00kie
-						WMMVideoOptions				-Author: w00kien00kie
+				CHALLENGE RULES:
 
-						Additional thanks for permission to use following modlets by their respective creator(s):
-						UH-60						-Author: Bdubyah
-						
-For full details, check the forum post here: *No post*
-			
-            </Description>
+				1: You must enter the aircraft carrier immediately (being in the tent counts as being in) and cannot leave thereafter.
+
+				2: The rubble on the ground around the carrier is NOT part of the aircraft carrier, and as such may NOT be used to support any structures, or to grow any crops, unless you can do this WITHOUT touching it.
+
+				3: You may build bridges off the side of the carrier to reach things, but those bridges must support themselves and cannot touch the ground.
+
+				4: You may NOT mine or dig under the carrier.
+
+				5: All default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days and turn airdrops OFF.
+
+				6: If you die, the game is over.
+
+				7: You must survive until you are able to build a UH-60 and fly off the flight deck.
+
+				Contributors:
+				DishongGameOptions 			-Author: w00kien00kie
+				DishongLootBags 			-Author: w00kien00kie
+				DishongPickupWorkstations 	-Author: w00kien00kie
+				Cleaner HUD					-Author: Frantic_Dan
+				KHA21-HPBars				-Author: Khaine
+				Khelldon Custom Menu 		-Author: Khelldon
+				WMMAvoidBloodmoon 			-Author: w00kien00kie
+				WMMLootRespawnTweak			-Author: w00kien00kie
+				WMMPersistGameOptions		-Author: w00kien00kie
+				WMMStaminaDehydrationFix	-Author: w00kien00kie
+				WMMStashBackpack			-Author: w00kien00kie
+				WMMVideoOptions				-Author: w00kien00kie
+
+				Additional thanks for permission to use following modlets by their respective creator(s):
+				UH-60						-Author: Bdubyah
+				Military Blocks & Shrader971-SS-Explosive-Pack		-Author: Shrader971
+
+				This mod pack was created for a solo or multiplayer challenge onboard a US Ford class carrier by_NAZ and redesigned by Devilskut for A21.2 with code help from
+				Techgeek_20.
+
+				Shout outs and thanks to the mod authors and Hells_Janitor for the Dishong Tower Challenge and allowing usage of their mods and code.
+
+				For full details, check the forum post here: *No post*
+
+			</Description>
            	
            	<Version>Alpha21.2</Version>
             <EAC>Disabled</EAC>
