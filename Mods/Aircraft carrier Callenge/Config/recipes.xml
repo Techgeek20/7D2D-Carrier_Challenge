@@ -9,10 +9,13 @@
       <ingredient name="oldCash" count="1"/>
     </recipe>
 
+
+<!-- START disable of feathers from arrows and bolts
+
     <recipe name="resourceFeather" count="1"  >
       <ingredient name="ammoArrowStone" count="1"/>
     </recipe>
-	
+
 	<recipe name="resourceFeather" count="1"  >
       <ingredient name="ammoCrossbowBoltStone" count="1"/>
     </recipe>
@@ -24,6 +27,8 @@
 	<recipe name="resourceFeather" count="1"  >
       <ingredient name="ammoArrowIron" count="1"/>
     </recipe>
+
+END disable of feathers from arrows and bolts --> 
 
   <recipe name="ammoArrowStone" count="1">
     <ingredient name="ammoCrossbowBoltStone" count="1"/>

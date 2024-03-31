@@ -25,6 +25,7 @@
 		<quest id="quest_BasicSurvival1">
 
 			<property name="group_name_key" value="challenge_StartingCarrier"/>
+			<property name="name_key" value="challenge_StartingCarrier"/>
 			<property name="subtitle_key" value="challenge_StartingCarrier"/>
 			<property name="description_key" value="challenge_StartingCarrier_description"/>
 
@@ -86,6 +87,7 @@
 		<quest id="quest_CarrierChallenge01">
 
 			<property name="group_name_key" value="quest_CarrierChallenge01"/>
+			<property name="name_key" value="quest_CarrierChallenge01"/>
 			<property name="subtitle_key" value="quest_CarrierChallenge01"/>
 			<property name="description_key" value="Can you please find my supplies"/>
 			<property name="icon" value="ui_game_symbol_quest"/>
@@ -138,6 +140,7 @@
 		<quest id="quest_CarrierChallenge02">
 
 				<property name="group_name_key" value="quest_CarrierChallenge02"/>
+				<property name="name_key" value="quest_CarrierChallenge02"/>
 				<property name="subtitle_key" value="quest_CarrierChallenge02"/>
 				<property name="description_key" value="quest_CarrierChallenge02_description"/>
 				<property name="icon" value="ui_game_symbol_gyrocopter"/>
@@ -163,6 +166,7 @@
 		<quest id="quest_CarrierChallenge03">
 
 				<property name="group_name_key" value="quest_CarrierChallenge03"/>
+				<property name="name_key" value="quest_CarrierChallenge03"/>
 				<property name="subtitle_key" value="quest_CarrierChallenge03"/>
 				<property name="description_key" value="quest_CarrierChallenge03_description"/>
 				<property name="icon" value="ui_game_symbol_gyrocopter"/>
@@ -186,6 +190,7 @@
 		<quest id="quest_CarrierChallenge04">
 
 			<property name="group_name_key" value="quest_CarrierChallenge04"/>
+			<property name="name_key" value="quest_CarrierChallenge04"/>
 			<property name="subtitle_key" value="quest_CarrierChallenge04_subtitle"/>
 			<property name="description_key" value="quest_CarrierChallenge04_description"/>
 			<property name="icon" value="ui_game_symbol_quest" />
@@ -263,6 +268,7 @@
 		<quest id="quest_CarrierChallenge05">
 
 			<property name="group_name_key" value="quest_CarrierChallenge05"/>
+			<property name="name_key" value="quest_CarrierChallenge05"/>
 			<property name="subtitle_key" value="quest_CarrierChallenge05_subtitle"/>
 			<property name="description_key" value="quest_CarrierChallenge05_description"/>
 			<property name="icon" value="ui_game_symbol_gyrocopter"/>
@@ -288,6 +294,7 @@
 		<quest id="quest_CarrierChallenge06">
 
 			<property name="group_name_key" value="quest_CarrierChallenge06"/>
+			<property name="name_key" value="quest_CarrierChallenge06"/>
 			<property name="subtitle_key" value="quest_CarrierChallenge06"/>
 			<property name="description_key" value="quest_CarrierChallenge06_description"/>
 			<property name="icon" value="ui_game_symbol_gyrocopter"/>
@@ -316,9 +323,10 @@
 
 		<quest id="Completion">
 
-			<property name="group_name_key" value="Challenge Completion"/>
-			<property name="subtitle_key" value="Challenge Completion_subtitle"/>
-			<property name="description_key" value="Challenge Completion_description"/>
+			<property name="group_name_key" value="Challenge_Completion"/>
+			<property name="name_key" value="Challenge_Completion"/>
+			<property name="subtitle_key" value="Challenge_Completion_subtitle"/>
+			<property name="description_key" value="Challenge_Completion_description"/>
 			<property name="icon" value="ui_game_symbol_map_trader"/>
 			<property name="category" value="Congratulations!"/>
 			<property name="difficulty" value="easy"/>
