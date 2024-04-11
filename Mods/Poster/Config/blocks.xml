@@ -1,0 +1,27 @@
+<Config>
+
+	<append xpath="/blocks">
+	
+		<block name="APposter">
+			<property name="DescriptionKey" value="hiddenSafePaintingGroupDesc"/>
+			<property name="CustomIcon" value=""/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mglass"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/AP.unity3d?CarrierPoster.Prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<drop event="Destroy" name="resourceBrokenGlass" count="5,10"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<drop event="Destroy" name="resourceNail" count="1,2"/>
+			<property name="FilterTags" value="fdecor,fother"/>
+			<property name="SortOrder1" value="7000"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+	</append>
+
+</Config>

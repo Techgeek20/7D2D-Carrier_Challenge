@@ -13,7 +13,7 @@
   <property name="Zoning" value="any" />
   <property name="EditorGroups" value="any" />
   <property name="Tags" value="trader" />
-  <property name="QuestTags" value="trader" />
+  <property name="QuestTags" value="bandit" />
   <property class="IndexedBlockOffsets">
     <property class="Trader">
       <property name="0" value="3, 0, 1" />
