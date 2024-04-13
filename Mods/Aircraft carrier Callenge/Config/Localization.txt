@@ -247,7 +247,7 @@ dishongTowerBundleDesc,Starter items for the Aircraft carrier challenge.,,
 
 quest_CarrierChallenge,"Head to a trader"
 quest_CarrierChallenge_offer,"Find your way to a trader."
-quest_CarrierChallenge_description,"To find the trader, go through double doors behind tanks. Through cargo storage, then upstairs to briefing rooms."
+quest_CarrierChallenge_description,"To find the trader, go through orange roller door behind the tanks. Through cargo storage, then upstairs to briefing rooms."
 quest_CarrierChallenge_subtitle,"Find your trader."
 
 quest_CarrierChallenge01,"Fetch my supplies"

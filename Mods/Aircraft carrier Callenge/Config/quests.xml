@@ -15,7 +15,7 @@
 	    <remove xpath="/quests/quest[@id='tier3_buried_supplies']" />
 	
 	    <remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']" />
-	
+		
 	<!-- End Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
 
 	<append xpath="/quests">
@@ -255,7 +255,7 @@
 			</objective>
 
 			<reward type="Exp" value="5060"/>
-			<reward type="Item" id="casinoCoin" value="1400"/>
+			<reward type="Item" id="vehicleUH60accessories" />
 			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
@@ -281,42 +281,70 @@
 			<action type="TrackQuest"/>
 
 			<objective type="Craft" id="vehicleUH60chassis" value="1" phase="1"/>
-			<objective type="Craft" id="vehicleUH60accessories" value="1" phase="1"/>
+			<!-- <objective type="Craft" id="vehicleUH60accessories" value="1" phase="1"/> -->
 			<objective type="FetchKeep" id="smallEngine" value="2" phase="1"/>
 			<objective type="FetchKeep" id="carBattery" value="2" phase="1"/>
 			<objective type="FetchKeep" id="vehicleWheels" value="3" phase="1"/>
 			<objective type="Craft" id="vehicleUH60placeable" value="1" phase="2"/>
 
-			<reward type="Quest" id="quest_CarrierChallenge06"/>
-
+			<reward type="Quest" id="quest_CarrierChallenge06"/> 
+			
 		</quest>
-
 		<quest id="quest_CarrierChallenge06">
+			
+        <property name="name_key" value="quest_CarrierChallenge06" param1="name"/>
+		<property name="subtitle_key" value="quest_CarrierChallenge06"/>
+		<property name="description_key" value="quest_CarrierChallenge06"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_CarrierChallenge06" param1="offer"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="2" param1="difficulty"/>
+		<property name="statement_key" value="quest_infestation_statement"/>
+		<property name="response_key" value="quest_infestation_response"/>
+		<property name="login_rally_reset" value="true"/>
+		<!-- <property name="reward_choices_count" value="5" /> -->
+		<property name="extra_tags" value="infested" param1="extra_tags" />
+		<property name="shareable" value="false"/>
+		<property name="spawn_multiplier" value="2" param1="spawn_multiplier" />
+		<property name="gamestage_mod" value=".6" param1="gamestage_mod" />
+		<property name="gamestage_bonus" value="30" param1="gamestage_bonus" />
 
-			<property name="group_name_key" value="quest_CarrierChallenge06"/>
-			<property name="name_key" value="quest_CarrierChallenge06"/>
-			<property name="subtitle_key" value="quest_CarrierChallenge06"/>
-			<property name="description_key" value="quest_CarrierChallenge06_description"/>
-			<property name="icon" value="ui_game_symbol_gyrocopter"/>
-			<property name="repeatable" value="false"/>
-			<property name="category_key" value="quest"/>
-			<property name="offer_key" value="quest_CarrierChallenge06_offer"/>
-			<property name="difficulty" value="medium"/>
-			<property name="shareable" value="false"/>
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
 
-			<action type="TrackQuest"/>
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+			<property name="nav_object" value="quest" />
+			<property name="poi_tier" value="2" param1="poi_tier" />
+		</objective>
 
-			<objective type="Goto" id="trader" value="1" phase="1">
-				<property name="nav_object" value="go_to_trader" />
-			</objective>
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
 
-			<objective type="InteractWithNPC">
-				<property name="phase" value="1"/>
-				<property name="nav_object" value="return_to_trader" />
-				<property name="use_closest" value="true" />
-			</objective>
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+			<property name="nav_object" value="sleeper_volume"/>
+		</objective>
 
-			<reward type="Exp" value="500"/>
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<action type="UnlockPOI" >
+			<property name="phase" value="4"/>
+		</action>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+
+        	<!-- <reward type="Exp" value="500"/> -->
 			<reward type="Quest" id="Completion"/>
 
 		</quest>
