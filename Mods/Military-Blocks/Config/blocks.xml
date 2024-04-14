@@ -149,11 +149,11 @@
 		</block> -->
 
 		<block name="atvpuma">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?atvpuma.prefab"/>
 			<property name="MultiBlockDim" value="6,3,3"/>
@@ -165,9 +165,9 @@
 		</block>	
 
 		<block name="atvpumaS2">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?atvpumaStage2.prefab"/>
 			<property name="MultiBlockDim" value="6,3,3"/>
@@ -184,9 +184,9 @@
 		</block>
 
 		<block name="atvpumaS3">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?atvpumaStage3.prefab"/>
 			<property name="MultiBlockDim" value="6,3,3"/>
@@ -197,9 +197,9 @@
 		</block>
 
 		<block name="atvpumaS4">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?atvpumaStage4.prefab"/>
 			<property name="MultiBlockDim" value="6,3,3"/>
@@ -210,9 +210,9 @@
 		</block>
 
 		<block name="atvpumaS5">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?atvpumaStage5.prefab"/>
 			<property name="MultiBlockDim" value="6,3,3"/>
@@ -275,11 +275,11 @@
 		</block> -->
 
 		<block name="BTR80">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?BTR80A.prefab"/>
 			<property name="MultiBlockDim" value="6,3,3"/>
@@ -291,9 +291,9 @@
 		</block>	
 
 		<block name="BTR80AS2">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?BTR80AS1.prefab"/>
 			<property name="MultiBlockDim" value="6,3,3"/>
@@ -310,9 +310,9 @@
 		</block>
 
 		<block name="BTR80AS3">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?BTR80AS2.prefab"/>
 			<property name="MultiBlockDim" value="6,3,3"/>
@@ -328,11 +328,11 @@
 		</block>
 
 		<block name="MilitaryTrailer">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?MilitaryTrailer.prefab"/>
 			<property name="MultiBlockDim" value="5,3,3"/>
@@ -344,9 +344,9 @@
 		</block>	
 
 		<block name="MilitaryTrailerS2">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?MilitaryTrailerS1.prefab"/>
 			<property name="MultiBlockDim" value="5,3,3"/>
@@ -363,9 +363,9 @@
 		</block>
 
 		<block name="MilitaryTrailerS3">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?MilitaryTrailerS2.prefab"/>
 			<property name="MultiBlockDim" value="5,3,3"/>
@@ -381,11 +381,11 @@
 		</block>
 
 		<block name="U-Boat">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?U-Boat.prefab"/>
 			<property name="MultiBlockDim" value="5,3,3"/>
@@ -397,9 +397,9 @@
 		</block>	
 
 		<block name="U-BoatS2">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?U-BoatS1.prefab"/>
 			<property name="MultiBlockDim" value="5,3,3"/>
@@ -497,11 +497,11 @@
 		</block> -->
 
 		<block name="AIM-9 Sidewinder">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="utilityCart"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?AIM-9Sidewinder.prefab"/>
 			<property name="MultiBlockDim" value="1,1,6"/>
@@ -512,11 +512,11 @@
 		</block>	
 
 		<block name="AIM-7 Sparrow">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="toolbox"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?AIM-7Sparrow.prefab"/>
 			<property name="MultiBlockDim" value="1,1,6"/>
@@ -527,11 +527,11 @@
 		</block>	
 
 		<block name="AGM-114 Hellfire">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="gasBarrel"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?AGM-114Hellfire.prefab"/>
 			<property name="MultiBlockDim" value="1,1,6"/>
@@ -542,11 +542,11 @@
 		</block>	
 
 		<block name="AGM-65Maverick">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="mopowerShelves"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?AGM-65Maverick.prefab"/>
 			<property name="MultiBlockDim" value="1,1,6"/>
@@ -557,11 +557,11 @@
 		</block>	
 
 		<block name="HJ-10">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="mopowerShelves"/>
-			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>	
+			<property name="Material" value="Mmetal"/>	
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?HJ-10.prefab"/>
 			<property name="MultiBlockDim" value="1,1,6"/>
@@ -572,11 +572,11 @@
 		</block>	
 
 		<block name="JDAM">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="mopowerShelves"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?JDAM.prefab"/>
 			<property name="MultiBlockDim" value="1,1,6"/>
@@ -587,11 +587,11 @@
 		</block>	
 
 		<block name="JDAMs2">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?JDAMs2.prefab"/>
 			<property name="MultiBlockDim" value="1,1,6"/>
@@ -602,11 +602,11 @@
 		</block>	
 
 		<block name="PL-11 (2)">
+			<property name="CreativeMode" value="None"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="mopowerShelves"/>
 			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Dev"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?PL-11(2).prefab"/>
 			<property name="MultiBlockDim" value="1,1,6"/>

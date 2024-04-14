@@ -1,0 +1,17 @@
+<Config>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoRocket']">
+
+	    <item name="resourceRocketTip" loot_prob_template="high" count="12,24"/>
+		<item name="resourceRocketCasing" loot_prob_template="high" count="12,24"/>
+		<item name="resourceGunPowderBundle" loot_prob_template="high" count="12,24"/>
+		<item name="ammoGasCan" loot_prob_template="high" count="12,24"/>
+		<item name="resourceLeadBundle" loot_prob_template="high" count="12,24"/>
+		<item name="resourceScrapPolymers" loot_prob_template="high" count="12,24"/>
+		<item name="resourceElectricParts" loot_prob_template="high" count="12,24"/>
+		<item name="resourceScrapIron" loot_prob_template="high" count="12,24"/>
+		<item name="resourceMechanicalParts" loot_prob_template="high" count="12,24"/>
+		
+	</append>
+
+</Config>

@@ -3,6 +3,7 @@
     <append xpath="item_modifiers">
 
         <item_modifier name="modArmorInsulater" installable_tags="pocketMod" modifier_tags="thermal" blocked_tags="noMods" type="attachment">
+            <property name="CreativeMode" value="None"/>
             <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
             <property name="UnlockedBy" value="modArmorInsulatedLinerSchematic"/>
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
@@ -17,6 +18,7 @@
         </item_modifier>
 
         <item_modifier name="modArmorAdvInsulater" installable_tags="pocketMod" modifier_tags="thermal" blocked_tags="noMods" type="attachment">
+            <property name="CreativeMode" value="None"/>
             <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
             <property name="UnlockedBy" value="modArmorInsulatedLinerSchematic"/>
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
@@ -31,6 +33,7 @@
         </item_modifier>
 
         <item_modifier name="modArmorAdvInsulatedLiner" installable_tags="armor" modifier_tags="thermal" blocked_tags="noMods" type="attachment">
+            <property name="CreativeMode" value="None"/>
             <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
             <property name="UnlockedBy" value="modArmorInsulatedLinerSchematic"/>
             <property name="CustomIcon" value="modArmorInsulatedLiner"/>
@@ -46,6 +49,7 @@
         </item_modifier>
 
         <item_modifier name="modArmorAdvCoolingMesh" installable_tags="armor" modifier_tags="temperature" blocked_tags="noMods" type="attachment">
+            <property name="CreativeMode" value="None"/>
             <property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
             <property name="UnlockedBy" value="modArmorCoolingMeshSchematic"/>
             <property name="CustomIcon" value="modArmorCoolingMesh"/>
