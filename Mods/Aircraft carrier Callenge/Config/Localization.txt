@@ -161,6 +161,9 @@ zombieSteve,Frantic_Dan
 zombieSteveFeral,Feral Frantic_Dan
 zombieSteveRadiated,Radiated Frantic_Dan
 
+zombieSteveCrawler,PitchieB
+zombieSteveCrawlerFeral,Feral PitchieB
+
 animalBossGrace,SpeedyPig69
 
 animalWolf,Korbulas
