@@ -6,7 +6,7 @@
   <property name="RotationToFaceNorth" value="2" />
   <property name="YOffset" value="-1" />
   <property name="AllowedTownships" value="city,town,rural,wilderness" />
-  <property name="TraderArea" value="True" />
+  <property name="TraderArea" value="False" />
   <property name="TraderAreaProtect" value="0,0,0" />
   <property name="TraderAreaTeleportSize" value="33, 32, 33" />
   <property name="TraderAreaTeleportCenter" value="13, 0, 1" />

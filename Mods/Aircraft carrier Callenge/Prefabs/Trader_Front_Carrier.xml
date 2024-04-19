@@ -27,15 +27,15 @@
   <property name="TraderArea" value="False" />
   <property name="QuestTags" value="wasteland, desert, snow, pineforest" />
   <property class="Stats">
-    <property name="TotalVertices" value="16707941" />
-    <property name="TotalTriangles" value="6295025" />
+    <property name="TotalVertices" value="17372637" />
+    <property name="TotalTriangles" value="6646129" />
     <property class="BlockEntities">
-      <property name="Vertices" value="14938618" />
-      <property name="Triangles" value="5146427" />
+      <property name="Vertices" value="15505634" />
+      <property name="Triangles" value="5425973" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="1712819" />
-      <property name="Triangles" value="1064434" />
+      <property name="Vertices" value="1799265" />
+      <property name="Triangles" value="1117956" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
@@ -58,8 +58,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes6">
-      <property name="Vertices" value="47558" />
-      <property name="Triangles" value="78380" />
+      <property name="Vertices" value="58792" />
+      <property name="Triangles" value="96416" />
     </property>
   </property>
   <property class="IndexedBlockOffsets">
