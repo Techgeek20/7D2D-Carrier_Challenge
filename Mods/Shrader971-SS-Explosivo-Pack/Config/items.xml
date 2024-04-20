@@ -3,6 +3,7 @@
 	<append xpath="/items">
 
         <item name="gunT0GrenadeLauncher">
+            <property name="CreativeMode" value="None"/>
             <property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,launcher,barrelAttachments,sideAttachments,smallTopAttachments,attPerception,perkDemolitionsExpert,canHaveCosmetic,modGunBarrelExtender,modGunSoundSuppressorSilencer,modGunLaserSight,modGunFlashlight"/>
             <property name="DisplayType" value="rangedLauncher"/>
             <property name="HoldType" value="84"/>
@@ -90,6 +91,7 @@
         </item>
 
         <item name="gunT1GrenadeLauncher">
+            <property name="CreativeMode" value="None"/>
             <property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,modGunBarrelExtender,modGunSoundSuppressorSilencer,modGunLaserSight,modGunFlashlight"/>
             <property name="DisplayType" value="rangedLauncher"/>
             <property name="HoldType" value="56"/>
@@ -178,6 +180,7 @@
         </item>
             
         <item name="gunT2GrenadeLauncher">
+            <property name="CreativeMode" value="None"/>
             <property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,modGunMagazineExtender,modGunBarrelExtender,modGunSoundSuppressorSilencer,modGunLaserSight,modGunFlashlight"/>
             <property name="DisplayType" value="rangedLauncher"/>
             <property name="HoldType" value="5"/>
@@ -266,6 +269,7 @@
         </item>
 
         <item name="gunT3GrenadeLauncher">
+            <property name="CreativeMode" value="None"/>
             <property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,modGunBarrelExtender,modGunSoundSuppressorSilencer,modGunLaserSight,modGunFlashlight"/>
             <property name="DisplayType" value="rangedLauncher"/>
             <property name="HoldType" value="76"/>
@@ -354,6 +358,7 @@
         </item>
 
         <item name="40mmGAmmo">
+            <property name="CreativeMode" value="None"/>
             <property name="Tags" value="ammo"/>
             <property name="DisplayType" value="ammoLauncher"/>
 	        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
@@ -384,6 +389,7 @@
         </item>
 
         <item name="40mmGHEAmmo">
+            <property name="CreativeMode" value="None"/>
             <property name="Tags" value="ammo"/>
             <property name="UnlockedBy" value="craftingExplosives"/>
 	        <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
@@ -414,6 +420,7 @@
         </item>
 
         <item name="resourceGrenadeTip">
+            <property name="CreativeMode" value="None"/>
             <property name="UnlockedBy" value="craftingExplosives"/><!-- perkDemolitionsExpert,gunExplosivesT3RocketLauncherSchematic, -->
             <property name="HoldType" value="45"/>
             <property name="CustomIcon" value="resourceRocketTip"/>
@@ -426,6 +433,7 @@
         </item>
 
         <item name="resourceGrenadeCasing">
+            <property name="CreativeMode" value="None"/>
             <property name="UnlockedBy" value="craftingExplosives"/><!-- perkDemolitionsExpert,gunExplosivesT3RocketLauncherSchematic, -->
             <property name="HoldType" value="45"/>
             <property name="CustomIcon" value="resourceRocketCasing"/>
