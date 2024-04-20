@@ -24,3 +24,5 @@ Khelldon-CustomMenu  Link: https://7daystodiemods.com/custom-menu-art/
 UH-60 by Bdubyah - https://7daystodiemods.com/uh-60/
 
 OCB Map Waypoints (A21) by obcMaurice - https://www.nexusmods.com/7daystodie/mods/1883 or https://github.com/OCB7D2D/OcbWayPointIcons
+
+Found a bug and wish to let us know?  Head to https://github.com/Techgeek20/7D2D-Carrier_Challenge/issues and open an issues ticket.
