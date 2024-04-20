@@ -75,6 +75,11 @@
 
 </insertafter>
 
+<insertafter xpath="/blocks/block[@name]/property[1]">
+		<property name="CreativeMode" value="None"/>
+	</insertafter>
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>
+
 	<set xpath="//block[@name='terrDirt']//drop[1]/@count">10</set>
 	
 	<set xpath="//block[@name='glassBulletproofMaster']/property[@name='LightOpacity']/@value">0</set>
