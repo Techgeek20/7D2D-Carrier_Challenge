@@ -4,9 +4,12 @@
 		<recipe name="vehicleUH60chassis" count="1" craft_area="workbench" craft_time="60" tags="learnable,workbenchCrafting">
 			<ingredient name="resourceSpring" count="80"/>
 			<ingredient name="resourceForgedSteel" count="700"/>
-	        <ingredient name="resourceMechanicalParts" count="100"/>
+	        <ingredient name="resourceMechanicalParts" count="150"/>
 	        <ingredient name="resourceDuctTape" count="120"/>
 	        <ingredient name="resourceMetalPipe" count="250"/>
+			<ingredient name="resourceLeather" count="125"/>
+			<ingredient name="resourceElectricParts" count="120"/>
+			<ingredient name="resourceHeadlight" count="20"/>
 		</recipe>
 		
 		<!-- <recipe name="vehicleUH60accessories" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">

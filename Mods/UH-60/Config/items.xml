@@ -1,7 +1,6 @@
 <configs>
 	<append xpath="/items">
 		<item name="vehicleUH60chassis">
-			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="UnlockedBy" value="craftingVehicles"/>
 			<property name="CustomIcon" value="UH60chassis"/>
@@ -10,7 +9,6 @@
 			<property name="TraderStageTemplate" value="vehicleTier4"/>
 		</item>
 		<item name="vehicleUH60accessories">
-			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="vehicleWheels"/>
 			<property name="UnlockedBy" value="craftingVehicles"/>
 			<property name="CustomIcon" value="UH60accessories"/>
@@ -19,7 +17,6 @@
 			<property name="TraderStageTemplate" value="vehicleTier4"/>
 		</item>
 		<item name="vehicleUH60placeable">
-			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="vehicleGyrocopterPlaceable"/>
 			<property name="Tags" value="vehicle,vengine,vfuel,vlight,canHaveCosmetic"/>
 			<property name="CustomIcon" value="UH60"/>
