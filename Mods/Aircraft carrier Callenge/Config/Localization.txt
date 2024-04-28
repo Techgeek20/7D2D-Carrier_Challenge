@@ -87,7 +87,8 @@ spearsSkillMagazineDT,Sharp Sticks
 roboticsSkillMagazineDT,Tech Planet
 explosivesSkillMagazineDT,Explosive Magazine
 
-
+npcTraderJen, Dawnrox
+npcTraderJoel, Shadow_Floodlight
 
 zombieBiker,Raziel_MacCloud
 zombieBikerFeral,Feral Raziel_MacCloud
@@ -101,9 +102,9 @@ zombieBurnt,FlameWizo
 zombieBurntFeral,Feral FlameWizo
 zombieBurntRadiated,Radiated FlameWizo
 
-zombieDarlene,Loveshack
-zombieDarleneFeral,Feral Loveshack
-zombieDarleneRadiated,Radiated Loveshack
+zombieDarlene,Loveshack65
+zombieDarleneFeral,Feral Loveshack65
+zombieDarleneRadiated,Radiated Loveshack65
 
 zombieJanitor,HellsJanitorTV
 zombieJanitorFeral,Feral HellsJanitorTV
@@ -113,9 +114,9 @@ zombieLab,CharmCuddler
 zombieLabFeral,Feral CharmCuddler
 zombieLabRadiated,Radiated CharmCuddler
 
-zombieLumberjack,HardBargain
-zombieLumberjackFeral,Feral HardBargain
-zombieLumberjackRadiated,Radiated HardBargain
+zombieLumberjack,Zenn5150
+zombieLumberjackFeral,Feral Zenn5150
+zombieLumberjackRadiated,Radiated Zenn5150
 
 zombieMaleHazmat,Riven
 zombieMaleHazmatFeral,Feral Riven
@@ -182,16 +183,16 @@ animalSnake,Danger Noodle
 animalSnakeRadiated,Spicy Danger Noodle
 
 zombieUtilityWorker,Seamen
-zombieUtilityWorkerRadiated,Spicy Seamen
-zombieUtilityFeral,Fast Seamen
+zombieUtilityWorkerRadiated,Major Johnson
+zombieUtilityFeral,Private Willie
 
 zombieArlene,DeaditeGirl
-zombieArleneFeral, Feral DeaditeGirl
+zombieArleneFeral,Feral DeaditeGirl
 zombieArleneRadiated,Radiated DeaditeGirl
 
-zombieSpider,NuttyMonkey
-zombieSpiderFeral,Feral NuttyMonkey
-zombieSpiderRadiation, Radiated NuttyMonkey
+zombieSpider,NuttyMonkey15
+zombieSpiderFeral,Feral NuttyMonkey15
+zombieSpiderRadiation,Radiated NuttyMonkey15
 
 zombieScreamer,MoonLuna
 zombieScreamerFeral,Feral MoonLuna
@@ -204,6 +205,10 @@ zombieSkateboarderRadiated,Radiated TylerGMS
 zombieFatHawaiian,Shrader
 zombieFatHawaiianFeral,Feral Shrader
 zombieFatHawaiianRadiated,Radiated Shrader
+
+zombieFemaleFat,GizmosGifts
+zombieFemaleFatFeral,Feral GizmosGifts
+zombieFemaleFatRadiated,Radiated GizmosGifts
 
 loadingTipAircraft1,"All seed crafting is unlocked by default, and some seeds only require a couple of food items to make. There are NO usuable farmplots in the ship ..."
 loadingTipAircraft1_title,Seeds asshole
@@ -279,7 +284,7 @@ quest_CarrierChallenge05_description,"Gather all the parts to craft a UH-60, and
 quest_CarrierChallenge05_subtitle,"Craft the UH-60."
 
 quest_CarrierChallenge06,"Use UH-60 to escape"
-quest_CarrierChallenge06_offer,"Fly! Fly, my pretty!! Trader Jen is your salvation!!"
+quest_CarrierChallenge06_offer,"Fly! Fly, my pretty!! Trader Joel is your salvation!!"
 quest_CarrierChallenge06_description,"Escape the Carrier!"
 quest_CarrierChallenge06_subtitle,"Escape the Carrier!"
 
