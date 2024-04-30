@@ -27,15 +27,15 @@
   <property name="TraderArea" value="False" />
   <property name="QuestTags" value="wasteland, desert, snow, pineforest" />
   <property class="Stats">
-    <property name="TotalVertices" value="17376115" />
-    <property name="TotalTriangles" value="6646899" />
+    <property name="TotalVertices" value="17376969" />
+    <property name="TotalTriangles" value="6647757" />
     <property class="BlockEntities">
-      <property name="Vertices" value="15509018" />
-      <property name="Triangles" value="5426697" />
+      <property name="Vertices" value="15509916" />
+      <property name="Triangles" value="5427577" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="1799359" />
-      <property name="Triangles" value="1118002" />
+      <property name="Vertices" value="1799435" />
+      <property name="Triangles" value="1118040" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
@@ -50,8 +50,8 @@
       <property name="Triangles" value="4180" />
     </property>
     <property class="ChunkMeshes4">
-      <property name="Vertices" value="3208" />
-      <property name="Triangles" value="1604" />
+      <property name="Vertices" value="3088" />
+      <property name="Triangles" value="1544" />
     </property>
     <property class="ChunkMeshes5">
       <property name="Vertices" value="0" />
@@ -79,6 +79,9 @@
     </property>
     <property class="FetchContainer">
       <property name="0" value="105, 7, 53" />
+    </property>
+    <property class="Rally">
+      <property name="0" value="104, 21, 80" />
     </property>
   </property>
 </prefab>
