@@ -281,10 +281,10 @@ quest_CarrierChallenge04_subtitle,"Restore power to the Bridge."
 quest_CarrierChallenge05,"Assemble UH-60 Parts"
 quest_CarrierChallenge05_offer,"Gather all the parts to craft a UH-60, and craft the UH-60."
 quest_CarrierChallenge05_description,"Gather all the parts to craft a UH-60, and craft the UH-60."
-quest_CarrierChallenge05_subtitle,"Craft the UH-60."
+quest_CarrierChallenge05_subtitle,"Go help Trader Joel."
 
-quest_CarrierChallenge06,"Use UH-60 to escape"
-quest_CarrierChallenge06_offer,"Fly! Fly, my pretty!! Trader Joel is your salvation!!"
+quest_CarrierChallenge06,"Go help Trader Joel"
+quest_CarrierChallenge06_offer,"Fly! Fly, my pretty!! Trader Joel needs help!!"
 quest_CarrierChallenge06_description,"Escape the Carrier!"
 quest_CarrierChallenge06_subtitle,"Escape the Carrier!"
 

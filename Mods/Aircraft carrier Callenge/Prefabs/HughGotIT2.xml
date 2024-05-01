@@ -14,12 +14,17 @@
   <property name="EditorGroups" value="any" />
   <property name="Tags" value="trader" />
   <property name="QuestTags" value="bandit" />
+  <property class="IndexedBlockOffsets">
+    <property class="Trader">
+      <property name="0" value="3, 0, 1" />
+    </property>
+  </property>
   <property class="Stats">
-    <property name="TotalVertices" value="343168" />
-    <property name="TotalTriangles" value="83092" />
+    <property name="TotalVertices" value="351031" />
+    <property name="TotalTriangles" value="87457" />
     <property class="BlockEntities">
-      <property name="Vertices" value="343025" />
-      <property name="Triangles" value="83001" />
+      <property name="Vertices" value="350888" />
+      <property name="Triangles" value="87366" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="143" />
