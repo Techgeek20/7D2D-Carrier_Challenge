@@ -1,56 +1,184 @@
 <Config>
 
-	<append xpath="/blocks">	
+		<append xpath="/blocks">
+			<block name="ApacheBlock">
+				<property name="Material" value="Mmetal"/>
+				<property name="Class" value="CarExplodeLoot"/>
+				<!-- cars explode when destroyed by a tool without harvest settings -->
+				<!-- <property name="CustomIcon" value=""/> -->
+				<property name="CreativeMode" value="Dev"/>
+				<property name="ItemTypeIcon" value="explosion"/>
+				<property name="LootList" value="cars"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="Model" value="#@modfolder:Resources/AircraftCarrierBlocks.unity3d?ApacheBlock2.prefab"/>
+				<property name="Place" value="TowardsPlacer"/>
+				<property name="ModelOffset" value="0,0,0"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="MultiBlockDim" value="10,5,8"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="ShowModelOnFall" value="false"/>
+				<property name="PassThroughDamage" value="true"/>
+				<property name="DowngradeBlock" value="ApacheUpgradeBlock"/>
+				<drop event="Harvest" name="resourceHeadlight" count="0,1" prob="0.2" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceLeather" count="1,3" prob="0.2" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceScrapIron" count="5,10" tag="allHarvest"/>
+				<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+				<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+				<drop event="Harvest" name="ammoGasCan" count="12,125" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
+				<drop event="Harvest" name="resourceScrapIron" count="9,18" tag="allHarvest"/>
+				<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.5" tag="salvageHarvest"/>
+				<drop event="Harvest" name="ammoGasCan" count="12,125" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.45" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceOil" count="0,2" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceSpring" count="1,3" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceScrapIron" count="6,10" tag="allHarvest"/>
+				<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+				<drop event="Destroy" count="0"/>
+				<property name="MaxDamage" value="1000"/>
+				<property name="BigDecorationRadius" value="5"/>
+				<property name="CanDecorateOnSlopes" value="false"/>
+				<property class="Explosion">
+					<property name="ParticleIndex" value="4"/>
+					<property name="RadiusBlocks" value="3.5"/>
+					<property name="BlockDamage" value="500"/>
 
-		<!-- <block name="Apache">
-			<property name="DescriptionKey" value="furnitureGroupDesc"/>
-            <property name="Class" value="Loot"/>
-	        <property name="LootList" value="cars"/>
-			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?ApacheBlock.prefab"/>
-			<property name="MultiBlockDim" value="18,5,8"/>
-			<property name="ModelOffset" value="0,0,0"/>
-            <property name="DowngradeBlock" value="ApacheS2"/>
-            <drop event="Destroy" name="resourceCloth" count="1,3"/>
-			<property name="IsTerrainDecoration" value="true"/>
-            <property name="FilterTags" value="MC_helpers,SC_helperOutdoor,A21_NEW"/>
-		</block>	
+					<property name="RadiusEntities" value="5"/>
+					<property name="EntityDamage" value="250"/>
+				</property>
+				<property name="PlacementDistance" value="6"/>
+				<property name="FilterTags" value="MC_building,SC_automotive"/>
+			</block>
+			<block name="ApacheBlock2 ">
+				<property name="Material" value="Mmetal"/>
+				<property name="Class" value="CarExplodeLoot"/>
+				<!-- cars explode when destroyed by a tool without harvest settings -->
+				<!-- <property name="CustomIcon" value=""/> -->
+				<property name="CreativeMode" value="Dev"/>
+				<property name="ItemTypeIcon" value="explosion"/>
+				<property name="LootList" value="cars"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="Model" value="#@modfolder:Resources/AircraftCarrierBlocks.unity3d?ApacheBlock2.prefab"/>
+				<property name="Place" value="TowardsPlacer"/>
+				<property name="ModelOffset" value="0,0,0"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="MultiBlockDim" value="10,5,8"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="ShowModelOnFall" value="false"/>
+				<property name="PassThroughDamage" value="true"/>
+				<property name="DowngradeBlock" value="ApacheUpgradeBlock"/>
+				<drop event="Harvest" name="resourceHeadlight" count="0,1" prob="0.2" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceLeather" count="1,3" prob="0.2" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceScrapIron" count="5,10" tag="allHarvest"/>
+				<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+				<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+				<drop event="Harvest" name="ammoGasCan" count="12,125" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
+				<drop event="Harvest" name="resourceScrapIron" count="9,18" tag="allHarvest"/>
+				<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.5" tag="salvageHarvest"/>
+				<drop event="Harvest" name="ammoGasCan" count="12,125" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.45" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceOil" count="0,2" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceSpring" count="1,3" tag="salvageHarvest"/>
+				<drop event="Harvest" name="resourceScrapIron" count="6,10" tag="allHarvest"/>
+				<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+				<drop event="Destroy" count="0"/>
+				<property name="MaxDamage" value="1000"/>
+				<property name="BigDecorationRadius" value="5"/>
+				<property name="CanDecorateOnSlopes" value="false"/>
+				<property class="Explosion">
+					<property name="ParticleIndex" value="4"/>
+					<property name="RadiusBlocks" value="3.5"/>
+					<property name="BlockDamage" value="500"/>
 
-		<block name="ApacheS2">
-			<property name="DescriptionKey" value="furnitureGroupDesc"/>
-			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?ApacheBlockStage2.prefab"/>
-			<property name="MultiBlockDim" value="18,5,8"/>
-			<property name="ModelOffset" value="0,0,0"/>
-            <property name="ImposterDontBlock" value="true"/>
-            <property name="WaterFlow" value="permitted"/>
-            <property name="Place" value="TowardsPlacer"/>
-            <property name="PlacementDistance" value="8"/>
-            <property name="BigDecorationRadius" value="5"/>
-            <property name="DowngradeBlock" value="ApacheS3"/>
-            <drop event="Destroy" name="resourceCloth" count="1,3"/>
-			<property name="IsTerrainDecoration" value="true"/>
-            <property name="FilterTags" value="MC_helpers,SC_helperOutdoor,A21_NEW"/>
-		</block>
+					<property name="RadiusEntities" value="5"/>
+					<property name="EntityDamage" value="250"/>
+				</property>
+				<property name="PlacementDistance" value="6"/>
+				<property name="FilterTags" value="MC_building,SC_automotive"/>
+			</block>
 
-		<block name="ApacheS3">
-			<property name="DescriptionKey" value="furnitureGroupDesc"/>
-			<property name="Material" value="Mmetal"/>
-            <property name="CreativeMode" value="Player"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?ApacheBlockStage3.prefab"/>
-			<property name="MultiBlockDim" value="18,5,8"/>
-			<property name="ModelOffset" value="0,0,0"/>
-            <property name="DowngradeBlock" value="ApacheS4"/>
-            <drop event="Destroy" name="resourceCloth" count="1,3"/>
-			<property name="IsTerrainDecoration" value="true"/>
-		</block>
+			<block name="ApacheUpgradeBlock">
+				<property name="Material" value="Mmetal"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="#Entities/Vehicles?Car/car_tirePrefab.prefab"/>
+				<property name="Place" value="TowardsPlacerInverted"/>
+				<property name="Path" value="solid"/>
+				<property name="ImposterExchange" value="imposterBlock" param1="2"/>
+				<property name="CanMobsSpawnOn" value="false"/>
+				<property name="Class" value="PlantGrowing"/>
+				<property name="StabilitySupport" value="false"/>
+				<property name="MaxDamage" value="50000"/>
+				<property name="PlantGrowing.Next" value="Apache"/>
+				<property name="PlantGrowing.GrowthRate" value="0.1"/>
+				<property name="PlantGrowing.FertileLevel" value="0"/>
+				<property name="PlantGrowing.IsRandom" value="false"/>
+				<property name="PlantGrowing.LightLevelGrow" value="0"/>
+				<property name="PlantGrowing.LightLevelStay" value="0"/>
+				<property name="PlantGrowing.GrowIfAnythinOnTop" value="true"/>
+				<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+				<drop event="Fall" name="ApacheUpgradeBlock" count="1" prob="1"/>
+				<property class="RepairItems">
+					<property name="resourceScrapIron" value="10"/>
+				</property>
+				<drop event="Destroy" name="ApacheUpgradeBlock" count="1" />
+				<property name="FilterTags" value="MC_building,SC_electrical"/>
+				<property name="SortOrder1" value="70e3"/>
+			</block>
+			<block name="Apache">
+				<property name="DescriptionKey" value="furnitureGroupDesc"/>
+				<property name="Class" value="Loot"/>
+				<property name="LootList" value="cars"/>
+				<property name="Material" value="Mmetal"/>
+				<property name="CreativeMode" value="Dev"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?ApacheBlock.prefab"/>
+				<property name="MultiBlockDim" value="18,5,8"/>
+				<property name="ModelOffset" value="0,0,0"/>
+				<property name="DowngradeBlock" value="ApacheS2"/>
+				<drop event="Destroy" name="resourceCloth" count="1,3"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="FilterTags" value="MC_helpers,SC_helperOutdoor,A21_NEW"/>
+			</block>
 
-		<block name="ApacheS4">
+			<block name="ApacheS2">
+				<property name="DescriptionKey" value="furnitureGroupDesc"/>
+				<property name="Material" value="Mmetal"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?ApacheBlockStage2.prefab"/>
+				<property name="MultiBlockDim" value="18,5,8"/>
+				<property name="ModelOffset" value="0,0,0"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="WaterFlow" value="permitted"/>
+				<property name="Place" value="TowardsPlacer"/>
+				<property name="PlacementDistance" value="8"/>
+				<property name="BigDecorationRadius" value="5"/>
+				<property name="DowngradeBlock" value="ApacheS3"/>
+				<drop event="Destroy" name="resourceCloth" count="1,3"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="FilterTags" value="MC_helpers,SC_helperOutdoor,A21_NEW"/>
+			</block>
+
+			<block name="ApacheS3">
+				<property name="DescriptionKey" value="furnitureGroupDesc"/>
+				<property name="Material" value="Mmetal"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?ApacheBlockStage3.prefab"/>
+				<property name="MultiBlockDim" value="18,5,8"/>
+				<property name="ModelOffset" value="0,0,0"/>
+				<drop event="Destroy" name="resourceCloth" count="1,3"/>
+				<property name="IsTerrainDecoration" value="true"/>
+			</block>
+
+			<!-- <block name="ApacheS4">
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
 			<property name="Material" value="Mmetal"/>
             <property name="CreativeMode" value="Player"/>
@@ -73,7 +201,7 @@
 			<property name="ModelOffset" value="0,0,0"/>
             <drop event="Destroy" name="resourceCloth" count="1,3"/>
 			<property name="IsTerrainDecoration" value="true"/>
-		</block>
+		</block> -->
 
 		<block name="Raptor">
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -149,7 +277,7 @@
 		</block> -->
 
 		<block name="atvpuma">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
@@ -275,7 +403,7 @@
 		</block> -->
 
 		<block name="BTR80">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
@@ -328,7 +456,7 @@
 		</block>
 
 		<block name="MilitaryTrailer">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
@@ -381,7 +509,7 @@
 		</block>
 
 		<block name="U-Boat">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
 	        <property name="LootList" value="cars"/>
@@ -497,10 +625,10 @@
 		</block> -->
 
 		<block name="AIM-9 Sidewinder">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
-	        <property name="LootList" value="utilityCart"/>
+	        <property name="LootList" value="ACmunitions"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?AIM-9Sidewinder.prefab"/>
@@ -512,10 +640,10 @@
 		</block>	
 
 		<block name="AIM-7 Sparrow">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
-	        <property name="LootList" value="toolbox"/>
+	        <property name="LootList" value="ACmunitions"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?AIM-7Sparrow.prefab"/>
@@ -527,10 +655,10 @@
 		</block>	
 
 		<block name="AGM-114 Hellfire">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
-	        <property name="LootList" value="gasBarrel"/>
+	        <property name="LootList" value="ACmunitions"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?AGM-114Hellfire.prefab"/>
@@ -542,10 +670,10 @@
 		</block>	
 
 		<block name="AGM-65Maverick">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
-	        <property name="LootList" value="mopowerShelves"/>
+	        <property name="LootList" value="ACmunitions"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?AGM-65Maverick.prefab"/>
@@ -557,10 +685,10 @@
 		</block>	
 
 		<block name="HJ-10">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
-	        <property name="LootList" value="mopowerShelves"/>
+	        <property name="LootList" value="ACmunitions"/>
 			<property name="Material" value="Mmetal"/>	
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?HJ-10.prefab"/>
@@ -572,10 +700,10 @@
 		</block>	
 
 		<block name="JDAM">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
-	        <property name="LootList" value="mopowerShelves"/>
+	        <property name="LootList" value="ACmunitions"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?JDAM.prefab"/>
@@ -587,10 +715,10 @@
 		</block>	
 
 		<block name="JDAMs2">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
-	        <property name="LootList" value="cars"/>
+	        <property name="LootList" value="ACmunitions"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?JDAMs2.prefab"/>
@@ -602,10 +730,10 @@
 		</block>	
 
 		<block name="PL-11 (2)">
-			<property name="CreativeMode" value="None"/>
+			<property name="CreativeMode" value="Dev"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
             <property name="Class" value="Loot"/>
-	        <property name="LootList" value="mopowerShelves"/>
+	        <property name="LootList" value="ACmunitions"/>
 			<property name="Material" value="Mmetal"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/MilitaryBundle.unity3d?PL-11(2).prefab"/>

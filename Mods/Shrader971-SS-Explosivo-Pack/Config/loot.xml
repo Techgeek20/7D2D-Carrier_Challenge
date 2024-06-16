@@ -1,9 +1,0 @@
-<config>
-
-    <append xpath="//lootgroup[@name='groupResourceBulletCasingSmall']">	
-        <item name="resourceGrenadeTip" count="5,10"/>
-        <item name="resourceGrenadeCasing" count="5,10"/>
-	</append>
-
-
-</config>

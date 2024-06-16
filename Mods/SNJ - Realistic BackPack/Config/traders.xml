@@ -1,0 +1,8 @@
+<snj>
+	<remove xpath="//item[@name='modArmorStoragePocket']" />
+	<remove xpath="//item[@name='modArmorDoubleStoragePocket']" />
+	<remove xpath="//item[@name='modArmorTripleStoragePocket']" />
+	<remove xpath="//item[@name='modArmorStoragePocketSchematic']" />
+	<remove xpath="//item[@name='modArmorDoubleStoragePocketSchematic']" />
+	
+</snj> 

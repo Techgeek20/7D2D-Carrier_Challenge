@@ -1,0 +1,8 @@
+<snj>
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="carryCapacity" display_group="modAttire">
+			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true"/>
+			<display_entry name="dMobility" title_key="statMobility" display_type="Percent" negative_preferred="false"/>
+		</item_display_info>
+	</append>
+</snj> 

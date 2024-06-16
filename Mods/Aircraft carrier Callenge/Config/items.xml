@@ -1,10 +1,5 @@
 ﻿<configs>
 	
-	<insertafter xpath="/items/item[@name]/property[1]">
-		 <property name="CreativeMode" value="none"/> 
-	</insertafter>
-	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set>
-
 	<insertAfter xpath="/items/item[@name='ammoBundleMaster']">
 	<item name="Backpack">
 		<property name="CreativeMode" value="None"/>
@@ -21,7 +16,7 @@
 			<property name="Delay" value="0"/>
 			<property name="Use_time" value="0"/>
 			<property name="Sound_start" value="UseActions/open_backpack"/>
-			<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,gunT0GrenadeLauncher,meleeWpnBladeT1HuntingKnife,foodCanChili,medicalFirstAidBandage,meleeToolTorch,40mmGHEAmmo"/>
+			<property name="Create_item" value="meleeToolRepairT0StoneAxe,drinkJarBoiledWater,gunExplosivesT2M79Launcher,meleeWpnBladeT1HuntingKnife,foodCanChili,medicalFirstAidBandage,meleeToolTorch,ammoGrenade40mmFrag"/>
 			<property name="Create_item_count" value="6,2,1,2,2,2,1,2"/>
 		</property>
 	</item>	
@@ -412,4 +407,67 @@
 		</effect_group>
 	</item>
 	</insertafter>
+
+	<append xpath="/items">
+
+		<item name="Mission_1_Retrieve information">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="DescriptionKey" value="Gather information from the satchel"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="HoldType" value="21"/>
+			<property name="Group" value="All,Quest,Challenges"/>
+			<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Weight" value="2"/>
+			<property name="FuelValue" value="0"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="quest_CarrierChallenge01"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Mission_3_Retrieve more supplies">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="DescriptionKey" value="quest_CarrierChallenge03_paperDesc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="HoldType" value="21"/>
+			<property name="Group" value="All,Quest,Challenges"/>
+			<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Weight" value="2"/>
+			<property name="FuelValue" value="0"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="quest_CarrierChallenge03"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		<item name="Mission_4_Restore Power to Bridge">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="questMaster"/>
+			<property name="DescriptionKey" value="quest_CarrierChallenge04_paperDesc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="HoldType" value="21"/>
+			<property name="Group" value="All,Quest,Challenges"/>
+			<property name="Meshfile" value="Items/Misc/bookPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Weight" value="2"/>
+			<property name="FuelValue" value="0"/>
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="quest_CarrierChallenge04"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+
+	</append>
+
 </configs>

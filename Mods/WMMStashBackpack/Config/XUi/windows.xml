@@ -10,4 +10,6 @@
 
 	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']/rect/button[@name='btnMoveFillAndSmart']/@tooltip_key">lblDumpMatchingInventory</set>
 	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']/rect/button[@name='btnMoveFillAndSmart']/@name">btnDumpMatching</set>
+	<remove xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/combobox[@name='cbxLockedSlots']"/>
+	
 </windows>

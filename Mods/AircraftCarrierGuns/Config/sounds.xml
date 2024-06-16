@@ -1,0 +1,44 @@
+<config>
+ <append xpath="/Sounds">
+
+<SoundDataNode name="Minigun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.45" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Assets/AircraftCarrierSounds.unity3d?Minigun_fire"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="flamethrower_start"> <AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Assets/AircraftCarrierSounds.unity3d?flamethrower_start"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="20"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value=".01"/> 
+</SoundDataNode>
+
+<SoundDataNode name="flamethrower_Loop"> <AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Assets/AircraftCarrierSounds.unity3d?flamethrower_start"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="20"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxRepeatRate value=".01"/> 
+</SoundDataNode>	
+	
+<SoundDataNode name="GrenadeLauncher_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise ID="0" noise="108" time="2" muffled_when_crouched="0.8" heat_map_strength="0.45" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Assets/AircraftCarrierSounds.unity3d?GrenadeLauncher_fire"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly1" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly2" AltSound="true"/>
+    <AudioClip ClipName="Sounds/Twitch/Silly/hunting_rifle_fire_silly3" AltSound="true"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxVoicesPerEntity value="6"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+		
+	
+</append>
+</config>

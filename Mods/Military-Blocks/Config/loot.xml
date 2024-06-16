@@ -1,6 +1,6 @@
 <Config>
 
-	<append xpath="/lootcontainers/lootgroup[@name='groupAmmoRocket']">
+	<!--<append xpath="/lootcontainers/lootgroup[@name='groupAmmoRocket']">
 
 	    <item name="resourceRocketTip" loot_prob_template="high" count="12,24"/>
 		<item name="resourceRocketCasing" loot_prob_template="high" count="12,24"/>
@@ -12,6 +12,18 @@
 		<item name="resourceScrapIron" loot_prob_template="high" count="12,24"/>
 		<item name="resourceMechanicalParts" loot_prob_template="high" count="12,24"/>
 		
-	</append>
+	</append>-->
 
+<append xpath="/lootcontainers">
+	<lootgroup name="ACgroupAmmoMunitions" count="all">
+		<item group="groupAmmoResourcesSmall" loot_prob_template="high" force_prob="true"/>
+		<item group="groupAmmoResourcesMedium" loot_prob_template="medLow" force_prob="true"/>
+		<item group="groupAmmoResourcesLarge" loot_prob_template="low" force_prob="true"/>
+		<item name="resourceScrapIron" count="1,40"/>
+		
+	</lootgroup>
+	<lootcontainer name="ACmunitions" size="4,1" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1" loot_quality_template="qualBaseTemplate">
+		<item group="ACgroupAmmoMunitions"/>
+	</lootcontainer>
+</append>
 </Config>

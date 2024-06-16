@@ -1,0 +1,127 @@
+<snj>
+		<remove xpath="/item_modifiers/item_modifier[@name='modArmorStoragePocket']/effect_group"/>
+		<remove xpath="/item_modifiers/item_modifier[@name='modArmorDoubleStoragePocket']/effect_group"/>
+		<remove xpath="/item_modifiers/item_modifier[@name='modArmorTripleStoragePocket']/effect_group"/>
+		<remove xpath="/item_modifiers/item_modifier[@name='modClothingStoragePocket']"/>
+		
+<append xpath="/item_modifiers" >
+<item_modifier name="fannypack" installable_tags="armorChest" modifier_tags="SophiticatedStorage" blocked_tags="noMods" type="attachment">
+			<property name="CustomIcon" value="modClothingCargoStoragePocket"/>
+			<property name="DescriptionKey" value="backpackDesc"/>
+			<property name="DisplayType" value="carryCapacity"/>
+			<property name="Group" value="Clothing,Tailor"/>
+			<property name="Tags" value="SophiticatedStorage"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Weight" value="24"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="FuelValue" value="6"/>
+			<property name="EconomicValue" value="1250"/>
+			<property name="SellableToTrader" value="false"/>
+			
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="armorChest"/>
+					<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="fannypackCheck"/>
+					<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="fannypackCheck"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<display_value name="dCarryCapacity" value="15"/>
+				<display_value name="dMobility" value="0"/>
+			</effect_group>
+			
+		</item_modifier>
+
+
+<item_modifier name="smallBackpack" installable_tags="armorChest" modifier_tags="SophiticatedStorage" blocked_tags="noMods" type="attachment">
+			
+			<property name="CustomIcon" value="cntBackpack03"/>
+			<property name="DescriptionKey" value="backpackDesc"/>
+			<property name="DisplayType" value="carryCapacity"/>
+			<property name="Group" value="Clothing,Tailor"/>
+			<property name="Tags" value="SophiticatedStorage"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Weight" value="24"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="FuelValue" value="6"/>
+			<property name="EconomicValue" value="1250"/>
+			<property name="SellableToTrader" value="false"/>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="armorChest"/>
+					<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="smallBackpackCheck"/>
+					<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="smallBackpackCheck"/>
+			</effect_group>
+				<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<display_value name="dCarryCapacity" value="30"/>
+				<display_value name="dMobility" value="-0.01"/>
+			</effect_group>
+		</item_modifier>
+
+<item_modifier name="mediumBackpack" installable_tags="armorChest" modifier_tags="SophiticatedStorage" blocked_tags="noMods" type="attachment">
+			<property name="CustomIcon" value="cntSportsBag01White"/>
+			<property name="DescriptionKey" value="backpackDesc"/>
+			<property name="DisplayType" value="carryCapacity"/>
+			<property name="Group" value="Clothing,Tailor"/>
+			<property name="Tags" value="SophiticatedStorage"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Weight" value="24"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="FuelValue" value="6"/>
+			<property name="EconomicValue" value="1250"/>
+			<property name="SellableToTrader" value="false"/>
+			
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="armorChest"/>
+					<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="mediumBackpackCheck"/>
+					<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="mediumBackpackCheck"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<display_value name="dCarryCapacity" value="40"/>
+				<display_value name="dMobility" value="-0.03"/>
+			</effect_group>
+		</item_modifier>
+
+<item_modifier name="largeBackpack" installable_tags="armorChest" modifier_tags="SophiticatedStorage" blocked_tags="noMods" type="attachment">
+			<property name="CustomIcon" value="cntDuffle01"/>
+			<property name="DescriptionKey" value="backpackDesc"/>
+			<property name="DisplayType" value="carryCapacity"/>
+			<property name="Group" value="Clothing,Tailor"/>
+			<property name="Tags" value="SophiticatedStorage"/>
+			<property name="UnlockedBy" value="craftingArmor"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Weight" value="24"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="FuelValue" value="6"/>
+			<property name="EconomicValue" value="1250"/>
+			<property name="SellableToTrader" value="false"/>
+			<effect_group tiered="false">
+				<requirement name="ItemHasTags" tags="armorChest"/>
+					<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="largeBackpackCheck"/>
+					<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="largeBackpackCheck"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<display_value name="dCarryCapacity" value="70"/>
+				<display_value name="dMobility" value="-0.05"/>
+			</effect_group>
+			
+		</item_modifier>
+
+</append>
+</snj>

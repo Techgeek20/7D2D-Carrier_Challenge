@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefabs>
+  <decoration type="model" name="AircraftCarrier21" position="480,35,294" rotation="1" y_is_groundlevel="true" />
+  <decoration type="model" name="ARMY_DEPOT_2" position="530,25,516" rotation="1" y_is_groundlevel="true" />
+  <decoration type="model" name="TheBridge80" position="554,47,368" rotation="1" y_is_groundlevel="true" />
+  <decoration type="model" name="trder_joel_1" position="-480,35,-419" rotation="3" y_is_groundlevel="true" />
+  <decoration type="model" name="Trader_Jen_2" position="520,26,342" rotation="1" y_is_groundlevel="true" />
+  <decoration type="model" name="HughGotIT2" position="535,24,606" rotation="1" y_is_groundlevel="true" />
+</prefabs>

@@ -1,0 +1,9 @@
+<configs>	
+	<set xpath="//window[@name='windowTip']/@height">663</set>
+	<set xpath="//window[@name='windowTip']/@pos">-300,250</set>
+	<setattribute xpath="//window[@name='windowTip']/panel[@name='header']" name="pos">0,190</setattribute>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/@pos">0,146</set>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/@height">663</set>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/label[@depth='3']/@height">633</set>
+	<set xpath="//window[@name='windowTip']/rect[@name='content']/rect[@name='btnContinue']/@pos">0,-663</set>
+</configs>

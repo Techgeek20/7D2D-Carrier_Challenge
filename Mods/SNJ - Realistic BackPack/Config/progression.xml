@@ -1,0 +1,33 @@
+<snj>
+   <remove xpath="/progression/perks/perk[@name='perkPackMule']"/>
+   <!-- <remove xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']"/> -->
+   <remove xpath="/progression/perks/book[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']"/>
+   <!-- <remove xpath="/progression/perks/book[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']"/> -->
+
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/display_entry[@icon='resourceCloth']">
+		<unlock_entry item="fannypack" unlock_tier="1" />
+	</append>
+	   
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingArmor']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="fannypack"/>
+	</append>
+
+	<append xpath="//crafting_skill[@name='craftingArmor']/display_entry[@icon='resourceLeather']">
+		<unlock_entry item="smallBackpack" unlock_tier="2"/>
+	</append>
+	<append xpath="//crafting_skill[@name='craftingArmor']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="17,75" value="1" tags="smallBackpack"/>
+	</append>	
+
+	<append xpath="//crafting_skill[@name='craftingArmor']/display_entry[@icon='resourceMilitaryFiber']">
+		<unlock_entry item="mediumBackpack" unlock_tier="1"/>
+		<unlock_entry item="largeBackpack" unlock_tier="4"/>
+	</append>
+	<append xpath="//crafting_skill[@name='craftingArmor']/effect_group">
+	<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="mediumBackpack"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="66,75" value="1" tags="largeBackpack"/>
+	</append>	
+
+
+</snj> 

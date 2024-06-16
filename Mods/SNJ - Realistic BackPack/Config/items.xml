@@ -1,0 +1,6 @@
+<snj>
+	<remove xpath="/items/item[@name='modArmorStoragePocketSchematic']/effect_group"/>
+	<remove xpath="/items/item[@name='modArmorDoubleStoragePocketSchematic']/effect_group"/>
+	<remove xpath="/items/item[@name='modArmorTripleStoragePocketSchematic']/effect_group"/>
+	<set xpath="/items/item[@name='drugSteroids']/effect_group/display_value[@name='dCarryCapacity']/@value">0</set>
+</snj>

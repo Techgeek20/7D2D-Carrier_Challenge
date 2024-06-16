@@ -64,7 +64,7 @@
 	<property class="RepairItems">
 		<property name="resourceCobblestones" value="6"/>
 	</property>
-	<property name="StabilitySupport" value="false"/>
+	<property name="StabilitySupport" value="true"/>
 	<drop event="Harvest" name="resourceCrushedSand" count="4" tag="oreWoodHarvest"/>
 	<drop event="Harvest" name="resourceRockSmall" count="12" tag="oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
@@ -72,13 +72,24 @@
 	<property name="SortOrder2" value="0700"/>
 	<property name="FilterTags" value="MC_outdoor,SC_terrain,MC_building,SC_destruction"/>
 	</block>
+		<block name="DevilAir">
+            <!--  Invisible block that provided structural support -->
+            <property name="CustomIcon" value="shapeCube"/>
+            <property name="CustomIconTint" value="32455E"/>
+            <property name="Material" value="Mbedrock"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="1"/>
+            <property name="StabilitySupport" value="true"/>
+            <property name="ImposterExclude" value="true"/>
+            <property name="Collide" value=""/>
+            <property name="WaterFlow" value="permitted"/>
+            <drop event="Destroy" count="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+            <property name="ModelOffset" value="0,0,0"/>
+        </block>
 
 </insertafter>
-
-<insertafter xpath="/blocks/block[@name]/property[1]">
-		<property name="CreativeMode" value="None"/>
-	</insertafter>
-	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>
 
 	<set xpath="//block[@name='terrDirt']//drop[1]/@count">10</set>
 	
@@ -127,5 +138,14 @@
 	<append xpath="//block[starts-with(@name,'projector')]">
 		<drop event="Destroy" name="resourceHeadlight" count="1" prob="1" tag="salvageHarvest"/>
 	</append>
-
+	
+    <set xpath="//block[contains(@name,'Door')]/property[@name='StabilitySupport']/@value">true</set>
+    <append xpath="/blocks/block[contains(@name,'Door')]">
+        <property name="StabilitySupport" value="true" />
+    </append>
+	<remove xpath="/blocks/block[@name='mattressFlatThin']/property[@name='GndAlign']"/>
+	<!-- <set xpath="//block[contains(@name,'mattressFlatThin')]/property[@name='StabilitySupport']/@value">true</set> -->
+	<append xpath="/blocks/block[contains(@name,'mattressFlatThin')]">
+		<property name="StabilitySupport" value="true" />
+	</append>
 </configs>

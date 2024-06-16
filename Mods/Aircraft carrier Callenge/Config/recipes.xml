@@ -9,6 +9,13 @@
       <ingredient name="oldCash" count="1"/>
     </recipe>
 
+	<recipe name="Mission_3_Retrieve more supplies" count="1"  >
+	  <ingredient name="resourceElectricParts" count="100"/>
+	  <ingredient name="resourceHeadlight" count="10"/>
+	  <ingredient name="resourceSpring" count="15"/>
+	  <ingredient name="resourceLeather" count="50"/>
+	  <ingredient name="resourceMetalPipe" count="40"/>
+	</recipe>
 
 <!-- START disable of feathers from arrows and bolts
 

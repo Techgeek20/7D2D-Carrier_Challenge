@@ -10,7 +10,7 @@
   <property name="PrefabSize" value="29, 45, 29" />
   <property name="RotationToFaceNorth" value="2" />
   <property name="Zoning" value="any" />
-  <property name="QuestTags" value="clear, fetch, restore_power, infested, hidden_cache" />
+  <property name="QuestTags" value="clear, restore_power, infested " />
   <property name="EditorGroups" value="any" />
   <property name="Tags" value="industrial" />
   <property name="TraderArea" value="False" />
