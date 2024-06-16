@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Table_of_Contents -->
+<!-- Search_Find_All_for *** -->
+<configs>
+
+	<append xpath="/item_modifiers">
+
+		<item_modifier name="HCwM Salvo Mode" installable_tags="salvo" modifier_tags="trigger" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="HCwM-Salvo_LaunchSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="CustomIcon" value="modGunTriggerGroupBurst"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="BurstRoundCount" operation="base_set" value="5"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".1"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".05"/>
+			</effect_group>
+
+		</item_modifier>
+
+	</append>
+
+</configs>

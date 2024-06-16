@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+	<!-- Begin adding modded recipes into 7 Days to Die's memory stack-->
+	<append xpath="/recipes">
+		<!-- Begin Hell's Coming w/ Me recipe code block -->
+
+		<recipe name="weapHCwM" count="1" craft_time="180" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="gunExplosivesT3RocketLauncherParts" count="25"/>
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceDuctTape" count="50"/>
+			<ingredient name="resourceElectricParts" count="75"/>
+			<ingredient name="resourceSpring" count="50"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,5" tags="gunExplosivesT3RocketLauncherParts,resourceForgedSteel,resourceDuctTape,resourceElectricParts,resourceSpring"/>
+			</effect_group>
+		</recipe>
+
+		<!-- End Hell's Coming w/ Me recipe code block -->
+
+		<!-- BEGIN Planet Cracker recipe code block -->
+
+		<recipe name="ammoPlanetCracker" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceRocketTip" count="25"/>
+			<ingredient name="resourceGunPowder" count="1000"/>
+			<ingredient name="resourceDuctTape" count="15"/>
+			<ingredient name="ammoGasCan" count="25000"/>
+			<ingredient name="resourceRocketCasing" count="30"/>
+		</recipe>
+
+		<!-- END Planet Cracker recipe code block -->
+
+		<recipe name="weapScuttleCharge" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="50"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+			<ingredient name="resourceElectricParts" count="25"/>
+		</recipe>
+		
+	</append> <!-- End of adding modded reciped into 7 Days to Die's memory stack-->
+
+</configs> <!-- End of File -->

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+	<!-- Begin adding modded items into 7 Days to Die's memory stack-->
+	<append xpath="/items">
+
+		<!-- Beging Hell's Comin' with Me code block -->
+		<item name="weapHCwM">
+			<!-- Begin item's general info properties -->
+			<property name="Group" value="Ammo/Weapons,Ranged Weapons"/>
+			<property name="CustomIcon" value="weapHCwM"/>
+			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,barrelAttachments,noSilencer,sideAttachments,smallTopAttachments,explosivesSkill,salvo"/>
+			<property name="DisplayType" value="rangedLauncher"/>
+			<property name="HoldType" value="10"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab"/>
+			<property name="Material" value="MRocketLauncherParts"/>
+			<property name="TintColor" value="00,00,00"/>
+			<property name="Weight" value="14"/>
+			<property name="UnlockedBy" value="craftingExplosives"/><!-- gunExplosivesT3RocketLauncherSchematic, -->
+			<property name="ShowQuality" value="true"/>
+			<!-- End item's general info propertires -->
+			<!-- Begin item's repair properties -->
+			<property name="DegradationBreaksAfter" value="true"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<!-- End item's repair properties -->
+			<!-- Begin item's sounds properties -->
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="Sound_Sight_In" value="launcher_sight_in"/>
+			<property name="Sound_Sight_Out" value="launcher_sight_out"/>
+			<!-- End item's sounds properties -->
+			<!-- Begin item's trader properties -->
+			<property name="EconomicValue" value="1000"/>
+			<property name="TraderStageTemplate" value="baseTier3"/>
+			<!-- End item's trader properties -->
+
+			<property class="Action0">
+			<property name="Class" value="Launcher"/>
+			<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
+			<!-- <property name="Range" value="200"/> -->
+			<property name="Magazine_items" value="ammoRocketHE,ammoRocketFrag,ammoPlanetCracker"/>
+			<!-- <property name="Reload_time" value="2"/> -->
+			<property name="Sound_start" value="m136_fire"/>
+			<property name="Sound_repeat" value=""/>
+			<property name="Sound_end" value=""/>
+			<property name="Sound_empty" value="dryfire"/>
+			<property name="Sound_reload" value="m136_reload"/>
+			<property name="AutoReload" value="false"/>
+			<property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
+			<property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/>
+			<property name="ScopeOffset" value="-.00062,.088,.065"/>
+			<property name="SideOffset" value="0,0,0"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+		        <property name="triggerEffectTriggerShootDualsense" value="PistolShoot"/>
+			</property>
+
+			<property class="Action1">
+				<property name="Class" value="Zoom"/>
+				<property name="Zoom_max_out" value="55"/>
+				<property name="Zoom_max_in" value="55"/>
+			        <property name="triggerEffectTriggerPullDualsense" value="PistolZoom"/>
+			</property>
+
+			<effect_group name="Hell's Comin' with Me">
+				<passive_effect name="MaxRange" operation="base_set" value="100"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="80"/>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value="0,.40" tier="1,80"/>
+				<passive_effect name="MaxRange" operation="perc_add" value="0,.40" tier="1,80"/>
+
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="50"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+
+				<passive_effect name="MagazineSize" operation="base_set" value="5"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".7"/> <!-- 2.7s -->
+				<passive_effect name="ModSlots" operation="base_set" value="1" tier="1,10"/>
+				<passive_effect name="ModSlots" operation="base_set" value="2" tier="11,20"/>
+				<passive_effect name="ModSlots" operation="base_set" value="3" tier="21,30"/>
+				<passive_effect name="ModSlots" operation="base_set" value="4" tier="31,40"/>
+				<passive_effect name="ModSlots" operation="base_set" value="5" tier="41,50"/>
+				<passive_effect name="ModSlots" operation="base_set" value="6" tier="51,80"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".05" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2"/>
+
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="10"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="10"/>
+
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.5"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".5"/>
+
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="4"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".4"/>
+
+				<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,60" />
+				<passive_effect name="DegradationMax" operation="base_set" value="600" tier="61,70" />
+				<passive_effect name="DegradationMax" operation="base_set" value="800" tier="71,80" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" />
+			</effect_group>
+			
+			<effect_group name="corpseRemoval">
+				<requirement name="!IsAlive" target="other"/>
+				<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="500"/>
+			</effect_group>
+
+		</item> <!-- End of Hell's Comin' with Me code block -->
+
+		<!-- Begin Planet Cracker ammo code block -->
+		<item name="ammoPlanetCracker">
+			<property name="Tags" value="ammo,perkDemolitionsExpert"/>
+			<property name="CustomIcon" value="ammoPlanetCracker"/>
+			<property name="DescriptionKey" value="ammoPlanetCrackerDesc"/>
+			<property name="DisplayType" value="ammoLauncher"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mlead_scrap"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+			<property name="UnlockedBy" value="craftingExplosives"/><!-- gunExplosivesT3RocketLauncherSchematic, --> 
+			<!-- Enabled for packs that are not Darknes Falls -->
+			<!-- Uncomment value below to enable for Darkness Falls - ->
+			<!- - <property name="UnlockedBy" value="perkCraftFutureTech"/> - ->
+			-->
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="5"/> <!-- which Prefab/particle is used -->
+				<property name="Explosion.RadiusBlocks" value="30"/> <!-- damage radius for blocks -->
+				<property name="Explosion.RadiusEntities" value="20"/> <!-- damage radius for entities -->
+				<property name="Explosion.DamageBonus.water" value="0"/>
+				<property name="Explosion.BlastPower" value="100"/> <!-- (int,100) how far ragdolls and such are flung -->
+				<property name="Explosion.Buff" value="buffLaserWeapon"/> <!-- molotovs have a ExplosiveDamageArea script that runs this buff for their ground effect -->
+				<property name="Gravity" value="-6"/>
+				<property name="FlyTime" value="0"/>
+				<property name="LifeTime" value="2"/>
+
+				<property name="Explosion.BlockDamage" value="1000000"/> <!-- workaround, not affected by perks at all -->
+				<property name="Explosion.EntityDamage" value="25000"/> <!-- workaround, not affected by perks at all -->
+			</property>
+			
+			<effect_group name="ammoRocketPlanetCracker" tiered="false">
+				<passive_effect name="BlockDamage" operation="base_set" value="1000000" tags="perkDemolitionsExpert"/><display_value name="dExDamageBlock" value="1000000"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="25000" tags="perkDemolitionsExpert"/><display_value name="dExDamageEntity" value="25000"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="500" tags="perkDemolitionsExpert"/>
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="otherAOE" buff="buffLaserWeapon" target_tags="demon"/>
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="otherAOE" buff="buffLaserWeapon" target_tags="empowered"/>
+				<display_value name="dExRadius" value="30"/>
+
+			<!-- Darkness Falls options
+
+				<display_value name="dDisablesDemonRegen" value="1"/>
+				<display_value name="dDisablesEmpoweredRegen" value="1"/>
+			-->
+
+			</effect_group>
+			
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="1"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".1"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".05"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="2"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".2"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".1"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="3"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".3"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".3"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".2"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="4"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".4"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".4"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".3"/>
+			</effect_group>
+			<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+				<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="5"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+					<passive_effect name="BlockDamage"  operation="perc_add" value=".5"/>
+					<passive_effect name="DismemberChance" operation="base_add" value=".45"/>
+			</effect_group>
+			
+			<effect_group tiered="false" name="corpseRemoval">
+				<requirement name="!IsAlive" target="other"/>
+				<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="50000"/>
+			</effect_group>
+		</item><!-- End of Planet Cracker ammo code block -->
+
+			<item name="HCwM-Salvo_LaunchSchematic">
+				<property name="Extends" value="schematicNoQualityMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="modGunTriggerGroupBurst"/>
+				<property name="Unlocks" value="HCwM Salvo Mode"/>
+				<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="HCwM Salvo Mode" operation="set" value="1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				</effect_group>
+			</item>
+
+			<item name="weapScuttleCharge">
+				<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,explosivesSkill,perkGreatHeistSafes"/>
+				<property name="ItemTypeIcon" value="explosion"/>
+				<property name="CustomIcon" value="thrownTimedCharge"/>
+				<property name="DisplayType" value="ammoGrenadeTimedCharge"/>
+				<property name="TintColor" value="00,00,00"/>
+				<property name="Class" value="ItemClassTimeBomb"/>
+				<property name="HoldType" value="62"/>
+				<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/TimedCharge/timedChargePrefab.prefab"/>
+				<property name="ActivationTransformToHide" value="Armed"/>
+				<property name="DropScale" value="1.8"/>
+				<property name="Material" value="Mmetal"/>
+				<property name="Stacknumber" value="20"/>
+				<property name="EconomicValue" value="41"/>
+				<property name="TraderStageTemplate" value="baseTier2"/>
+				<property name="Weight" value="0"/>
+				<property name="Explosion.BlockTags" value="timecharge"/>
+				<property name="Explosion.ParticleIndex" value="12"/>
+				<property name="Explosion.RadiusBlocks" value="50"/>
+				<property name="Explosion.RadiusEntities" value="1"/>
+				<property name="Explosion.BlastPower" value="100"/> <!-- (int,100) how far ragdolls and such are flung -->
+				<property name="FusePrimeOnActivate" value="true"/>
+				<property name="FuseTime" value="10"/> <!-- End: Needed for  time in sec, max 6 -->
+				<property name="StickPercent" value="1"/>
+				<property name="UnlockedBy" value="craftingExplosives"/><!-- perkDemolitionsExpert,bookGreatHeistGoldRush, -->
+				<property name="Group" value="Ammo/Weapons,Ammo"/>
+				<property name="SoundUnholster" value="charge_unholster"/>
+				<property name="SoundStick" value="charge_stick"/>
+				<property name="SoundTick" value="charge_beep,.8"/>
+				
+				<property class="Action0">
+					<property name="Class" value="ThrowAway"/>
+					<property name="Delay" value="1"/>
+					<property name="Throw_strength_default" value="15"/>
+					<property name="Max_strain_time" value="0"/>
+					<property name="Sound_start" value="charge_throw"/>
+			        <property name="triggerEffectTriggerPullDualsense" value="ShotgunTrigger"/>
+			        <property name="triggerEffectTriggerPullXbox" value="ShotgunTrigger"/>
+			        <property name="triggerEffectShootDualsense" value="ShotgunShoot"/>
+			        <property name="triggerEffectShootXbox" value="PistolShoot"/>
+				</property>
+
+			  	<property class="Action1">
+				    <!-- UseAction -->
+				    <property name="Class" value="Activate"/>
+				    <property name="Delay" value="1"/>
+				    <!-- obsolete if rounds per minute exists -->
+					<requirement name="CVarCompare" cvar="_underwater" operation="LT" value="1"/>
+				  </property>
+			  	<property name="ThrowableDecoy" value="true"/>
+					<effect_group tiered="false">
+						<passive_effect name="BlockDamage" operation="base_set" value="1000000" tags="perkDemolitionsExpert"/>
+							<display_value name="dExDamageBlock" value="1000000"/>
+						<passive_effect name="EntityDamage" operation="base_set" value="100" tags="perkDemolitionsExpert"/>
+						<display_value name="dExRadius" value="50"/>
+						<display_value name="dFuseTime" value="10"/>
+				</effect_group>
+
+				<!--
+					<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+						<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="1"/>
+							<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+							<passive_effect name="BlockDamage"  operation="perc_add" value=".1"/>
+							<passive_effect name="DismemberChance" operation="base_add" value=".05"/>
+					</effect_group>
+					<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+						<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="2"/>
+							<passive_effect name="EntityDamage" operation="perc_add" value=".2"/>
+							<passive_effect name="BlockDamage"  operation="perc_add" value=".2"/>
+							<passive_effect name="DismemberChance" operation="base_add" value=".1"/>
+					</effect_group>
+					<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+						<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="3"/>
+							<passive_effect name="EntityDamage" operation="perc_add" value=".3"/>
+							<passive_effect name="BlockDamage"  operation="perc_add" value=".3"/>
+							<passive_effect name="DismemberChance" operation="base_add" value=".2"/>
+					</effect_group>
+					<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+						<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="4"/>
+							<passive_effect name="EntityDamage" operation="perc_add" value=".4"/>
+							<passive_effect name="BlockDamage"  operation="perc_add" value=".4"/>
+							<passive_effect name="DismemberChance" operation="base_add" value=".3"/>
+					</effect_group>
+					<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+						<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="5"/>
+							<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+							<passive_effect name="BlockDamage"  operation="perc_add" value=".5"/>
+							<passive_effect name="DismemberChance" operation="base_add" value=".45"/>
+					</effect_group>
+					<effect_group tiered="false" name="workaround for explosives ignoring perks/buffs">
+						<requirement name="HasBuff" buff="buffDrugAtomJunkies"/>
+							<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+							<passive_effect name="BlockDamage"  operation="perc_add" value=".5"/>
+					</effect_group>
+				-->
+			</item>
+
+	</append> <!-- End of adding modded items into 7 Days to Die's memory stack-->
+
+</configs> <!-- End of File -->
