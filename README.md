@@ -1,6 +1,12 @@
 # 7D2D-Carrier_Challenge
 Aircraft Carrier Challenge for 7 Days to Die - Alpha 21.2
 
+NOTE: Updated version of this pack is released and available for 7 Days to Die V1.1 (Link: https://github.com/Techgeek20/7D2D-V1_Aircraft_Carrier_Challenge) and on the 7 Days to Die Mod Launcher!
+
+Known "glitches":
+ 1) "Disco" flooring underneath the Army Depot poi - this is a overall POI bug that triggers when the retrieve supplies quest is started. (Fixed in the V1 version)
+ 2) Reminder - leave loot respawn days in serverconfig.xml (when hosting on a dedicated server) to deafault value (7 days).
+
 DevilsKut is the person that had the idea to create this challege pack and was inspired after seeing the Dishong Tower Challenge.
 Techgeek20 manages the repo and assisted with code and bug fixes...
 
